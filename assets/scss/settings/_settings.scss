@@ -79,10 +79,6 @@ $primary-font: 		"magallanes", helvetica, san-serif;
 ////////////////////
 $masthead-background:	"juju_masthead.png";
 %masthead-background { background:url(#{$img-assetpath}#{$masthead-background}); }
-$embellishment-sprite:	"embellishments_1.png";
-%embellishment-sprite { background:url(#{$img-assetpath}#{$embellishment-sprite}); }
-$hover-sprite:	"hover_border.png";
-%hover-sprite { background:url(#{$img-assetpath}#{$hover-sprite}); }
 ////////////////////
 //
 // Z-Index

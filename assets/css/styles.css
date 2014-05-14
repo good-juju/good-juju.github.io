@@ -425,6 +425,9 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 640px; }
+  @media screen and (min-width: 320px) and (max-width: 601px) {
+    .masthead-container {
+      background: none; } }
 
 .masthead {
   max-width: 64em;
@@ -444,6 +447,17 @@ body {
   width: 24.96431%; }
   .juju-logo:last-child, .juju-logo-footer:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 320px) and (max-width: 601px) {
+    .juju-logo, .juju-logo-footer {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 12.50595%;
+      float: left;
+      display: block;
+      margin-right: 0.09522%;
+      width: 49.95239%; }
+      .juju-logo:last-child, .juju-logo-footer:last-child {
+        margin-right: 0; } }
 
 .juju-logo-footer {
   margin-left: 0%; }
@@ -456,17 +470,37 @@ body {
   width: 49.97621%; }
   .juju-trailer:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 320px) and (max-width: 601px) {
+    .juju-trailer {
+      margin-top: 0px;
+      float: left;
+      display: block;
+      margin-right: 0.09522%;
+      width: 100%; }
+      .juju-trailer:last-child {
+        margin-right: 0; } }
 
 .introductions {
   margin-top: 145px;
   padding-left: 50px;
-  margin-left: 50.02379%;
+  margin-left: 100.09522%;
   float: left;
   display: block;
   margin-right: 0.04759%;
   width: 37.47026%; }
   .introductions:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 320px) and (max-width: 601px) {
+    .introductions {
+      margin-top: 0px;
+      padding: 10px;
+      margin-left: 0%;
+      float: left;
+      display: block;
+      margin-right: 0.09522%;
+      width: 100%; }
+      .introductions:last-child {
+        margin-right: 0; } }
 
 .juju-show {
   width: 100%; }
@@ -479,10 +513,16 @@ body {
   padding: 10px;
   height: 457px;
   background-color: #ff7373; }
+  @media screen and (min-width: 320px) and (max-width: 601px) {
+    .juju-show-title {
+      height: 200px; } }
 
 .juju-example {
   width: 512px;
   float: left; }
+  @media screen and (min-width: 320px) and (max-width: 601px) {
+    .juju-example {
+      display: none; } }
 
 .footer-container {
   max-width: 64em;
@@ -501,6 +541,14 @@ body {
   margin-top: 25px; }
   .support:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 320px) and (max-width: 601px) {
+    .support {
+      float: left;
+      display: block;
+      margin-right: 0.09522%;
+      width: 100%; }
+      .support:last-child {
+        margin-right: 0; } }
 
 p.copyright {
   color: #a6a6a6;
@@ -511,11 +559,37 @@ p.copyright {
   width: 100%;
   height: 472px;
   background-color: #58ee5f; }
+  @media screen and (min-width: 320px) and (max-width: 601px) {
+    .green-background {
+      height: 325px; } }
 
 .blue-background {
   width: 100%;
   height: 168px;
   background-color: #58eedb; }
+
+.trailer-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+.trailer-wrapper iframe,
+.trailer-wrapper object,
+.trailer-wrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.trailer-content {
+  width: 600px;
+  max-width: 100%; }
+  @media screen and (min-width: 320px) and (max-width: 601px) {
+    .trailer-content {
+      width: 100%; } }
 
 @font-face {
   font-family: magallanes;
