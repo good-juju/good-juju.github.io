@@ -1,4 +1,4 @@
 good-juju.github.io
 ===================
 
-Site available at http://getjujuapp.com
+Site available at http://sharethejuju.com
