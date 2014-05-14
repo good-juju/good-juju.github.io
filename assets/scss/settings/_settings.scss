@@ -1,0 +1,101 @@
+////////////////////
+//////////////////
+//
+// Underscore
+// Application
+// SETTINGS
+// v 1.1
+//
+// TABLE OF CONTENTS
+//
+//	B A S E
+//  Asset Paths = Define where your assets live
+//  Default Width = Default center width for Center mixin
+//  Breakpoints = For media quieries
+//  Grid = Bourbon Neat Grid Settings
+//	V I S U A L
+//  Colors =
+//  Typography = 
+//  Z Index - May not need...
+//
+//////////////////
+////////////////////
+// Asset Paths
+////////////////////
+$img-assetpath: 	"/assets/img/";
+$font-assetpath:	"/assets/fonts/";
+////////////////////
+// Default Width
+////////////////////
+$default-width:		960px;
+////////////////////
+// Grid
+////////////////////
+$column: golden-ratio(1em, 3) !default; // Column width
+$gutter: golden-ratio(0.01em, 1) !default; // Gutter between each two columns
+$grid-columns: 8 !default; // Total number of columns in the grid
+$max-width: em(1024)!default; // Max-width of the outer container
+$border-box-sizing: true !default; // Makes all elements have a border-box layout
+$default-feature: min-width; // Default @media feature for the breakpoint() mixin
+$default-layout-direction: LTR !default;
+// Visual Grid
+$visual-grid: false !default; // Display the base grid
+$visual-grid-color: #aaa !default;
+$visual-grid-index: front !default; // Show grid behind content (back) or overlay it over the content (front)
+$visual-grid-opacity: 0.4 !default;
+$visual-grid-breakpoints: () !default;
+////////////////////
+//
+// Colors
+//
+////////////////////
+$primary:			rgb(130,130,130); // Grey
+$secondary:			rgb(255,115,115);  // Salmon
+$tertiary:			rgb(255,255,255); // White
+
+$salmon:			rgb(255,115,115);
+$green:				rgb(88,238,95);
+$darkgreen:			rgb(60,220,70);
+$blue:				rgb(88,238,219);
+$magenta:			rgb(213,48,106);
+$darkgrey:			rgb(67,67,67);
+$grey:				rgb(130,130,130);
+$silver:			rgb(166,166,166);
+////////////////////
+//
+// Typography
+//
+////////////////////
+$base-font-size:	em(14);
+$font-small:		em(12);
+$font-medium:		em(18);
+$font-large:		em(22);
+
+$primary-font: 		"magallanes", helvetica, san-serif;
+////////////////////
+//
+// Images
+//
+////////////////////
+$masthead-background:	"juju_masthead.png";
+%masthead-background { background:url(#{$img-assetpath}#{$masthead-background}); }
+$embellishment-sprite:	"embellishments_1.png";
+%embellishment-sprite { background:url(#{$img-assetpath}#{$embellishment-sprite}); }
+$hover-sprite:	"hover_border.png";
+%hover-sprite { background:url(#{$img-assetpath}#{$hover-sprite}); }
+////////////////////
+//
+// Z-Index
+//
+////////////////////
+$z-masthead:		1000;
+$z-navigation:		900;
+$z-content:			200;
+$z-backgrounds:		100;
+$z-level-1:			700;
+$z-level-2:			600;
+$z-level-3:			500;
+$z-level-4:			400;
+
+
+

@@ -1,0 +1,100 @@
+////////////////////
+//////////////////
+//
+// Underscore
+// BASE
+// v 1.0
+//
+// TABLE OF CONTENTS
+//
+//
+//////////////////
+////////////////////
+//
+// Base
+//
+////////////////////
+html, body { width:100%; height:100%; }
+body {
+	font-size:$base-font-size;
+	font-family:$primary-font;
+	color:$tertiary;
+	background-color:$primary;
+}
+.container {
+	@include outer-container;
+}
+////////////////////
+//
+// Content
+//
+////////////////////
+.masthead-container {
+	position:absolute;
+	z-index:$z-masthead;
+	@extend %masthead-background;
+	background-position:43% 0px;
+	background-repeat:no-repeat;
+	width:100%;
+	height:640px;
+}
+.masthead {
+	@include outer-container;
+}
+.juju-logo {
+	margin-top:62px;
+	@include shift(1);
+	@include span-columns(2);
+}
+.juju-logo-footer {
+	@extend .juju-logo;
+	@include shift(0);
+}
+.juju-trailer {
+	margin-top:85px;
+	@include span-columns(4);
+}
+.introductions {
+	margin-top:365px;
+	padding-left:50px;
+	@include shift(4);
+	@include span-columns(3);
+}
+.juju-show {
+	width:100%;
+}
+.juju-show-title, .juju {
+	width:256px;
+	float:left;
+}
+.juju-show-title {
+	padding:10px;
+	height:457px;
+	background-color:$salmon;
+}
+.juju-example {
+	width:512px;
+	float:left;
+}
+.footer-container {
+	@include outer-container;
+}
+.support {
+	@include span-columns(8);
+	margin-top:25px;
+}
+p.copyright {
+	color:$silver;
+	font-size:em(12);
+	letter-spacing:em(1);
+}
+.green-background {
+	width:100%;
+	height:472px;
+	background-color:$green;
+}
+.blue-background {
+	width:100%;
+	height:168px;
+	background-color:$blue;
+}
