@@ -481,13 +481,15 @@ body {
         margin-right: 0; } }
 
 .introductions {
-  margin-top: 145px;
+  margin-top: 50px;
   padding-left: 50px;
-  margin-left: 100.09522%;
+  margin-left: 50.04761%;
   float: left;
   display: block;
   margin-right: 0.04759%;
-  width: 37.47026%; }
+  width: 37.47026%;
+  color: #828282;
+  font-size: 18px; }
   .introductions:last-child {
     margin-right: 0; }
   @media screen and (min-width: 320px) and (max-width: 601px) {
@@ -558,7 +560,7 @@ p.copyright {
 .green-background {
   width: 100%;
   height: 472px;
-  background-color: #58ee5f; }
+  background-color: #bfec47; }
   @media screen and (min-width: 320px) and (max-width: 601px) {
     .green-background {
       height: 325px; } }
@@ -566,7 +568,7 @@ p.copyright {
 .blue-background {
   width: 100%;
   height: 168px;
-  background-color: #58eedb; }
+  background-color: #bfec47; }
 
 .trailer-wrapper {
   position: relative;
