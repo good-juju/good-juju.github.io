@@ -68,10 +68,10 @@ body {
 	}
 }
 .introductions {
-	margin-top:50px;
+	margin-top:75px;
 	padding-left:50px;
 	@include shift(2);
-	@include span-columns(3);
+	@include span-columns(4);
 	color:$grey;
 	font-size:18px;
 	@include media($break-mobile) {

@@ -481,13 +481,13 @@ body {
         margin-right: 0; } }
 
 .introductions {
-  margin-top: 50px;
+  margin-top: 75px;
   padding-left: 50px;
   margin-left: 50.04761%;
   float: left;
   display: block;
   margin-right: 0.04759%;
-  width: 37.47026%;
+  width: 49.97621%;
   color: #828282;
   font-size: 18px; }
   .introductions:last-child {
@@ -662,7 +662,8 @@ ol {
 h1, .h1, .h2, .h3, .h4, .h5, .h6, h2, h3, h4, h5, h6 {
   font-family: "magallanes", helvetica, san-serif;
   text-transform: lowercase;
-  font-weight: 100; }
+  font-weight: 100;
+  margin-bottom: 0.75em; }
 
 h1, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: 3.4375em; }
