@@ -430,7 +430,7 @@ body {
   @media screen and (min-width: 320px) and (max-width: 601px) {
     .masthead-container {
       background: none;
-      height: none; } }
+      height: initial; } }
 
 .masthead {
   max-width: 64em;

@@ -41,7 +41,7 @@ body {
  height:640px;
  @include media($break-mobile) {
   background:none;
-  height:none;
+  height:initial;
  }
 }
 .masthead {
