@@ -408,6 +408,9 @@ body {
   font-family: "magallanes", helvetica, san-serif;
   color: white;
   background-color: #828282; }
+  @media screen and (min-width: 320px) and (max-width: 601px) {
+    body {
+      background-color: #bfec47; } }
 
 .container {
   max-width: 64em;
@@ -419,15 +422,15 @@ body {
     clear: both; }
 
 .masthead-container {
-  position: absolute;
-  z-index: 1000;
   background-position: 43% 0px;
   background-repeat: no-repeat;
+  background-color: #bfec47;
   width: 100%;
   height: 640px; }
   @media screen and (min-width: 320px) and (max-width: 601px) {
     .masthead-container {
-      background: none; } }
+      background: none;
+      height: inherit; } }
 
 .masthead {
   max-width: 64em;
@@ -461,6 +464,15 @@ body {
 
 .juju-logo-footer {
   margin-left: 0%; }
+  @media screen and (min-width: 320px) and (max-width: 601px) {
+    .juju-logo-footer {
+      float: left;
+      display: block;
+      margin-right: 0.09522%;
+      width: 100%;
+      padding: 10px; }
+      .juju-logo-footer:last-child {
+        margin-right: 0; } }
 
 .juju-trailer {
   margin-top: 85px;
@@ -507,17 +519,17 @@ body {
 .juju-show {
   width: 100%; }
 
-.juju-show-title, .juju {
-  width: 256px;
+.juju {
+  width: 320px;
   float: left; }
-
-.juju-show-title {
-  padding: 10px;
-  height: 457px;
-  background-color: #ff7373; }
   @media screen and (min-width: 320px) and (max-width: 601px) {
-    .juju-show-title {
-      height: 200px; } }
+    .juju {
+      float: left;
+      display: block;
+      margin-right: 0.09522%;
+      width: 100%; }
+      .juju:last-child {
+        margin-right: 0; } }
 
 .juju-example {
   width: 512px;
@@ -534,6 +546,9 @@ body {
     content: "";
     display: table;
     clear: both; }
+  @media screen and (min-width: 320px) and (max-width: 601px) {
+    .footer-container {
+      background-color: #828282; } }
 
 .support {
   float: left;
@@ -548,7 +563,8 @@ body {
       float: left;
       display: block;
       margin-right: 0.09522%;
-      width: 100%; }
+      width: 100%;
+      padding: 10px; }
       .support:last-child {
         margin-right: 0; } }
 
@@ -556,6 +572,9 @@ p.copyright {
   color: #a6a6a6;
   font-size: 0.75em;
   letter-spacing: 0.0625em; }
+
+.masthead-background {
+  width: 100%; }
 
 .green-background {
   width: 100%;

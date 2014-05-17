@@ -20,6 +20,9 @@ body {
  font-family:$primary-font;
  color:$tertiary;
  background-color:$primary;
+ @include media($break-mobile) {
+  background-color:$green;
+ }
 }
 .container {
  @include outer-container;
@@ -30,15 +33,15 @@ body {
 //
 ////////////////////
 .masthead-container {
- position:absolute;
- z-index:$z-masthead;
  @extend %masthead-background;
  background-position:43% 0px;
  background-repeat:no-repeat;
+ background-color:$green;
  width:100%;
  height:640px;
  @include media($break-mobile) {
   background:none;
+  height:inherit;
  }
 }
 .masthead {
@@ -58,6 +61,10 @@ body {
 .juju-logo-footer {
  @extend .juju-logo;
  @include shift(0);
+ @include media($break-mobile) {
+  @include span-columns(4);
+  padding:$padding-small;
+ }
 }
 .juju-trailer {
  margin-top:85px;
@@ -84,16 +91,11 @@ body {
 .juju-show {
  width:100%;
 }
-.juju-show-title, .juju {
- width:256px;
+.juju {
+ width:320px;
  float:left;
-}
-.juju-show-title {
- padding:10px;
- height:457px;
- background-color:$salmon;
  @include media($break-mobile) {
-  height:200px;
+  @include span-columns(4 of 4);
  }
 }
 .juju-example {
@@ -105,18 +107,25 @@ body {
 }
 .footer-container {
  @include outer-container;
+ @include media($break-mobile) {
+  background-color:$grey;
+ }
 }
 .support {
  @include span-columns(8);
  margin-top:25px;
  @include media($break-mobile) {
   @include span-columns(4);
+  padding:$padding-small;
  }
 }
 p.copyright {
  color:$silver;
  font-size:em(12);
  letter-spacing:em(1);
+}
+.masthead-background {
+ width:100%;
 }
 .green-background {
  width:100%;
