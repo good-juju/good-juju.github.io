@@ -517,17 +517,33 @@ body {
         margin-right: 0; } }
 
 .juju-show {
-  width: 100%; }
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0; }
 
 .juju {
-  width: 320px;
-  float: left; }
+  float: left;
+  display: block;
+  margin-right: 0.04759%;
+  width: 24.96431%;
+  margin-right: 0; }
+  .juju:last-child {
+    margin-right: 0; }
   @media screen and (min-width: 320px) and (max-width: 601px) {
     .juju {
       float: left;
       display: block;
       margin-right: 0.09522%;
       width: 100%; }
+      .juju:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 64.063em) and (max-width: 90em) {
+    .juju {
+      float: left;
+      display: block;
+      margin-right: 0.04759%;
+      width: 12.45836%;
+      margin-right: 0; }
       .juju:last-child {
         margin-right: 0; } }
 
@@ -539,25 +555,18 @@ body {
       display: none; } }
 
 .footer-container {
-  max-width: 64em;
-  margin-left: auto;
-  margin-right: auto; }
-  .footer-container:after {
-    content: "";
-    display: table;
-    clear: both; }
+  float: left;
+  display: block;
+  margin-right: 0.04759%;
+  width: 100%; }
+  .footer-container:last-child {
+    margin-right: 0; }
   @media screen and (min-width: 320px) and (max-width: 601px) {
     .footer-container {
       background-color: #828282; } }
 
 .support {
-  float: left;
-  display: block;
-  margin-right: 0.04759%;
-  width: 100%;
   margin-top: 25px; }
-  .support:last-child {
-    margin-right: 0; }
   @media screen and (min-width: 320px) and (max-width: 601px) {
     .support {
       float: left;

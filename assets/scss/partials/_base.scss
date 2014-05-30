@@ -90,12 +90,18 @@ body {
 }
 .juju-show {
  width:100%;
+ margin-left:0;
+ margin-right:0;
 }
 .juju {
- width:320px;
- float:left;
+ @include span-columns(2);
+ @include omega;
  @include media($break-mobile) {
   @include span-columns(4 of 4);
+ }
+ @include media($break-screen) {
+  @include span-columns(1);
+  @include omega;
  }
 }
 .juju-example {
@@ -106,13 +112,12 @@ body {
  }
 }
 .footer-container {
- @include outer-container;
+ @include span-columns(8);
  @include media($break-mobile) {
   background-color:$grey;
  }
 }
 .support {
- @include span-columns(8);
  margin-top:25px;
  @include media($break-mobile) {
   @include span-columns(4);
