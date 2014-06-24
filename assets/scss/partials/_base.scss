@@ -38,7 +38,6 @@ body {
  background-repeat:no-repeat;
  background-color:$green;
  width:100%;
- height:640px;
  @include media($break-mobile) {
   background:none;
   height:initial;
