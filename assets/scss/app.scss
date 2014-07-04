@@ -1,7 +1,53 @@
 // Import
 @import "settings";
+@import "variables";
 @import "foundation";
-
+@import "bourbon";
+// Base
+html, body {
+	width:100%;
+	height:100%;
+}
+// Containers
+.introduction {
+	position:fixed;
+	z-index:$z-introduction;
+	top:0;
+	width:100%;
+	height:100%; 
+	background-color:magenta;
+}
+.content-container {
+	position:absolute;
+	z-index:$z-content-container;
+	top:97%;
+	@include grid-row();
+}
+// .grid { @include grid-column(8, $collapse:true); }
+// Excerpts
+.excerpt-juju {
+	@include grid-column(2);
+	border:1px solid black;
+	height:400px;
+	background-color:white;
+	@media #{$small-only} { @include grid-column(4); }
+}
+.excerpt-press {
+	@extend .excerpt-juju;
+}
+.excerpt-artist-profile {
+	@include grid-column(4);
+	border:1px solid black;
+	height:400px;
+	background-color:white;
+	@media #{$small-only} { @include grid-column(8); }
+}
+.excerpt-art-pack {
+	@extend .excerpt-artist-profile;
+}
+.excerpt-how-to {
+	@extend .excerpt-artist-profile;
+}
 
 
 // Or selectively include components
