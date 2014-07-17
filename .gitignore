@@ -1,5 +1,6 @@
 ***/.sass-cache
 _site
-*.codekit
+
 config.rb
+
 *.codekit
