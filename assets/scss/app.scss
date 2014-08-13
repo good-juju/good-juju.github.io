@@ -15,38 +15,46 @@ html, body {
 	top:0;
 	width:100%;
 	height:100%; 
-	background-color:magenta;
+	background-color:$lightgrey;
 }
-.content-container {
+.overlay-container {
 	position:absolute;
+	width:100%;
 	z-index:$z-content-container;
 	top:97%;
+	background-color:white;
+}
+.content-container {
 	@include grid-row();
 }
-// .grid { @include grid-column(8, $collapse:true); }
+// GRIDs
+%excerpt-large { @include grid-column(8); @media #{$small-only} { @include grid-column(8); } }
+%excerpt-small { @include grid-column(4); @media #{$small-only} { @include grid-column(8); } }
+%border {border:1px solid black; height:400px; }
 // Excerpts
+.excerpt-blog-banner {
+	@extend %excerpt-large;
+	@extend %border;
+}
+.excerpt-blog {
+	@extend %excerpt-small;
+	@extend %border;
+}
 .excerpt-juju {
-	@include grid-column(2);
-	border:1px solid black;
-	height:400px;
-	background-color:white;
-	@media #{$small-only} { @include grid-column(4); }
-}
-.excerpt-press {
-	@extend .excerpt-juju;
-}
-.excerpt-artist-profile {
-	@include grid-column(4);
-	border:1px solid black;
-	height:400px;
-	background-color:white;
-	@media #{$small-only} { @include grid-column(8); }
-}
-.excerpt-art-pack {
-	@extend .excerpt-artist-profile;
+	@extend %excerpt-small;
+	@extend %border;
 }
 .excerpt-how-to {
-	@extend .excerpt-artist-profile;
+	@extend %excerpt-small;
+	@extend %border;
+}
+.excerpt-artist {
+	@extend %excerpt-small;
+	@extend %border;
+}
+.excerpt-new-art {
+	@extend %excerpt-small;
+	@extend %border;
 }
 
 
