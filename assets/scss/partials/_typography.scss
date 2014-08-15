@@ -1,3 +1,4 @@
+// FONT-FACE
 @include font-face(magallanes, '#{$font-assetpath}magallanes-essential-webfont');
 @include font-face(magallanes, '#{$font-assetpath}magallanes-essential-italic-webfont', normal, italic);
 @include font-face(magallanes, '#{$font-assetpath}magallanes-essential-light-webfont', 100);
@@ -6,3 +7,5 @@
 @include font-face(magallanes, '#{$font-assetpath}magallanes-essential-bold-webfont', 800, italic);
 @include font-face(magallanes, '#{$font-assetpath}magallanes-essential-bold-webfont', bold);
 @include font-face(magallanes, '#{$font-assetpath}magallanes-essential-bold-webfont', bold, italic);
+//
+body { font-family:$primary-fonts; }
