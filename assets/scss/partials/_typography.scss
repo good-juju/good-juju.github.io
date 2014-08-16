@@ -9,3 +9,6 @@
 @include font-face(magallanes, '#{$font-assetpath}magallanes-essential-bold-webfont', bold, italic);
 //
 body { font-family:$primary-fonts; }
+// ANCHORS
+a { color:black; text-decoration:underline; }
+nav ul li a { text-decoration:none; }

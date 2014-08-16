@@ -46,7 +46,7 @@ html, body {
 /* line 374, ../../bower_components/foundation/scss/foundation/components/_global.scss */
 html,
 body {
-  font-size: 100%; }
+  font-size: 16px; }
 
 /* line 378, ../../bower_components/foundation/scss/foundation/components/_global.scss */
 body {
@@ -6368,12 +6368,88 @@ th.hide-for-touch {
   /* line 404, ../../bower_components/foundation/scss/foundation/components/_visibility.scss */
   th.show-for-print {
     display: table-cell !important; } }
-/* line 7, ../scss/app.scss */
+@font-face {
+  font-family: magallanes;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/assets/fonts/magallanes-essential-webfont.eot");
+  src: url("/assets/fonts/magallanes-essential-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/magallanes-essential-webfont.woff") format("woff"), url("/assets/fonts/magallanes-essential-webfont.ttf") format("truetype"), url("/assets/fonts/magallanes-essential-webfont.svg#magallanes") format("svg"); }
+@font-face {
+  font-family: magallanes;
+  font-weight: normal;
+  font-style: italic;
+  src: url("/assets/fonts/magallanes-essential-italic-webfont.eot");
+  src: url("/assets/fonts/magallanes-essential-italic-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/magallanes-essential-italic-webfont.woff") format("woff"), url("/assets/fonts/magallanes-essential-italic-webfont.ttf") format("truetype"), url("/assets/fonts/magallanes-essential-italic-webfont.svg#magallanes") format("svg"); }
+@font-face {
+  font-family: magallanes;
+  font-weight: 100;
+  font-style: normal;
+  src: url("/assets/fonts/magallanes-essential-light-webfont.eot");
+  src: url("/assets/fonts/magallanes-essential-light-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/magallanes-essential-light-webfont.woff") format("woff"), url("/assets/fonts/magallanes-essential-light-webfont.ttf") format("truetype"), url("/assets/fonts/magallanes-essential-light-webfont.svg#magallanes") format("svg"); }
+@font-face {
+  font-family: magallanes;
+  font-weight: 100;
+  font-style: italic;
+  src: url("/assets/fonts/magallanes-essential-light-italic-webfont.eot");
+  src: url("/assets/fonts/magallanes-essential-light-italic-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/magallanes-essential-light-italic-webfont.woff") format("woff"), url("/assets/fonts/magallanes-essential-light-italic-webfont.ttf") format("truetype"), url("/assets/fonts/magallanes-essential-light-italic-webfont.svg#magallanes") format("svg"); }
+@font-face {
+  font-family: magallanes;
+  font-weight: 800;
+  font-style: normal;
+  src: url("/assets/fonts/magallanes-essential-bold-webfont.eot");
+  src: url("/assets/fonts/magallanes-essential-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/magallanes-essential-bold-webfont.woff") format("woff"), url("/assets/fonts/magallanes-essential-bold-webfont.ttf") format("truetype"), url("/assets/fonts/magallanes-essential-bold-webfont.svg#magallanes") format("svg"); }
+@font-face {
+  font-family: magallanes;
+  font-weight: 800;
+  font-style: italic;
+  src: url("/assets/fonts/magallanes-essential-bold-webfont.eot");
+  src: url("/assets/fonts/magallanes-essential-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/magallanes-essential-bold-webfont.woff") format("woff"), url("/assets/fonts/magallanes-essential-bold-webfont.ttf") format("truetype"), url("/assets/fonts/magallanes-essential-bold-webfont.svg#magallanes") format("svg"); }
+@font-face {
+  font-family: magallanes;
+  font-weight: bold;
+  font-style: normal;
+  src: url("/assets/fonts/magallanes-essential-bold-webfont.eot");
+  src: url("/assets/fonts/magallanes-essential-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/magallanes-essential-bold-webfont.woff") format("woff"), url("/assets/fonts/magallanes-essential-bold-webfont.ttf") format("truetype"), url("/assets/fonts/magallanes-essential-bold-webfont.svg#magallanes") format("svg"); }
+@font-face {
+  font-family: magallanes;
+  font-weight: bold;
+  font-style: italic;
+  src: url("/assets/fonts/magallanes-essential-bold-webfont.eot");
+  src: url("/assets/fonts/magallanes-essential-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/magallanes-essential-bold-webfont.woff") format("woff"), url("/assets/fonts/magallanes-essential-bold-webfont.ttf") format("truetype"), url("/assets/fonts/magallanes-essential-bold-webfont.svg#magallanes") format("svg"); }
+/* line 11, ../scss/partials/_typography.scss */
+body {
+  font-family: "magallanes", helvetica, "Helvetica Neue", san-serif; }
+
+/* line 13, ../scss/partials/_typography.scss */
+a {
+  color: black;
+  text-decoration: underline; }
+
+/* line 14, ../scss/partials/_typography.scss */
+nav ul li a {
+  text-decoration: none; }
+
+/* line 10, ../scss/app.scss */
+.menu-icon {
+  height: 56px;
+  width: 56px;
+  border: 4px solid black;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px; }
+
+/* line 13, ../scss/app.scss */
+.excerpt-blog-banner, .excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
+  border: 1px solid black;
+  height: 400px; }
+
+/* line 15, ../scss/app.scss */
 html, body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  -webkit-font-smoothing: antialiased; }
 
-/* line 12, ../scss/app.scss */
+/* line 21, ../scss/app.scss */
 .introduction {
   position: fixed;
   z-index: 100;
@@ -6382,7 +6458,7 @@ html, body {
   height: 100%;
   background-color: #e6e6e6; }
 
-/* line 20, ../scss/app.scss */
+/* line 29, ../scss/app.scss */
 .overlay-container {
   position: absolute;
   width: 100%;
@@ -6390,7 +6466,7 @@ html, body {
   top: 97%;
   background-color: white; }
 
-/* line 27, ../scss/app.scss */
+/* line 36, ../scss/app.scss */
 .content-container {
   width: 100%;
   margin-left: auto;
@@ -6398,41 +6474,128 @@ html, body {
   margin-top: 0;
   margin-bottom: 0;
   max-width: 900px; }
-  /* line 15, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  /* line 181, ../../bower_components/foundation/scss/foundation/components/_global.scss */
+  .content-container:before, .content-container:after {
+    content: " ";
+    display: table; }
+  /* line 182, ../../bower_components/foundation/scss/foundation/components/_global.scss */
   .content-container:after {
-    content: "";
-    display: table;
     clear: both; }
 
-/* line 31, ../scss/app.scss */
+/* line 40, ../scss/app.scss */
 .excerpt-blog-banner {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 100%;
   float: left; }
   @media only screen and (max-width: 40em) {
-    /* line 31, ../scss/app.scss */
+    /* line 40, ../scss/app.scss */
     .excerpt-blog-banner {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
       width: 100%;
       float: left; } }
 
-/* line 32, ../scss/app.scss */
+/* line 41, ../scss/app.scss */
 .excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 50%;
   float: left; }
   @media only screen and (max-width: 40em) {
-    /* line 32, ../scss/app.scss */
+    /* line 41, ../scss/app.scss */
     .excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
       width: 100%;
       float: left; } }
 
-/* line 33, ../scss/app.scss */
-.excerpt-blog-banner, .excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
-  border: 1px solid black;
-  height: 400px; }
+/* line 43, ../scss/app.scss */
+.masthead-container {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  font-weight: 800; }
+
+/* line 44, ../scss/app.scss */
+.navigation-container {
+  width: 100%;
+  background-color: #fa3241; }
+
+/* line 45, ../scss/app.scss */
+.navigation {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 75%;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  padding: 0; }
+
+/* line 46, ../scss/app.scss */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 47, ../scss/app.scss */
+nav ul li {
+  display: inline;
+  margin-right: 16px; }
+
+/* line 48, ../scss/app.scss */
+.masthead {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 75%;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  padding: 0; }
+
+/* line 49, ../scss/app.scss */
+.menu-toggle-container {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 37.5%;
+  float: left; }
+
+/* line 50, ../scss/app.scss */
+.menu-toggle {
+  float: left;
+  width: 56px;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 0.875em;
+  padding: 0; }
+
+/* line 51, ../scss/app.scss */
+.menu-icon {
+  display: block; }
+
+/* line 52, ../scss/app.scss */
+.app-store {
+  float: left;
+  width: 144px;
+  height: 54px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 4px solid black; }
+
+/* line 53, ../scss/app.scss */
+.logo {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 25%;
+  float: left;
+  text-align: center; }
+
+/* line 54, ../scss/app.scss */
+.follow-us {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 25%;
+  float: left; }

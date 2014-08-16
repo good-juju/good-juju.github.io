@@ -1,7 +1,13 @@
 // Z-Index
-$z-introduction:				100;
+$z-masthead:							1000;
+$z-introduction:					100;
 $z-content-container:			200;
-
+// Fonts
+$primary-fonts:			"magallanes", helvetica, "Helvetica Neue", san-serif;
+// Font Sizes
+$font-small:				em(12);
+$font-medium:				em(14);
+$font-large:				em(18);
 // Colors
 $poppy:							rgb(250,50,65);
 $mint:							rgb(65,235,30);
@@ -19,3 +25,5 @@ $white:							rgb(255,255,255);
 $black:							rgb(0,0,0);
 $grey:							rgb(102,102,102);
 $lightgrey:					rgb(230,230,230);
+
+$font-assetpath:		"/assets/fonts/";
