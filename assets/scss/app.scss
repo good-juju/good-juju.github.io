@@ -35,8 +35,10 @@ html, body {
 .masthead-container { position:fixed; z-index:$z-masthead; width:100%; font-weight:800; }
 .navigation-container { width:100%; background-color:$poppy;}
 .navigation { @include grid-column(6, $center:true); padding:0; }
-nav ul { list-style-type:none; margin:0; padding:0; }
-nav ul li { display:inline; margin-right:16px; }
+nav { 
+	ul { list-style-type:none; margin:0; padding:0; }
+	ul li { display:inline; margin-right:16px; }
+}
 .masthead { @include grid-column(6, $center:true); padding:0; }
 .menu-toggle-container { @include grid-column(3); }
 .menu-toggle { float:left; width:56px; text-align:center; text-transform:lowercase; font-size:$font-medium; padding:0; }
@@ -53,14 +55,23 @@ nav ul li { display:inline; margin-right:16px; }
 	a { display:block; width:144px; height:54px; }
 }
 .logo { @include grid-column(2); text-align:center; }
-.follow-us { @include grid-column(2); }
 // SOCIAL
-.social-links {}
-.facebook {}
-.tumblr {}
-.twitter {}
-.instagram {}
-.pinterest {}
+.follow-us { @include grid-column(2);  }
+.follow-nav { float:right; margin-top:12px; }
+.follow-title { margin-left:12px; text-transform:lowercase; }
+.follow-links { 
+	list-style:none;
+	margin:6px 0 0 0;
+	padding:0px;
+	li { display:inline; }
+	a { float:right; margin-left:12px; }
+}
+%social-link { display:block; @extend %medium-circle; @extend %juju-sprite; text-indent:-9999px; }
+.facebook { @extend %social-link; background-position:-412px 3px; }
+.tumblr { @extend %social-link; background-position:-335px 3px; }
+.twitter { @extend %social-link; background-position:-363px -111px; }
+.instagram { @extend %social-link; background-position:-363px -111px; }
+.pinterest { @extend %social-link; background-position:-573px 2px; }
 // CONTENT BADGES
 %badge-type { position:absolute; z-index:$z-content-type; top:0px; right:0px; }
 .badge-blog { @extend %badge-type; @extend %juju-sprite; width:110px; height:111px; background-position:-363px -111px; }

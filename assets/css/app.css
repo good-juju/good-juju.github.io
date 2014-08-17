@@ -6369,13 +6369,22 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 /* line 2, ../scss/partials/_common.scss */
-.app-store, .badge-blog, .badge-artist, .badge-new, .badge-juju, .badge-how {
+.app-store, .facebook, .tumblr, .twitter, .instagram, .pinterest, .badge-blog, .badge-artist, .badge-new, .badge-juju, .badge-how {
   background: url(/assets/img/juju_sprite.png) no-repeat; }
 
 /* line 4, ../scss/partials/_common.scss */
 .menu-icon {
   height: 56px;
   width: 56px;
+  border: 4px solid black;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px; }
+
+/* line 5, ../scss/partials/_common.scss */
+.facebook, .tumblr, .twitter, .instagram, .pinterest {
+  height: 40px;
+  width: 40px;
   border: 4px solid black;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
@@ -6539,18 +6548,17 @@ html, body {
   float: none;
   padding: 0; }
 
-/* line 38, ../scss/app.scss */
+/* line 39, ../scss/app.scss */
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
-
-/* line 39, ../scss/app.scss */
+/* line 40, ../scss/app.scss */
 nav ul li {
   display: inline;
   margin-right: 16px; }
 
-/* line 40, ../scss/app.scss */
+/* line 42, ../scss/app.scss */
 .masthead {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -6561,14 +6569,14 @@ nav ul li {
   float: none;
   padding: 0; }
 
-/* line 41, ../scss/app.scss */
+/* line 43, ../scss/app.scss */
 .menu-toggle-container {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 37.5%;
   float: left; }
 
-/* line 42, ../scss/app.scss */
+/* line 44, ../scss/app.scss */
 .menu-toggle {
   float: left;
   width: 56px;
@@ -6577,11 +6585,11 @@ nav ul li {
   font-size: 0.875em;
   padding: 0; }
 
-/* line 43, ../scss/app.scss */
+/* line 45, ../scss/app.scss */
 .menu-icon {
   display: block; }
 
-/* line 44, ../scss/app.scss */
+/* line 46, ../scss/app.scss */
 .app-store {
   float: left;
   width: 144px;
@@ -6592,13 +6600,13 @@ nav ul li {
   border: 4px solid black;
   text-indent: -9999px;
   background-position: -154px 9px; }
-  /* line 53, ../scss/app.scss */
+  /* line 55, ../scss/app.scss */
   .app-store a {
     display: block;
     width: 144px;
     height: 54px; }
 
-/* line 55, ../scss/app.scss */
+/* line 57, ../scss/app.scss */
 .logo {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -6606,39 +6614,87 @@ nav ul li {
   float: left;
   text-align: center; }
 
-/* line 56, ../scss/app.scss */
+/* line 59, ../scss/app.scss */
 .follow-us {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 25%;
   float: left; }
 
-/* line 65, ../scss/app.scss */
+/* line 60, ../scss/app.scss */
+.follow-nav {
+  float: right;
+  margin-top: 12px; }
+
+/* line 61, ../scss/app.scss */
+.follow-title {
+  margin-left: 12px;
+  text-transform: lowercase; }
+
+/* line 62, ../scss/app.scss */
+.follow-links {
+  list-style: none;
+  margin: 6px 0 0 0;
+  padding: 0px; }
+  /* line 66, ../scss/app.scss */
+  .follow-links li {
+    display: inline; }
+  /* line 67, ../scss/app.scss */
+  .follow-links a {
+    float: right;
+    margin-left: 12px; }
+
+/* line 69, ../scss/app.scss */
+.facebook, .tumblr, .twitter, .instagram, .pinterest {
+  display: block;
+  text-indent: -9999px; }
+
+/* line 70, ../scss/app.scss */
+.facebook {
+  background-position: -412px 3px; }
+
+/* line 71, ../scss/app.scss */
+.tumblr {
+  background-position: -335px 3px; }
+
+/* line 72, ../scss/app.scss */
+.twitter {
+  background-position: -363px -111px; }
+
+/* line 73, ../scss/app.scss */
+.instagram {
+  background-position: -363px -111px; }
+
+/* line 74, ../scss/app.scss */
+.pinterest {
+  background-position: -573px 2px; }
+
+/* line 76, ../scss/app.scss */
 .badge-blog, .badge-artist, .badge-new, .badge-juju, .badge-how {
   position: absolute;
   z-index: 300;
   top: 0px;
   right: 0px; }
 
-/* line 66, ../scss/app.scss */
+/* line 77, ../scss/app.scss */
 .badge-blog {
   width: 110px;
   height: 111px;
   background-position: -363px -111px; }
 
-/* line 67, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 .badge-artist {
   width: 146px;
   height: 170px;
   background-position: -631px -111px; }
 
-/* line 68, ../scss/app.scss */
+/* line 79, ../scss/app.scss */
 .badge-new {
   width: 118px;
   height: 150px;
   background-position: -936px -111px; }
 
-/* line 69, ../scss/app.scss */
+/* line 80, ../scss/app.scss */
 .badge-juju {
   right: auto;
   left: 150px;
