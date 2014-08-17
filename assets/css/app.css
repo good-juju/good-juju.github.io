@@ -6368,6 +6368,54 @@ th.hide-for-touch {
   /* line 404, ../../bower_components/foundation/scss/foundation/components/_visibility.scss */
   th.show-for-print {
     display: table-cell !important; } }
+/* line 2, ../scss/partials/_common.scss */
+.badge-blog, .badge-artist, .badge-new, .badge-juju, .badge-how {
+  background: url(/assets/img/juju_sprite.png) no-repeat; }
+
+/* line 4, ../scss/partials/_common.scss */
+.menu-icon {
+  height: 56px;
+  width: 56px;
+  border: 4px solid black;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px; }
+
+/* line 8, ../scss/partials/_common.scss */
+.badge-blog, .badge-artist, .badge-new, .badge-juju, .badge-how, .excerpt-blog-banner, .excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
+  border: 1px solid black;
+  height: 400px; }
+
+/* line 10, ../scss/partials/_common.scss */
+.excerpt-blog-banner {
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left; }
+  @media only screen and (max-width: 40em) {
+    /* line 10, ../scss/partials/_common.scss */
+    .excerpt-blog-banner {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 100%;
+      float: left; } }
+
+/* line 11, ../scss/partials/_common.scss */
+.excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 50%;
+  float: left; }
+  @media only screen and (max-width: 40em) {
+    /* line 11, ../scss/partials/_common.scss */
+    .excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 100%;
+      float: left; } }
+
 @font-face {
   font-family: magallanes;
   font-weight: normal;
@@ -6430,26 +6478,12 @@ nav ul li a {
   text-decoration: none; }
 
 /* line 10, ../scss/app.scss */
-.menu-icon {
-  height: 56px;
-  width: 56px;
-  border: 4px solid black;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
-  border-radius: 40px; }
-
-/* line 13, ../scss/app.scss */
-.excerpt-blog-banner, .excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
-  border: 1px solid black;
-  height: 400px; }
-
-/* line 15, ../scss/app.scss */
 html, body {
   width: 100%;
   height: 100%;
   -webkit-font-smoothing: antialiased; }
 
-/* line 21, ../scss/app.scss */
+/* line 16, ../scss/app.scss */
 .introduction {
   position: fixed;
   z-index: 100;
@@ -6458,7 +6492,7 @@ html, body {
   height: 100%;
   background-color: #e6e6e6; }
 
-/* line 29, ../scss/app.scss */
+/* line 24, ../scss/app.scss */
 .overlay-container {
   position: absolute;
   width: 100%;
@@ -6466,7 +6500,7 @@ html, body {
   top: 97%;
   background-color: white; }
 
-/* line 36, ../scss/app.scss */
+/* line 31, ../scss/app.scss */
 .content-container {
   width: 100%;
   margin-left: auto;
@@ -6482,47 +6516,19 @@ html, body {
   .content-container:after {
     clear: both; }
 
-/* line 40, ../scss/app.scss */
-.excerpt-blog-banner {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  width: 100%;
-  float: left; }
-  @media only screen and (max-width: 40em) {
-    /* line 40, ../scss/app.scss */
-    .excerpt-blog-banner {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem;
-      width: 100%;
-      float: left; } }
-
-/* line 41, ../scss/app.scss */
-.excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  width: 50%;
-  float: left; }
-  @media only screen and (max-width: 40em) {
-    /* line 41, ../scss/app.scss */
-    .excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem;
-      width: 100%;
-      float: left; } }
-
-/* line 43, ../scss/app.scss */
+/* line 35, ../scss/app.scss */
 .masthead-container {
   position: fixed;
   z-index: 1000;
   width: 100%;
   font-weight: 800; }
 
-/* line 44, ../scss/app.scss */
+/* line 36, ../scss/app.scss */
 .navigation-container {
   width: 100%;
   background-color: #fa3241; }
 
-/* line 45, ../scss/app.scss */
+/* line 37, ../scss/app.scss */
 .navigation {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -6533,18 +6539,18 @@ html, body {
   float: none;
   padding: 0; }
 
-/* line 46, ../scss/app.scss */
+/* line 38, ../scss/app.scss */
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
 
-/* line 47, ../scss/app.scss */
+/* line 39, ../scss/app.scss */
 nav ul li {
   display: inline;
   margin-right: 16px; }
 
-/* line 48, ../scss/app.scss */
+/* line 40, ../scss/app.scss */
 .masthead {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -6555,14 +6561,14 @@ nav ul li {
   float: none;
   padding: 0; }
 
-/* line 49, ../scss/app.scss */
+/* line 41, ../scss/app.scss */
 .menu-toggle-container {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 37.5%;
   float: left; }
 
-/* line 50, ../scss/app.scss */
+/* line 42, ../scss/app.scss */
 .menu-toggle {
   float: left;
   width: 56px;
@@ -6571,11 +6577,11 @@ nav ul li {
   font-size: 0.875em;
   padding: 0; }
 
-/* line 51, ../scss/app.scss */
+/* line 43, ../scss/app.scss */
 .menu-icon {
   display: block; }
 
-/* line 52, ../scss/app.scss */
+/* line 44, ../scss/app.scss */
 .app-store {
   float: left;
   width: 144px;
@@ -6585,7 +6591,7 @@ nav ul li {
   border-radius: 10px;
   border: 4px solid black; }
 
-/* line 53, ../scss/app.scss */
+/* line 45, ../scss/app.scss */
 .logo {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -6593,9 +6599,43 @@ nav ul li {
   float: left;
   text-align: center; }
 
-/* line 54, ../scss/app.scss */
+/* line 46, ../scss/app.scss */
 .follow-us {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 25%;
   float: left; }
+
+/* line 55, ../scss/app.scss */
+.badge-blog, .badge-artist, .badge-new, .badge-juju, .badge-how {
+  position: absolute;
+  z-index: 300;
+  top: 0px;
+  right: 0px; }
+
+/* line 56, ../scss/app.scss */
+.badge-blog {
+  width: 110px;
+  height: 111px;
+  background-position: -363px -111px; }
+
+/* line 57, ../scss/app.scss */
+.badge-artist {
+  width: 146px;
+  height: 170px;
+  background-position: -631px -111px; }
+
+/* line 58, ../scss/app.scss */
+.badge-new {
+  width: 118px;
+  height: 150px;
+  background-position: -936px -111px; }
+
+/* line 59, ../scss/app.scss */
+.badge-juju {
+  right: auto;
+  left: 150px;
+  top: 25px;
+  width: 126px;
+  height: 94px;
+  background-position: -80px -120px; }

@@ -2,6 +2,7 @@
 $z-masthead:							1000;
 $z-introduction:					100;
 $z-content-container:			200;
+$z-content-type:					300;
 // Fonts
 $primary-fonts:			"magallanes", helvetica, "Helvetica Neue", san-serif;
 // Font Sizes
@@ -25,5 +26,6 @@ $white:							rgb(255,255,255);
 $black:							rgb(0,0,0);
 $grey:							rgb(102,102,102);
 $lightgrey:					rgb(230,230,230);
-
+// ASSETS
 $font-assetpath:		"/assets/fonts/";
+$img-assetpath:			"/assets/img/";

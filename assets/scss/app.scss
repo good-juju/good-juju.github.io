@@ -4,13 +4,8 @@
 @import "settings";
 @import "variables";
 @import "foundation";
+@import "partials/common";
 @import "partials/typography";
-
-// CIRCLES
-%large-circle { height:56px; width:56px; border:4px solid $black; @include border-radius(40px); }
-%medium-circle { height:40px; width:40px; border:4px solid $black; @include border-radius(40px); }
-%small-circle { height:30px; width:30px; border:4px solid $black; @include border-radius(40px); }
-%border { border:1px solid black; height:400px; }
 // Base
 html, body {
 	width:100%;
@@ -36,9 +31,6 @@ html, body {
 .content-container {
 	@include grid-row();
 }
-// GRIDs
-%excerpt-large { @include grid-column(8); @media #{$small-only} { @include grid-column(8); } }
-%excerpt-small { @include grid-column(4); @media #{$small-only} { @include grid-column(8); } }
 // MASTHEAD
 .masthead-container { position:fixed; z-index:$z-masthead; width:100%; font-weight:800; }
 .navigation-container { width:100%; background-color:$poppy;}
@@ -59,13 +51,13 @@ nav ul li { display:inline; margin-right:16px; }
 .twitter {}
 .instagram {}
 .pinterest {}
-
-
-
-
-
-
-
+// CONTENT TYPES
+%badge-type { position:absolute; z-index:$z-content-type; top:0px; right:0px; @extend %border; }
+.badge-blog { @extend %badge-type; @extend %juju-sprite; width:110px; height:111px; background-position:-363px -111px; }
+.badge-artist { @extend %badge-type; @extend %juju-sprite; width:146px; height:170px; background-position:-631px -111px; }
+.badge-new { @extend %badge-type; @extend %juju-sprite; width:118px; height:150px; background-position:-936px -111px; }
+.badge-juju { @extend %badge-type; @extend %juju-sprite; right:auto; left:150px; top:25px; width:126px; height:94px; background-position:-80px -120px; }
+.badge-how { @extend %badge-type; @extend %juju-sprite; }
 // EXCERPTS
 .excerpt-blog-banner {
 	@extend %excerpt-large;

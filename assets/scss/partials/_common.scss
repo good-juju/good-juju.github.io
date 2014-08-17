@@ -1,0 +1,11 @@
+// SPRITE
+%juju-sprite { background:url(#{$img-assetpath}juju_sprite.png) no-repeat; }
+// CIRCLES
+%large-circle { height:56px; width:56px; border:4px solid $black; @include border-radius(40px); }
+%medium-circle { height:40px; width:40px; border:4px solid $black; @include border-radius(40px); }
+%small-circle { height:30px; width:30px; border:4px solid $black; @include border-radius(40px); }
+// BORDER
+%border { border:1px solid black; height:400px; }
+// GRIDs
+%excerpt-large { position:relative; @include grid-column(8); @media #{$small-only} { @include grid-column(8); } }
+%excerpt-small { position:relative; @include grid-column(4); @media #{$small-only} { @include grid-column(8); } }
