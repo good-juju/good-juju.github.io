@@ -51,8 +51,8 @@ nav ul li { display:inline; margin-right:16px; }
 .twitter {}
 .instagram {}
 .pinterest {}
-// CONTENT TYPES
-%badge-type { position:absolute; z-index:$z-content-type; top:0px; right:0px; @extend %border; }
+// CONTENT BADGES
+%badge-type { position:absolute; z-index:$z-content-type; top:0px; right:0px; }
 .badge-blog { @extend %badge-type; @extend %juju-sprite; width:110px; height:111px; background-position:-363px -111px; }
 .badge-artist { @extend %badge-type; @extend %juju-sprite; width:146px; height:170px; background-position:-631px -111px; }
 .badge-new { @extend %badge-type; @extend %juju-sprite; width:118px; height:150px; background-position:-936px -111px; }

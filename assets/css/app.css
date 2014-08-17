@@ -6382,7 +6382,7 @@ th.hide-for-touch {
   border-radius: 40px; }
 
 /* line 8, ../scss/partials/_common.scss */
-.badge-blog, .badge-artist, .badge-new, .badge-juju, .badge-how, .excerpt-blog-banner, .excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
+.excerpt-blog-banner, .excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
   border: 1px solid black;
   height: 400px; }
 
