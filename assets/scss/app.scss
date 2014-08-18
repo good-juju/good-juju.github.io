@@ -90,10 +90,12 @@ nav {
 }
 .excerpt-juju {
 	@extend %excerpt-small;
-	@extend %border;
+	padding:0;
+	background-color:$lightgrey;
 }
 .excerpt-how-to {
 	@extend %excerpt-small;
+	background-color:$lightgrey;
 	@extend %border;
 }
 .excerpt-artist {

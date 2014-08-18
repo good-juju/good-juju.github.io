@@ -6391,7 +6391,7 @@ th.hide-for-touch {
   border-radius: 40px; }
 
 /* line 8, ../scss/partials/_common.scss */
-.excerpt-blog-banner, .excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
+.excerpt-blog-banner, .excerpt-blog, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
   border: 1px solid black;
   height: 400px; }
 
@@ -6702,3 +6702,12 @@ nav ul li {
   width: 126px;
   height: 94px;
   background-position: -80px -120px; }
+
+/* line 91, ../scss/app.scss */
+.excerpt-juju {
+  padding: 0;
+  background-color: #e6e6e6; }
+
+/* line 96, ../scss/app.scss */
+.excerpt-how-to {
+  background-color: #e6e6e6; }
