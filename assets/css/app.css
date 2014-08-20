@@ -6369,7 +6369,7 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 /* line 2, ../scss/partials/_common.scss */
-.app-store, .facebook, .tumblr, .twitter, .instagram, .pinterest, .badge-blog, .badge-artist, .badge-new, .badge-juju, .badge-how {
+.app-store, .facebook, .tumblr, .twitter, .instagram, .pinterest, .badge-blog, .badge-artist, .badge-new-art, .badge-juju, .badge-how {
   background: url(/assets/img/juju_sprite.png) no-repeat; }
 
 /* line 4, ../scss/partials/_common.scss */
@@ -6392,9 +6392,7 @@ th.hide-for-touch {
 
 /* line 8, ../scss/partials/_common.scss */
 .excerpt-border {
-  border-left: 20px solid #e6e6e6;
-  border-right: 20px solid #e6e6e6;
-  border-bottom: 20px solid #e6e6e6; }
+  border: 20px solid #e6e6e6; }
 
 /* line 10, ../scss/partials/_common.scss */
 .excerpt-blog-banner {
@@ -6412,7 +6410,7 @@ th.hide-for-touch {
       float: left; } }
 
 /* line 11, ../scss/partials/_common.scss */
-.excerpt-blog, .excerpt-artist, .excerpt-juju, .excerpt-how-to, .excerpt-new-art {
+.excerpt-blog, .excerpt-artist, .excerpt-juju, .excerpt-how-to, .excerpt-new-art, .excerpt-pro-tip {
   position: relative;
   padding-left: 0;
   padding-right: 0;
@@ -6420,14 +6418,14 @@ th.hide-for-touch {
   float: left; }
   @media only screen and (max-width: 40em) {
     /* line 11, ../scss/partials/_common.scss */
-    .excerpt-blog, .excerpt-artist, .excerpt-juju, .excerpt-how-to, .excerpt-new-art {
+    .excerpt-blog, .excerpt-artist, .excerpt-juju, .excerpt-how-to, .excerpt-new-art, .excerpt-pro-tip {
       padding-left: 0;
       padding-right: 0;
       width: 100%;
       float: left; } }
 
 /* line 13, ../scss/partials/_common.scss */
-.excerpt-how-to, .excerpt-new-art {
+.excerpt-how-to, .excerpt-pro-tip {
   border: 1px solid black;
   height: 400px; }
 
@@ -6725,7 +6723,7 @@ nav ul li {
   background-position: -573px 2px; }
 
 /* line 70, ../scss/app.scss */
-.badge-blog, .badge-artist, .badge-new, .badge-juju, .badge-how {
+.badge-blog, .badge-artist, .badge-new-art, .badge-juju, .badge-how {
   position: absolute;
   z-index: 300;
   top: 0px;
@@ -6744,10 +6742,10 @@ nav ul li {
   background-position: -630px -111px; }
 
 /* line 73, ../scss/app.scss */
-.badge-new {
+.badge-new-art {
   width: 118px;
   height: 150px;
-  background-position: -936px -111px; }
+  background-position: -934px -111px; }
 
 /* line 74, ../scss/app.scss */
 .badge-juju {
@@ -6871,3 +6869,12 @@ nav ul li {
 /* line 126, ../scss/app.scss */
 .excerpt-how-to {
   background-color: #e6e6e6; }
+
+/* line 131, ../scss/app.scss */
+.excerpt-new-art {
+  min-height: 450px;
+  padding: 0 15px 15px 0; }
+
+/* line 136, ../scss/app.scss */
+.new-art-image, .new-art-aside {
+  text-align: center; }
