@@ -58,15 +58,8 @@ nav {
 // SOCIAL
 .follow-us { @include grid-column(2);  }
 .follow-nav { float:right; margin-top:12px; }
-.follow-title { margin-left:12px; text-transform:lowercase; }
-.follow-links { 
-	list-style:none;
-	margin:6px 0 0 0;
-	padding:0px;
-	li { display:inline; }
-	a { float:right; margin-left:12px; }
-}
-.social-block { @include block-grid(4, rem-calc(45)); }
+.follow-title { text-transform:lowercase; }
+.follow-block { @include block-grid(3, rem-calc(10)); }
 %social-link { display:block; @extend %medium-circle; @extend %juju-sprite; text-indent:-9999px; }
 .facebook { @extend %social-link; background-position:-412px 3px; }
 .tumblr { @extend %social-link; background-position:-335px 3px; }
