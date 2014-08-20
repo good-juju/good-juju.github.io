@@ -68,13 +68,21 @@ nav {
 .pinterest { @extend %social-link; background-position:-573px 2px; }
 // CONTENT BADGES
 %badge-type { position:absolute; z-index:$z-content-type; top:0px; right:0px; }
-.badge-blog { @extend %badge-type; @extend %juju-sprite; width:110px; height:111px; background-position:-363px -111px; }
+.badge-blog { @extend %badge-type; @extend %juju-sprite; width:110px; height:111px; background-position:-362px -111px; }
 .badge-artist { @extend %badge-type; @extend %juju-sprite; width:146px; height:170px; background-position:-631px -111px; }
 .badge-new { @extend %badge-type; @extend %juju-sprite; width:118px; height:150px; background-position:-936px -111px; }
 .badge-juju { @extend %badge-type; @extend %juju-sprite; right:auto; left:225px; top:25px; width:126px; height:94px; background-position:-80px -120px; }
 .badge-how { @extend %badge-type; @extend %juju-sprite; }
 // EXCERPTS
+date { float:left; width:50px; margin-top:30px; @include transform(rotate(-90deg)); }
+.excerpt-border { position:absolute; z-index:100; width:100%; @extend %border; min-height:435px; }
+.excerpt-content { position:absolute; z-index:200; }
 .excerpt-container {
+	position:relative;
+	@include grid-row();
+	height:100%;
+}
+.excerpt-container-juju {
 	position:relative;
 	@include grid-row();
 	height:100%;
@@ -82,11 +90,18 @@ nav {
 }
 .excerpt-blog-banner {
 	@extend %excerpt-large;
-	@extend %border;
+	min-height:450px;
+	padding:0 15px 15px 0;
 }
+.blog-aside {
+	padding-left:$margin-large;
+	// @extend %border;
+}
+.blog-image { overflow:hidden;}
 .excerpt-blog {
 	@extend %excerpt-small;
 	@extend %border;
+	padding:0 15px 15px 0;
 }
 .excerpt-juju {
 	@extend %excerpt-small;
