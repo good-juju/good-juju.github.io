@@ -66,6 +66,7 @@ nav {
 	li { display:inline; }
 	a { float:right; margin-left:12px; }
 }
+.social-block { @include block-grid(4, rem-calc(45)); }
 %social-link { display:block; @extend %medium-circle; @extend %juju-sprite; text-indent:-9999px; }
 .facebook { @extend %social-link; background-position:-412px 3px; }
 .tumblr { @extend %social-link; background-position:-335px 3px; }
@@ -77,9 +78,15 @@ nav {
 .badge-blog { @extend %badge-type; @extend %juju-sprite; width:110px; height:111px; background-position:-363px -111px; }
 .badge-artist { @extend %badge-type; @extend %juju-sprite; width:146px; height:170px; background-position:-631px -111px; }
 .badge-new { @extend %badge-type; @extend %juju-sprite; width:118px; height:150px; background-position:-936px -111px; }
-.badge-juju { @extend %badge-type; @extend %juju-sprite; right:auto; left:150px; top:25px; width:126px; height:94px; background-position:-80px -120px; }
+.badge-juju { @extend %badge-type; @extend %juju-sprite; right:auto; left:225px; top:25px; width:126px; height:94px; background-position:-80px -120px; }
 .badge-how { @extend %badge-type; @extend %juju-sprite; }
 // EXCERPTS
+.excerpt-container {
+	position:relative;
+	@include grid-row();
+	height:100%;
+	background-color:$lightgrey;
+}
 .excerpt-blog-banner {
 	@extend %excerpt-large;
 	@extend %border;
@@ -90,8 +97,16 @@ nav {
 }
 .excerpt-juju {
 	@extend %excerpt-small;
-	padding:0;
-	background-color:$lightgrey;
+	padding:0 15px 15px 0;
+}
+.juju {
+	@include grid-column(5);
+}
+.juju-aside {
+	position:absolute;
+	right:0;
+	bottom:0;
+	margin-right:$margin-medium;
 }
 .excerpt-how-to {
 	@extend %excerpt-small;

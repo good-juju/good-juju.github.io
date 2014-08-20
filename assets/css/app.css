@@ -149,8 +149,8 @@ select {
   /* line 226, ../../bower_components/foundation/scss/foundation/components/_grid.scss */
   .row .row {
     width: auto;
-    margin-left: -0.9375rem;
-    margin-right: -0.9375rem;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 0;
     margin-bottom: 0;
     max-width: none; }
@@ -177,8 +177,8 @@ select {
 /* line 231, ../../bower_components/foundation/scss/foundation/components/_grid.scss */
 .column,
 .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0;
+  padding-right: 0;
   width: 100%;
   float: left; }
 
@@ -291,8 +291,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0;
+    padding-right: 0;
     float: left; }
 
   /* line 170, ../../bower_components/foundation/scss/foundation/components/_grid.scss */
@@ -496,8 +496,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0;
+    padding-right: 0;
     float: left; }
 
   /* line 170, ../../bower_components/foundation/scss/foundation/components/_grid.scss */
@@ -797,8 +797,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0;
+    padding-right: 0;
     float: left; }
 
   /* line 170, ../../bower_components/foundation/scss/foundation/components/_grid.scss */
@@ -1056,7 +1056,7 @@ select {
     /* line 156, ../../bower_components/foundation/scss/foundation/components/_accordion.scss */
     .accordion .accordion-navigation > .content, .accordion dd > .content {
       display: none;
-      padding: 0.9375rem; }
+      padding: 0; }
       /* line 159, ../../bower_components/foundation/scss/foundation/components/_accordion.scss */
       .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
         display: block;
@@ -4948,7 +4948,7 @@ blockquote p {
   .tabs-content > .content {
     display: none;
     float: left;
-    padding: 0.9375rem 0;
+    padding: 0 0;
     width: 100%; }
     /* line 78, ../../bower_components/foundation/scss/foundation/components/_tabs.scss */
     .tabs-content > .content.active {
@@ -4956,13 +4956,13 @@ blockquote p {
       float: none; }
     /* line 79, ../../bower_components/foundation/scss/foundation/components/_tabs.scss */
     .tabs-content > .content.contained {
-      padding: 0.9375rem; }
+      padding: 0; }
   /* line 81, ../../bower_components/foundation/scss/foundation/components/_tabs.scss */
   .tabs-content.vertical {
     display: block; }
     /* line 83, ../../bower_components/foundation/scss/foundation/components/_tabs.scss */
     .tabs-content.vertical > .content {
-      padding: 0 0.9375rem; }
+      padding: 0 0; }
 
 @media only screen and (min-width: 40.063em) {
   /* line 88, ../../bower_components/foundation/scss/foundation/components/_tabs.scss */
@@ -6385,7 +6385,7 @@ th.hide-for-touch {
 .facebook, .tumblr, .twitter, .instagram, .pinterest {
   height: 40px;
   width: 40px;
-  border: 4px solid black;
+  border: 4px solid #666666;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px; }
@@ -6398,30 +6398,30 @@ th.hide-for-touch {
 /* line 10, ../scss/partials/_common.scss */
 .excerpt-blog-banner {
   position: relative;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0;
+  padding-right: 0;
   width: 100%;
   float: left; }
   @media only screen and (max-width: 40em) {
     /* line 10, ../scss/partials/_common.scss */
     .excerpt-blog-banner {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem;
+      padding-left: 0;
+      padding-right: 0;
       width: 100%;
       float: left; } }
 
 /* line 11, ../scss/partials/_common.scss */
 .excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
   position: relative;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0;
+  padding-right: 0;
   width: 50%;
   float: left; }
   @media only screen and (max-width: 40em) {
     /* line 11, ../scss/partials/_common.scss */
     .excerpt-blog, .excerpt-juju, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem;
+      padding-left: 0;
+      padding-right: 0;
       width: 100%;
       float: left; } }
 
@@ -6475,14 +6475,19 @@ th.hide-for-touch {
   src: url("/assets/fonts/magallanes-essential-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/magallanes-essential-bold-webfont.woff") format("woff"), url("/assets/fonts/magallanes-essential-bold-webfont.ttf") format("truetype"), url("/assets/fonts/magallanes-essential-bold-webfont.svg#magallanes") format("svg"); }
 /* line 11, ../scss/partials/_typography.scss */
 body {
-  font-family: "magallanes", helvetica, "Helvetica Neue", san-serif; }
+  font-family: "magallanes", helvetica, "Helvetica Neue", san-serif;
+  font-size: 0.875em; }
 
-/* line 13, ../scss/partials/_typography.scss */
+/* line 12, ../scss/partials/_typography.scss */
+p {
+  font-size: 0.875em; }
+
+/* line 14, ../scss/partials/_typography.scss */
 a {
   color: black;
   text-decoration: underline; }
 
-/* line 14, ../scss/partials/_typography.scss */
+/* line 15, ../scss/partials/_typography.scss */
 nav ul li a {
   text-decoration: none; }
 
@@ -6539,8 +6544,8 @@ html, body {
 
 /* line 37, ../scss/app.scss */
 .navigation {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0;
+  padding-right: 0;
   width: 75%;
   float: left;
   margin-left: auto;
@@ -6560,8 +6565,8 @@ nav ul li {
 
 /* line 42, ../scss/app.scss */
 .masthead {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0;
+  padding-right: 0;
   width: 75%;
   float: left;
   margin-left: auto;
@@ -6571,8 +6576,8 @@ nav ul li {
 
 /* line 43, ../scss/app.scss */
 .menu-toggle-container {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0;
+  padding-right: 0;
   width: 37.5%;
   float: left; }
 
@@ -6608,16 +6613,16 @@ nav ul li {
 
 /* line 57, ../scss/app.scss */
 .logo {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0;
+  padding-right: 0;
   width: 25%;
   float: left;
   text-align: center; }
 
 /* line 59, ../scss/app.scss */
 .follow-us {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0;
+  padding-right: 0;
   width: 25%;
   float: left; }
 
@@ -6645,69 +6650,131 @@ nav ul li {
     margin-left: 12px; }
 
 /* line 69, ../scss/app.scss */
+.social-block {
+  display: block;
+  padding: 0;
+  margin: 0 -1.40625rem; }
+  /* line 181, ../../bower_components/foundation/scss/foundation/components/_global.scss */
+  .social-block:before, .social-block:after {
+    content: " ";
+    display: table; }
+  /* line 182, ../../bower_components/foundation/scss/foundation/components/_global.scss */
+  .social-block:after {
+    clear: both; }
+  /* line 50, ../../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .social-block > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 1.40625rem 2.8125rem; }
+  /* line 61, ../../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .social-block > li {
+    width: 25%;
+    padding: 0 1.40625rem 2.8125rem;
+    list-style: none; }
+    /* line 68, ../../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+    .social-block > li:nth-of-type(1n) {
+      clear: none; }
+    /* line 69, ../../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+    .social-block > li:nth-of-type(4n+1) {
+      clear: both; }
+
+/* line 70, ../scss/app.scss */
 .facebook, .tumblr, .twitter, .instagram, .pinterest {
   display: block;
   text-indent: -9999px; }
 
-/* line 70, ../scss/app.scss */
+/* line 71, ../scss/app.scss */
 .facebook {
   background-position: -412px 3px; }
 
-/* line 71, ../scss/app.scss */
+/* line 72, ../scss/app.scss */
 .tumblr {
   background-position: -335px 3px; }
 
-/* line 72, ../scss/app.scss */
+/* line 73, ../scss/app.scss */
 .twitter {
   background-position: -363px -111px; }
 
-/* line 73, ../scss/app.scss */
+/* line 74, ../scss/app.scss */
 .instagram {
   background-position: -363px -111px; }
 
-/* line 74, ../scss/app.scss */
+/* line 75, ../scss/app.scss */
 .pinterest {
   background-position: -573px 2px; }
 
-/* line 76, ../scss/app.scss */
+/* line 77, ../scss/app.scss */
 .badge-blog, .badge-artist, .badge-new, .badge-juju, .badge-how {
   position: absolute;
   z-index: 300;
   top: 0px;
   right: 0px; }
 
-/* line 77, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 .badge-blog {
   width: 110px;
   height: 111px;
   background-position: -363px -111px; }
 
-/* line 78, ../scss/app.scss */
+/* line 79, ../scss/app.scss */
 .badge-artist {
   width: 146px;
   height: 170px;
   background-position: -631px -111px; }
 
-/* line 79, ../scss/app.scss */
+/* line 80, ../scss/app.scss */
 .badge-new {
   width: 118px;
   height: 150px;
   background-position: -936px -111px; }
 
-/* line 80, ../scss/app.scss */
+/* line 81, ../scss/app.scss */
 .badge-juju {
   right: auto;
-  left: 150px;
+  left: 225px;
   top: 25px;
   width: 126px;
   height: 94px;
   background-position: -80px -120px; }
 
-/* line 91, ../scss/app.scss */
-.excerpt-juju {
-  padding: 0;
+/* line 84, ../scss/app.scss */
+.excerpt-container {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 900px;
+  height: 100%;
   background-color: #e6e6e6; }
+  /* line 181, ../../bower_components/foundation/scss/foundation/components/_global.scss */
+  .excerpt-container:before, .excerpt-container:after {
+    content: " ";
+    display: table; }
+  /* line 182, ../../bower_components/foundation/scss/foundation/components/_global.scss */
+  .excerpt-container:after {
+    clear: both; }
 
-/* line 96, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
+.excerpt-juju {
+  padding: 0 15px 15px 0; }
+
+/* line 102, ../scss/app.scss */
+.juju {
+  padding-left: 0;
+  padding-right: 0;
+  width: 62.5%;
+  float: left; }
+
+/* line 105, ../scss/app.scss */
+.juju-aside {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 15px; }
+
+/* line 111, ../scss/app.scss */
 .excerpt-how-to {
   background-color: #e6e6e6; }

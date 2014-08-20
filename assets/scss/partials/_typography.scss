@@ -8,7 +8,8 @@
 @include font-face(magallanes, '#{$font-assetpath}magallanes-essential-bold-webfont', bold);
 @include font-face(magallanes, '#{$font-assetpath}magallanes-essential-bold-webfont', bold, italic);
 //
-body { font-family:$primary-fonts; }
+body { font-family:$primary-fonts; font-size:$font-medium; }
+p { font-size:$font-medium; }
 // ANCHORS
 a { color:black; text-decoration:underline; }
 nav ul li a { text-decoration:none; }

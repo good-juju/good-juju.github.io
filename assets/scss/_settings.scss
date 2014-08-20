@@ -35,8 +35,10 @@
 // $include-html-block-grid-classes: $include-html-classes; 
 // $include-xl-html-grid-classes: false;
 
-$row-width: 900px;
-$total-columns: 8;
+$row-width:900px;
+$column-gutter:0;
+// $column-gutter:rem-calc(30);
+$total-columns:8;
 
 // Global
 
