@@ -74,7 +74,6 @@ nav {
 .badge-juju { @extend %badge-type; @extend %juju-sprite; right:auto; left:225px; top:25px; width:126px; height:94px; background-position:-80px -120px; }
 .badge-how { @extend %badge-type; @extend %juju-sprite; }
 // EXCERPTS
-date { float:left; width:50px; margin-top:30px; @include transform(rotate(-90deg)); }
 .excerpt-border { position:absolute; z-index:100; width:100%; @extend %border; min-height:435px; }
 .excerpt-content { position:absolute; z-index:200; }
 .excerpt-container {
@@ -95,12 +94,13 @@ date { float:left; width:50px; margin-top:30px; @include transform(rotate(-90deg
 }
 .blog-aside {
 	padding-left:$margin-large;
-	// @extend %border;
+	p { clear:both; margin-left:50px; }
 }
-.blog-image { overflow:hidden;}
+.blog-image { overflow:hidden; }
+.blog-date { float:left; width:50px; margin-top:30px; @include transform(rotate(-90deg)); }
 .excerpt-blog {
 	@extend %excerpt-small;
-	@extend %border;
+	min-height:450px;
 	padding:0 15px 15px 0;
 }
 .excerpt-juju {
@@ -119,15 +119,15 @@ date { float:left; width:50px; margin-top:30px; @include transform(rotate(-90deg
 .excerpt-how-to {
 	@extend %excerpt-small;
 	background-color:$lightgrey;
-	@extend %border;
+	@extend %wireframe;
 }
 .excerpt-artist {
 	@extend %excerpt-small;
-	@extend %border;
+	@extend %wireframe;
 }
 .excerpt-new-art {
 	@extend %excerpt-small;
-	@extend %border;
+	@extend %wireframe;
 }
 
 

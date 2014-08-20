@@ -6391,7 +6391,7 @@ th.hide-for-touch {
   border-radius: 40px; }
 
 /* line 8, ../scss/partials/_common.scss */
-.excerpt-border, .excerpt-blog, .excerpt-how-to, .excerpt-artist, .excerpt-new-art {
+.excerpt-border {
   border-left: 20px solid #e6e6e6;
   border-right: 20px solid #e6e6e6;
   border-bottom: 20px solid #e6e6e6; }
@@ -6425,6 +6425,11 @@ th.hide-for-touch {
       padding-right: 0;
       width: 100%;
       float: left; } }
+
+/* line 13, ../scss/partials/_common.scss */
+.excerpt-how-to, .excerpt-artist, .excerpt-new-art {
+  border: 1px solid black;
+  height: 400px; }
 
 @font-face {
   font-family: magallanes;
@@ -6754,29 +6759,18 @@ nav ul li {
   background-position: -80px -120px; }
 
 /* line 77, ../scss/app.scss */
-date {
-  float: left;
-  width: 50px;
-  margin-top: 30px;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg); }
-
-/* line 78, ../scss/app.scss */
 .excerpt-border {
   position: absolute;
   z-index: 100;
   width: 100%;
   min-height: 435px; }
 
-/* line 79, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 .excerpt-content {
   position: absolute;
   z-index: 200; }
 
-/* line 80, ../scss/app.scss */
+/* line 79, ../scss/app.scss */
 .excerpt-container {
   position: relative;
   width: 100%;
@@ -6794,7 +6788,7 @@ date {
   .excerpt-container:after {
     clear: both; }
 
-/* line 85, ../scss/app.scss */
+/* line 84, ../scss/app.scss */
 .excerpt-container-juju {
   position: relative;
   width: 100%;
@@ -6813,21 +6807,37 @@ date {
   .excerpt-container-juju:after {
     clear: both; }
 
-/* line 91, ../scss/app.scss */
+/* line 90, ../scss/app.scss */
 .excerpt-blog-banner {
   min-height: 450px;
   padding: 0 15px 15px 0; }
 
-/* line 96, ../scss/app.scss */
+/* line 95, ../scss/app.scss */
 .blog-aside {
   padding-left: 20px; }
+  /* line 97, ../scss/app.scss */
+  .blog-aside p {
+    clear: both;
+    margin-left: 50px; }
 
-/* line 100, ../scss/app.scss */
+/* line 99, ../scss/app.scss */
 .blog-image {
   overflow: hidden; }
 
+/* line 100, ../scss/app.scss */
+.blog-date {
+  float: left;
+  width: 50px;
+  margin-top: 30px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
 /* line 101, ../scss/app.scss */
 .excerpt-blog {
+  min-height: 450px;
   padding: 0 15px 15px 0; }
 
 /* line 106, ../scss/app.scss */
