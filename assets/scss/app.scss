@@ -52,6 +52,7 @@ nav {
 .menu-container { @include grid-column(2); margin-top:20px; }
 .menu-toggle { display:block; float:left; width:56px; height:75px; text-align:center; text-transform:lowercase; font-size:$font-medium; cursor:pointer; }
 .menu-icon { display:block; margin-bottom:3px; @extend %large-circle; @extend %juju-sprite; background-position:-65px 10px; }
+.menu-icon-close { background-position:16px 10px; }
 .app-store { 
 	float:left;
 	width:144px;
@@ -66,7 +67,7 @@ nav {
 }
 .logo { @include grid-column(4); text-align:center; }
 .masthead-sub { background-color:$poppy; height:150px; }
-.nav-expand { height:225px; }
+.masthead-expand { height:225px; }
 // SOCIAL
 .follow-us { @include grid-column(2); }
 .follow-nav { float:right; margin-top:12px; }

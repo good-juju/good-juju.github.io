@@ -6660,6 +6660,10 @@ nav ul li {
   background-position: -65px 10px; }
 
 /* line 55, ../scss/app.scss */
+.menu-icon-close {
+  background-position: 16px 10px; }
+
+/* line 56, ../scss/app.scss */
 .app-store {
   float: left;
   width: 144px;
@@ -6671,13 +6675,13 @@ nav ul li {
   border: 4px solid black;
   text-indent: -9999px;
   background-position: -154px 9px; }
-  /* line 65, ../scss/app.scss */
+  /* line 66, ../scss/app.scss */
   .app-store a {
     display: block;
     width: 144px;
     height: 54px; }
 
-/* line 67, ../scss/app.scss */
+/* line 68, ../scss/app.scss */
 .logo {
   padding-left: 0;
   padding-right: 0;
@@ -6685,33 +6689,33 @@ nav ul li {
   float: left;
   text-align: center; }
 
-/* line 68, ../scss/app.scss */
+/* line 69, ../scss/app.scss */
 .masthead-sub {
   background-color: #fa3241;
   height: 150px; }
 
-/* line 69, ../scss/app.scss */
-.nav-expand {
+/* line 70, ../scss/app.scss */
+.masthead-expand {
   height: 225px; }
 
-/* line 71, ../scss/app.scss */
+/* line 72, ../scss/app.scss */
 .follow-us {
   padding-left: 0;
   padding-right: 0;
   width: 25%;
   float: left; }
 
-/* line 72, ../scss/app.scss */
+/* line 73, ../scss/app.scss */
 .follow-nav {
   float: right;
   margin-top: 12px; }
 
-/* line 73, ../scss/app.scss */
+/* line 74, ../scss/app.scss */
 .follow-title {
   text-transform: lowercase;
   margin-bottom: 1px; }
 
-/* line 74, ../scss/app.scss */
+/* line 75, ../scss/app.scss */
 .follow-block {
   display: block;
   padding: 0;
@@ -6741,57 +6745,57 @@ nav ul li {
     .follow-block > li:nth-of-type(3n+1) {
       clear: both; }
 
-/* line 76, ../scss/app.scss */
+/* line 77, ../scss/app.scss */
 .facebook, .tumblr, .twitter, .instagram, .pinterest {
   display: block;
   text-indent: -9999px; }
 
-/* line 77, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 .facebook {
   background-position: -412px 3px; }
 
-/* line 78, ../scss/app.scss */
+/* line 79, ../scss/app.scss */
 .tumblr {
   background-position: -335px 3px; }
 
-/* line 79, ../scss/app.scss */
+/* line 80, ../scss/app.scss */
 .twitter {
   background-position: -363px -111px; }
 
-/* line 80, ../scss/app.scss */
+/* line 81, ../scss/app.scss */
 .instagram {
   background-position: -363px -111px; }
 
-/* line 81, ../scss/app.scss */
+/* line 82, ../scss/app.scss */
 .pinterest {
   background-position: -573px 2px; }
 
-/* line 83, ../scss/app.scss */
+/* line 84, ../scss/app.scss */
 .badge-blog, .badge-artist, .badge-new-art, .badge-juju, .badge-how {
   position: absolute;
   z-index: 300;
   top: 0px;
   right: 0px; }
 
-/* line 84, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 .badge-blog {
   width: 110px;
   height: 111px;
   background-position: -362px -111px; }
 
-/* line 85, ../scss/app.scss */
+/* line 86, ../scss/app.scss */
 .badge-artist {
   width: 146px;
   height: 170px;
   background-position: -630px -111px; }
 
-/* line 86, ../scss/app.scss */
+/* line 87, ../scss/app.scss */
 .badge-new-art {
   width: 118px;
   height: 150px;
   background-position: -934px -111px; }
 
-/* line 87, ../scss/app.scss */
+/* line 88, ../scss/app.scss */
 .badge-juju {
   right: auto;
   left: 225px;
@@ -6800,19 +6804,19 @@ nav ul li {
   height: 94px;
   background-position: -80px -120px; }
 
-/* line 90, ../scss/app.scss */
+/* line 91, ../scss/app.scss */
 .excerpt-border {
   position: absolute;
   z-index: 100;
   width: 100%;
   min-height: 435px; }
 
-/* line 91, ../scss/app.scss */
+/* line 92, ../scss/app.scss */
 .excerpt-content {
   position: absolute;
   z-index: 200; }
 
-/* line 92, ../scss/app.scss */
+/* line 93, ../scss/app.scss */
 .excerpt-container {
   position: relative;
   width: 100%;
@@ -6830,7 +6834,7 @@ nav ul li {
   .excerpt-container:after {
     clear: both; }
 
-/* line 97, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 .excerpt-container-juju, .excerpt-container-how-to {
   position: relative;
   width: 100%;
@@ -6850,29 +6854,29 @@ nav ul li {
   .excerpt-container-juju:after, .excerpt-container-how-to:after {
     clear: both; }
 
-/* line 104, ../scss/app.scss */
+/* line 105, ../scss/app.scss */
 .excerpt-blog-banner {
   min-height: 450px;
   padding: 0 15px 15px 0; }
 
-/* line 109, ../scss/app.scss */
+/* line 110, ../scss/app.scss */
 .excerpt-blog {
   min-height: 450px;
   padding: 0 15px 15px 0; }
 
-/* line 114, ../scss/app.scss */
+/* line 115, ../scss/app.scss */
 .blog-aside {
   padding-left: 20px; }
-  /* line 116, ../scss/app.scss */
+  /* line 117, ../scss/app.scss */
   .blog-aside p {
     clear: both;
     margin-left: 50px; }
 
-/* line 118, ../scss/app.scss */
+/* line 119, ../scss/app.scss */
 .blog-image, .artist-image {
   overflow: hidden; }
 
-/* line 119, ../scss/app.scss */
+/* line 120, ../scss/app.scss */
 .blog-date {
   float: left;
   width: 50px;
@@ -6883,48 +6887,48 @@ nav ul li {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
-/* line 120, ../scss/app.scss */
+/* line 121, ../scss/app.scss */
 .excerpt-artist {
   min-height: 450px;
   padding: 0 15px 15px 0; }
 
-/* line 126, ../scss/app.scss */
+/* line 127, ../scss/app.scss */
 .artist-aside {
   text-align: center;
   margin-top: 25px; }
 
-/* line 127, ../scss/app.scss */
+/* line 128, ../scss/app.scss */
 .excerpt-juju {
   padding: 0 15px 15px 0; }
 
-/* line 131, ../scss/app.scss */
+/* line 132, ../scss/app.scss */
 .juju-image {
   padding-left: 0;
   padding-right: 0;
   width: 62.5%;
   float: left; }
 
-/* line 134, ../scss/app.scss */
+/* line 135, ../scss/app.scss */
 .juju-aside {
   position: absolute;
   right: 0;
   bottom: 0;
   margin-right: 15px; }
 
-/* line 140, ../scss/app.scss */
+/* line 141, ../scss/app.scss */
 .excerpt-how-to {
   min-height: 450px;
   padding: 0 15px 15px 0; }
 
-/* line 145, ../scss/app.scss */
+/* line 146, ../scss/app.scss */
 .how-to-aside {
   margin: 15px; }
 
-/* line 146, ../scss/app.scss */
+/* line 147, ../scss/app.scss */
 .excerpt-new-art {
   min-height: 450px;
   padding: 0 15px 15px 0; }
 
-/* line 151, ../scss/app.scss */
+/* line 152, ../scss/app.scss */
 .new-art-aside {
   text-align: center; }
