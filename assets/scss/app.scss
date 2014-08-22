@@ -12,7 +12,8 @@ html, body {
 	height:100%;
 	-webkit-font-smoothing:antialiased;
 }
-// Containers
+// CONTAINERS
+// HOME
 .introduction {
 	position:fixed;
 	z-index:$z-introduction;
@@ -28,8 +29,14 @@ html, body {
 	top:97%;
 	background-color:white;
 }
+// SUB
+.content-sub-container {
+	padding-top:50px;
+}
+// GLOBAL
 .content-container {
 	@include grid-row();
+	.sub { margin-top:150px; }
 }
 // MASTHEAD
 .masthead-container { position:absolute; z-index:$z-masthead; width:100%; font-weight:800; }
@@ -58,6 +65,8 @@ nav {
 	a { display:block; width:144px; height:54px; }
 }
 .logo { @include grid-column(4); text-align:center; }
+.masthead-sub { background-color:$poppy; height:150px; }
+.nav-expand { height:225px; }
 // SOCIAL
 .follow-us { @include grid-column(2); }
 .follow-nav { float:right; margin-top:12px; }
