@@ -7,10 +7,10 @@
 @include font-face(magallanes, '#{$font-assetpath}magallanes-essential-black-italic-webfont', 800, italic);
 @include font-face(magallanes, '#{$font-assetpath}magallanes-essential-bold-webfont', bold);
 @include font-face(magallanes, '#{$font-assetpath}magallanes-essential-bold-webfont', bold, italic);
-//
+// BASE
 body { font-family:$primary-fonts; font-size:$font-medium; }
 p { font-size:$font-medium; }
-
+// HEADERS
 %headers { font-family:$primary-fonts; }
 .h1 { @extend %headers; font-size:$h1-font-size; }
 .h2 { @extend %headers; font-size:$h2-font-size; }
@@ -18,7 +18,9 @@ p { font-size:$font-medium; }
 .h4 { @extend %headers; font-size:$h4-font-size; }
 .h5 { @extend %headers; font-size:$h5-font-size; }
 .h6 { @extend %headers; font-size:$h6-font-size; }
-
+// BREADCRUMB
+.breadcrumb { padding-right:8px; color:$lightgrey; font-size:15px; letter-spacing:1px; }
+.slash { padding-right:8px; color:$lightgrey; font-size:15px; letter-spacing:1px; }
 // ANCHORS
 a { color:black; text-decoration:underline; }
 nav ul li a { text-decoration:none; }

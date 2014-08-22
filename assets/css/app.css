@@ -6514,12 +6514,26 @@ p {
 .h6 {
   font-size: 1rem; }
 
+/* line 22, ../scss/partials/_typography.scss */
+.breadcrumb {
+  padding-right: 8px;
+  color: #e6e6e6;
+  font-size: 15px;
+  letter-spacing: 1px; }
+
 /* line 23, ../scss/partials/_typography.scss */
+.slash {
+  padding-right: 8px;
+  color: #e6e6e6;
+  font-size: 15px;
+  letter-spacing: 1px; }
+
+/* line 25, ../scss/partials/_typography.scss */
 a {
   color: black;
   text-decoration: underline; }
 
-/* line 24, ../scss/partials/_typography.scss */
+/* line 26, ../scss/partials/_typography.scss */
 nav ul li a {
   text-decoration: none; }
 
