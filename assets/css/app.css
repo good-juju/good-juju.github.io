@@ -6369,7 +6369,7 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 /* line 2, ../scss/partials/_common.scss */
-.app-store, .facebook, .tumblr, .twitter, .instagram, .pinterest, .badge-blog, .badge-artist, .badge-new-art, .badge-juju, .badge-how {
+.menu-icon, .app-store, .facebook, .tumblr, .twitter, .instagram, .pinterest, .badge-blog, .badge-artist, .badge-new-art, .badge-juju, .badge-how {
   background: url(/assets/img/juju_sprite.png) no-repeat; }
 
 /* line 4, ../scss/partials/_common.scss */
@@ -6385,7 +6385,7 @@ th.hide-for-touch {
 .facebook, .tumblr, .twitter, .instagram, .pinterest {
   height: 40px;
   width: 40px;
-  border: 4px solid #666666;
+  border: 4px solid black;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px; }
@@ -6425,7 +6425,7 @@ th.hide-for-touch {
       float: left; } }
 
 /* line 13, ../scss/partials/_common.scss */
-.excerpt-how-to, .excerpt-pro-tip {
+.excerpt-pro-tip {
   border: 1px solid black;
   height: 400px; }
 
@@ -6564,7 +6564,7 @@ html, body {
 
 /* line 35, ../scss/app.scss */
 .masthead-container {
-  position: fixed;
+  position: absolute;
   z-index: 1000;
   width: 100%;
   font-weight: 800; }
@@ -6576,14 +6576,20 @@ html, body {
 
 /* line 37, ../scss/app.scss */
 .navigation {
-  padding-left: 0;
-  padding-right: 0;
-  width: 75%;
-  float: left;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  float: none;
-  padding: 0; }
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 900px;
+  padding: 20px 0; }
+  /* line 181, ../../bower_components/foundation/scss/foundation/components/_global.scss */
+  .navigation:before, .navigation:after {
+    content: " ";
+    display: table; }
+  /* line 182, ../../bower_components/foundation/scss/foundation/components/_global.scss */
+  .navigation:after {
+    clear: both; }
 
 /* line 39, ../scss/app.scss */
 nav ul {
@@ -6596,78 +6602,100 @@ nav ul li {
   margin-right: 16px; }
 
 /* line 42, ../scss/app.scss */
-.masthead {
-  padding-left: 0;
-  padding-right: 0;
-  width: 75%;
-  float: left;
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
-  padding: 0; }
+.nav-hide {
+  display: none; }
 
 /* line 43, ../scss/app.scss */
-.menu-toggle-container {
-  padding-left: 0;
-  padding-right: 0;
-  width: 37.5%;
-  float: left; }
+.nav-show {
+  display: block; }
 
 /* line 44, ../scss/app.scss */
+.masthead {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 900px;
+  padding: 0;
+  margin-top: 20px; }
+  /* line 181, ../../bower_components/foundation/scss/foundation/components/_global.scss */
+  .masthead:before, .masthead:after {
+    content: " ";
+    display: table; }
+  /* line 182, ../../bower_components/foundation/scss/foundation/components/_global.scss */
+  .masthead:after {
+    clear: both; }
+
+/* line 45, ../scss/app.scss */
+.menu-container {
+  padding-left: 0;
+  padding-right: 0;
+  width: 25%;
+  float: left;
+  margin-top: 20px; }
+
+/* line 46, ../scss/app.scss */
 .menu-toggle {
+  display: block;
   float: left;
   width: 56px;
+  height: 75px;
   text-align: center;
   text-transform: lowercase;
   font-size: 0.875em;
-  padding: 0; }
+  cursor: pointer; }
 
-/* line 45, ../scss/app.scss */
+/* line 47, ../scss/app.scss */
 .menu-icon {
-  display: block; }
+  display: block;
+  margin-bottom: 3px;
+  background-position: -65px 10px; }
 
-/* line 46, ../scss/app.scss */
+/* line 48, ../scss/app.scss */
 .app-store {
   float: left;
   width: 144px;
   height: 54px;
+  margin-left: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   border: 4px solid black;
   text-indent: -9999px;
   background-position: -154px 9px; }
-  /* line 55, ../scss/app.scss */
+  /* line 58, ../scss/app.scss */
   .app-store a {
     display: block;
     width: 144px;
     height: 54px; }
 
-/* line 57, ../scss/app.scss */
+/* line 60, ../scss/app.scss */
 .logo {
   padding-left: 0;
   padding-right: 0;
-  width: 25%;
+  width: 50%;
   float: left;
   text-align: center; }
 
-/* line 59, ../scss/app.scss */
+/* line 62, ../scss/app.scss */
 .follow-us {
   padding-left: 0;
   padding-right: 0;
   width: 25%;
   float: left; }
 
-/* line 60, ../scss/app.scss */
+/* line 63, ../scss/app.scss */
 .follow-nav {
   float: right;
   margin-top: 12px; }
 
-/* line 61, ../scss/app.scss */
+/* line 64, ../scss/app.scss */
 .follow-title {
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  margin-bottom: 1px; }
 
-/* line 62, ../scss/app.scss */
+/* line 65, ../scss/app.scss */
 .follow-block {
   display: block;
   padding: 0;
@@ -6697,57 +6725,57 @@ nav ul li {
     .follow-block > li:nth-of-type(3n+1) {
       clear: both; }
 
-/* line 63, ../scss/app.scss */
+/* line 67, ../scss/app.scss */
 .facebook, .tumblr, .twitter, .instagram, .pinterest {
   display: block;
   text-indent: -9999px; }
 
-/* line 64, ../scss/app.scss */
+/* line 68, ../scss/app.scss */
 .facebook {
   background-position: -412px 3px; }
 
-/* line 65, ../scss/app.scss */
+/* line 69, ../scss/app.scss */
 .tumblr {
   background-position: -335px 3px; }
 
-/* line 66, ../scss/app.scss */
+/* line 70, ../scss/app.scss */
 .twitter {
   background-position: -363px -111px; }
 
-/* line 67, ../scss/app.scss */
+/* line 71, ../scss/app.scss */
 .instagram {
   background-position: -363px -111px; }
 
-/* line 68, ../scss/app.scss */
+/* line 72, ../scss/app.scss */
 .pinterest {
   background-position: -573px 2px; }
 
-/* line 70, ../scss/app.scss */
+/* line 74, ../scss/app.scss */
 .badge-blog, .badge-artist, .badge-new-art, .badge-juju, .badge-how {
   position: absolute;
   z-index: 300;
   top: 0px;
   right: 0px; }
 
-/* line 71, ../scss/app.scss */
+/* line 75, ../scss/app.scss */
 .badge-blog {
   width: 110px;
   height: 111px;
   background-position: -362px -111px; }
 
-/* line 72, ../scss/app.scss */
+/* line 76, ../scss/app.scss */
 .badge-artist {
   width: 146px;
   height: 170px;
   background-position: -630px -111px; }
 
-/* line 73, ../scss/app.scss */
+/* line 77, ../scss/app.scss */
 .badge-new-art {
   width: 118px;
   height: 150px;
   background-position: -934px -111px; }
 
-/* line 74, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 .badge-juju {
   right: auto;
   left: 225px;
@@ -6756,19 +6784,19 @@ nav ul li {
   height: 94px;
   background-position: -80px -120px; }
 
-/* line 77, ../scss/app.scss */
+/* line 81, ../scss/app.scss */
 .excerpt-border {
   position: absolute;
   z-index: 100;
   width: 100%;
   min-height: 435px; }
 
-/* line 78, ../scss/app.scss */
+/* line 82, ../scss/app.scss */
 .excerpt-content {
   position: absolute;
   z-index: 200; }
 
-/* line 79, ../scss/app.scss */
+/* line 83, ../scss/app.scss */
 .excerpt-container {
   position: relative;
   width: 100%;
@@ -6786,8 +6814,8 @@ nav ul li {
   .excerpt-container:after {
     clear: both; }
 
-/* line 84, ../scss/app.scss */
-.excerpt-container-juju {
+/* line 88, ../scss/app.scss */
+.excerpt-container-juju, .excerpt-container-how-to {
   position: relative;
   width: 100%;
   margin-left: auto;
@@ -6796,38 +6824,39 @@ nav ul li {
   margin-bottom: 0;
   max-width: 900px;
   height: 100%;
+  min-height: 450px;
   background-color: #e6e6e6; }
   /* line 181, ../../bower_components/foundation/scss/foundation/components/_global.scss */
-  .excerpt-container-juju:before, .excerpt-container-juju:after {
+  .excerpt-container-juju:before, .excerpt-container-juju:after, .excerpt-container-how-to:before, .excerpt-container-how-to:after {
     content: " ";
     display: table; }
   /* line 182, ../../bower_components/foundation/scss/foundation/components/_global.scss */
-  .excerpt-container-juju:after {
+  .excerpt-container-juju:after, .excerpt-container-how-to:after {
     clear: both; }
 
-/* line 90, ../scss/app.scss */
+/* line 95, ../scss/app.scss */
 .excerpt-blog-banner {
   min-height: 450px;
   padding: 0 15px 15px 0; }
 
-/* line 95, ../scss/app.scss */
+/* line 100, ../scss/app.scss */
 .excerpt-blog {
   min-height: 450px;
   padding: 0 15px 15px 0; }
 
-/* line 100, ../scss/app.scss */
+/* line 105, ../scss/app.scss */
 .blog-aside {
   padding-left: 20px; }
-  /* line 102, ../scss/app.scss */
+  /* line 107, ../scss/app.scss */
   .blog-aside p {
     clear: both;
     margin-left: 50px; }
 
-/* line 104, ../scss/app.scss */
+/* line 109, ../scss/app.scss */
 .blog-image, .artist-image {
   overflow: hidden; }
 
-/* line 105, ../scss/app.scss */
+/* line 110, ../scss/app.scss */
 .blog-date {
   float: left;
   width: 50px;
@@ -6838,43 +6867,48 @@ nav ul li {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
-/* line 106, ../scss/app.scss */
+/* line 111, ../scss/app.scss */
 .excerpt-artist {
   min-height: 450px;
   padding: 0 15px 15px 0; }
 
-/* line 112, ../scss/app.scss */
+/* line 117, ../scss/app.scss */
 .artist-aside {
   text-align: center;
   margin-top: 25px; }
 
-/* line 113, ../scss/app.scss */
+/* line 118, ../scss/app.scss */
 .excerpt-juju {
   padding: 0 15px 15px 0; }
 
-/* line 117, ../scss/app.scss */
+/* line 122, ../scss/app.scss */
 .juju-image {
   padding-left: 0;
   padding-right: 0;
   width: 62.5%;
   float: left; }
 
-/* line 120, ../scss/app.scss */
+/* line 125, ../scss/app.scss */
 .juju-aside {
   position: absolute;
   right: 0;
   bottom: 0;
   margin-right: 15px; }
 
-/* line 126, ../scss/app.scss */
-.excerpt-how-to {
-  background-color: #e6e6e6; }
-
 /* line 131, ../scss/app.scss */
-.excerpt-new-art {
+.excerpt-how-to {
   min-height: 450px;
   padding: 0 15px 15px 0; }
 
 /* line 136, ../scss/app.scss */
-.new-art-image, .new-art-aside {
+.how-to-aside {
+  margin: 15px; }
+
+/* line 137, ../scss/app.scss */
+.excerpt-new-art {
+  min-height: 450px;
+  padding: 0 15px 15px 0; }
+
+/* line 142, ../scss/app.scss */
+.new-art-aside {
   text-align: center; }
