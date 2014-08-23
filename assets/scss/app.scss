@@ -29,14 +29,13 @@ html, body {
 	top:97%;
 	background-color:white;
 }
-// SUB
-.content-sub-container {
-	padding-top:50px;
+.home-content-container {
+	@include grid-row();
 }
 // GLOBAL
 .content-container {
 	@include grid-row();
-	.sub { margin-top:150px; }
+	padding-top:35px;
 }
 // MASTHEAD
 .masthead-container { position:absolute; z-index:$z-masthead; width:100%; font-weight:800; }
