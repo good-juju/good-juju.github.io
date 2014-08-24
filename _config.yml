@@ -1,0 +1,9 @@
+# Site settings
+title: JUJU - Art for Everyone
+email: hello@sharethejuju.com
+description: We need a description.... coming from GUY
+baseurl: ""
+url: "http://sharethejuju.com"
+
+# Build settings
+markdown: kramdown
