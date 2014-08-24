@@ -14,9 +14,9 @@ html, body {
 }
 // CONTAINERS
 // HOME
-.introduction {
+.home-banner {
 	position:fixed;
-	z-index:$z-introduction;
+	z-index:$z-home-banner;
 	top:0;
 	width:100%;
 	height:100%; 
@@ -37,6 +37,10 @@ html, body {
 	@include grid-row();
 	padding-top:35px;
 }
+.single-opening { position:relative; @include grid-row(); }
+.left-column { @include grid-column(5); }
+.right-column { @include grid-column(3); padding-left:20px; }
+
 // MASTHEAD
 .masthead-container { position:absolute; z-index:$z-masthead; width:100%; font-weight:800; }
 .navigation-container { width:100%; background-color:$poppy; }
@@ -153,7 +157,8 @@ nav {
 	@extend %excerpt-small;
 	@extend %wireframe;
 }
-
+// SINGLE PAGE
+.introduction-title { position:absolute; z-index:$z-introduction; top:440px; left:15px; h1 { font-size:65px; text-transform:uppercase; color:$lightgrey; } }
 
 
 

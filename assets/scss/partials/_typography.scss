@@ -19,9 +19,10 @@ p { font-size:$font-medium; }
 .h5 { @extend %headers; font-size:$h5-font-size; }
 .h6 { @extend %headers; font-size:$h6-font-size; }
 // BREADCRUMB
-.breadcrumb { padding-right:8px; color:$lightgrey; font-size:15px; letter-spacing:1px; }
-.slash { padding-right:8px; color:$lightgrey; font-size:15px; letter-spacing:1px; }
+.breadcrumb { padding-right:8px; color:$lightgrey; font-size:15px; letter-spacing:1px; font-weight:800; }
+.slash { padding-right:8px; color:$lightgrey; font-size:15px; letter-spacing:1px; font-weight:800; }
 // ANCHORS
 a { color:black; text-decoration:underline; }
 nav ul li a { text-decoration:none; }
-
+// SINGLE PAGES
+.introduction-copy { margin-top:50px; margin-left:15px; font-size:$font-large; }

@@ -11,3 +11,5 @@
 %excerpt-small { position:relative; @include grid-column(4); @media #{$small-only} { @include grid-column(8); } }
 // Wireframe
 %wireframe { border:1px solid black; height:400px; }
+// COLORS
+.background-poppy { background-color:$poppy; }
