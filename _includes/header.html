@@ -1,11 +1,14 @@
+<!--[if lt IE 7]>
+	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 <header id="masthead-container" class="masthead-container"> 
 	<div id="navigation-container" class="navigation-container nav-hide">
 		<nav id="navigation" class="navigation">
 			<ul>
-				<li><a href="">home</a></li>
-				<li><a href="">artists</a></li>
-				<li><a href="">help</a></li>
-				<li><a href="">contact</a></li>
+				<li><a href="{{ site.baseurl }}/">home</a></li>
+				<li><a href="{{ site.baseurl }}/artists">artists</a></li>
+				<li><a href="{{ site.baseurl }}/press">press</a></li>
+				<li><a href="{{ site.baseurl }}/help">help</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -19,7 +22,7 @@
 				<a href="https://itunes.apple.com/us/app/juju-art-mashup/id799548449?mt=8&uo=4" target="itunes_store">JUJU - Art Mashup</a>
 			</div>
 		</div>
-		<div id="logo" class="logo"><a href="{{ site.baseurl }}/"><img src="assets/img/juju_logo.png" width="164" height="98" alt="{{ site.title }}" /></a></div>
+		<div id="logo" class="logo"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/img/juju_logo.png" width="164" height="98" alt="{{ site.title }}" /></a></div>
 		<div id="follow-us" class="follow-us">
 			<div id="follow-nav" class="follow-nav">
 				<h6 class="follow-title">Follow us</h6>
