@@ -6433,6 +6433,10 @@ th.hide-for-touch {
 .background-poppy {
   background-color: #fa3241; }
 
+/* line 16, ../scss/partials/_common.scss */
+.background-water {
+  background-color: #32e6dc; }
+
 @font-face {
   font-family: magallanes;
   font-weight: normal;
@@ -6759,7 +6763,6 @@ nav ul li {
 
 /* line 72, ../scss/app.scss */
 .masthead-sub {
-  background-color: #fa3241;
   height: 150px; }
 
 /* line 73, ../scss/app.scss */
@@ -7002,13 +7005,48 @@ nav ul li {
   text-align: center; }
 
 /* line 161, ../scss/app.scss */
-.introduction-title {
+.opening-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 900px; }
+  /* line 181, ../../bower_components/foundation/scss/foundation/components/_global.scss */
+  .opening-container:before, .opening-container:after {
+    content: " ";
+    display: table; }
+  /* line 182, ../../bower_components/foundation/scss/foundation/components/_global.scss */
+  .opening-container:after {
+    clear: both; }
+
+/* line 162, ../scss/app.scss */
+.opening {
+  padding-left: 0;
+  padding-right: 0;
+  width: 62.5%;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  float: none; }
+
+/* line 163, ../scss/app.scss */
+.opening-animation {
+  position: fixed;
+  bottom: 0px; }
+
+/* line 165, ../scss/app.scss */
+.introduction-title, .introduction-title-help {
   position: absolute;
   z-index: 300;
   top: 440px;
   left: 15px; }
-  /* line 161, ../scss/app.scss */
-  .introduction-title h1 {
+  /* line 165, ../scss/app.scss */
+  .introduction-title h1, .introduction-title-help h1 {
     font-size: 65px;
     text-transform: uppercase;
     color: #e6e6e6; }
+
+/* line 166, ../scss/app.scss */
+.introduction-title-help {
+  top: 315px; }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% include head.html %}
+<body class="page help">
+<div id="masthead-sub" class="masthead-sub background-poppy">
+{% include header.html %}
+</div>
+<div id="color-band" class="color-band background-water">
+<section id="single-opening" class="single-opening">
+	<div id="introduction-photo" class="introduction-photo"><img src="{{ site.baseurl }}/assets/img/artist/{{page.portrait}}" width="900" height="500" alt="{{page.title}}" /></div>
+		<div id="introduction-title-help" class="introduction-title-help"><span class="breadcrumb">home</span><span class="slash">/</span>
+			<h1>{{page.title}}</h1></div>
+		<p id="introduction-copy" class="introduction-copy">{{page.introduction}}</p>
+</section>
+</div>
+<section id="content-container" class="content-container">
+{{ content }}
+</section>
+{% include footer.html %}
+</body>
+</html>

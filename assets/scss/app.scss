@@ -69,7 +69,7 @@ nav {
 	a { display:block; width:144px; height:54px; }
 }
 .logo { @include grid-column(4); text-align:center; }
-.masthead-sub { background-color:$poppy; height:150px; }
+.masthead-sub { height:150px; }
 .masthead-expand { height:225px; }
 // SOCIAL
 .follow-us { @include grid-column(2); }
@@ -157,9 +157,13 @@ nav {
 	@extend %excerpt-small;
 	@extend %wireframe;
 }
+// HOME
+.opening-container { @include grid-row(); }
+.opening {  @include grid-column(5, $center:true); }
+.opening-animation { position:fixed; bottom:0px;  }
 // SINGLE PAGE
-.introduction-title { position:absolute; z-index:$z-introduction; top:440px; left:15px; h1 { font-size:65px; text-transform:uppercase; color:$lightgrey; } }
-
+.introduction-title { position:absolute; z-index:$z-introduction; top:440px; left:15px;  h1 { font-size:65px; text-transform:uppercase; color:$lightgrey; } }
+.introduction-title-help { @extend .introduction-title; top:315px; }
 
 
 // Or selectively include components
