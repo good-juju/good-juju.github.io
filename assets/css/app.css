@@ -6400,7 +6400,8 @@ th.hide-for-touch {
   padding-left: 0;
   padding-right: 0;
   width: 100%;
-  float: left; }
+  float: left;
+  padding: 0 15px 15px 0; }
   @media only screen and (max-width: 40em) {
     /* line 10, ../scss/partials/_common.scss */
     .excerpt-blog-banner {
@@ -6415,7 +6416,8 @@ th.hide-for-touch {
   padding-left: 0;
   padding-right: 0;
   width: 50%;
-  float: left; }
+  float: left;
+  padding: 0 15px 15px 0; }
   @media only screen and (max-width: 40em) {
     /* line 11, ../scss/partials/_common.scss */
     .excerpt-blog, .excerpt-artist, .excerpt-juju, .excerpt-how-to, .excerpt-new-art, .excerpt-pro-tip {
@@ -6423,11 +6425,6 @@ th.hide-for-touch {
       padding-right: 0;
       width: 100%;
       float: left; } }
-
-/* line 13, ../scss/partials/_common.scss */
-.excerpt-pro-tip {
-  border: 1px solid black;
-  height: 400px; }
 
 /* line 15, ../scss/partials/_common.scss */
 .background-poppy {
@@ -6647,6 +6644,10 @@ html, body {
   z-index: 1000;
   width: 100%;
   font-weight: 800; }
+  @media only screen and (max-width: 40em) {
+    /* line 45, ../scss/app.scss */
+    .masthead-container {
+      position: static; } }
 
 /* line 46, ../scss/app.scss */
 .navigation-container {
@@ -6679,6 +6680,11 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 16px; }
+  @media only screen and (max-width: 40em) {
+    /* line 50, ../scss/app.scss */
+    nav ul li {
+      display: block;
+      text-align: center; } }
 
 /* line 52, ../scss/app.scss */
 .nav-hide {
@@ -6705,6 +6711,10 @@ nav ul li {
   /* line 182, ../../bower_components/foundation/scss/foundation/components/_global.scss */
   .masthead:after {
     clear: both; }
+  @media only screen and (max-width: 40em) {
+    /* line 54, ../scss/app.scss */
+    .masthead {
+      margin-top: 0; } }
 
 /* line 55, ../scss/app.scss */
 .menu-container {
@@ -6713,6 +6723,17 @@ nav ul li {
   width: 25%;
   float: left;
   margin-top: 20px; }
+  @media only screen and (max-width: 40em) {
+    /* line 55, ../scss/app.scss */
+    .menu-container {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+      float: left;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+      margin-top: 5px; } }
 
 /* line 56, ../scss/app.scss */
 .menu-toggle {
@@ -6724,6 +6745,10 @@ nav ul li {
   text-transform: lowercase;
   font-size: 0.875em;
   cursor: pointer; }
+  @media only screen and (max-width: 40em) {
+    /* line 56, ../scss/app.scss */
+    .menu-toggle {
+      margin-left: 20px; } }
 
 /* line 57, ../scss/app.scss */
 .menu-icon {
@@ -6752,41 +6777,62 @@ nav ul li {
     display: block;
     width: 144px;
     height: 54px; }
+  @media only screen and (max-width: 40em) {
+    /* line 59, ../scss/app.scss */
+    .app-store {
+      float: right;
+      margin-right: 20px; } }
 
-/* line 71, ../scss/app.scss */
+/* line 72, ../scss/app.scss */
 .logo {
   padding-left: 0;
   padding-right: 0;
   width: 50%;
   float: left;
   text-align: center; }
-
-/* line 72, ../scss/app.scss */
-.masthead-sub {
-  height: 150px; }
+  @media only screen and (max-width: 40em) {
+    /* line 72, ../scss/app.scss */
+    .logo {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+      float: left;
+      margin-bottom: 25px; } }
 
 /* line 73, ../scss/app.scss */
+.masthead-sub {
+  height: 150px; }
+  @media only screen and (max-width: 40em) {
+    /* line 73, ../scss/app.scss */
+    .masthead-sub {
+      height: auto; } }
+
+/* line 74, ../scss/app.scss */
 .masthead-expand {
   height: 225px; }
 
-/* line 75, ../scss/app.scss */
+/* line 76, ../scss/app.scss */
 .follow-us {
   padding-left: 0;
   padding-right: 0;
   width: 25%;
   float: left; }
+  @media only screen and (max-width: 40em) {
+    /* line 76, ../scss/app.scss */
+    .follow-us {
+      display: none; } }
 
-/* line 76, ../scss/app.scss */
+/* line 77, ../scss/app.scss */
 .follow-nav {
   float: right;
   margin-top: 12px; }
 
-/* line 77, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 .follow-title {
   text-transform: lowercase;
   margin-bottom: 1px; }
 
-/* line 78, ../scss/app.scss */
+/* line 79, ../scss/app.scss */
 .follow-block {
   display: block;
   padding: 0;
@@ -6816,97 +6862,83 @@ nav ul li {
     .follow-block > li:nth-of-type(3n+1) {
       clear: both; }
 
-/* line 80, ../scss/app.scss */
+/* line 81, ../scss/app.scss */
 .facebook, .tumblr, .twitter, .instagram, .pinterest {
   display: block;
   text-indent: -9999px; }
 
-/* line 81, ../scss/app.scss */
+/* line 82, ../scss/app.scss */
 .facebook {
   background-position: -412px 3px; }
 
-/* line 82, ../scss/app.scss */
+/* line 83, ../scss/app.scss */
 .tumblr {
   background-position: -335px 3px; }
 
-/* line 83, ../scss/app.scss */
+/* line 84, ../scss/app.scss */
 .twitter {
   background-position: -363px -111px; }
 
-/* line 84, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 .instagram {
   background-position: -363px -111px; }
 
-/* line 85, ../scss/app.scss */
+/* line 86, ../scss/app.scss */
 .pinterest {
   background-position: -573px 2px; }
 
-/* line 87, ../scss/app.scss */
+/* line 88, ../scss/app.scss */
 .badge-blog, .badge-artist, .badge-new-art, .badge-juju, .badge-how {
   position: absolute;
   z-index: 300;
   top: 0px;
   right: 0px; }
 
-/* line 88, ../scss/app.scss */
+/* line 89, ../scss/app.scss */
 .badge-blog {
   width: 110px;
   height: 111px;
   background-position: -362px -111px; }
 
-/* line 89, ../scss/app.scss */
+/* line 90, ../scss/app.scss */
 .badge-artist {
   width: 146px;
   height: 170px;
   background-position: -630px -111px; }
 
-/* line 90, ../scss/app.scss */
+/* line 91, ../scss/app.scss */
 .badge-new-art {
   width: 118px;
   height: 150px;
   background-position: -934px -111px; }
 
-/* line 91, ../scss/app.scss */
+/* line 92, ../scss/app.scss */
 .badge-juju {
-  right: auto;
-  left: 225px;
+  right: 85px;
   top: 25px;
   width: 126px;
   height: 94px;
   background-position: -80px -120px; }
-
-/* line 94, ../scss/app.scss */
-.excerpt-border {
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-  min-height: 435px; }
+  @media only screen and (max-width: 40em) {
+    /* line 92, ../scss/app.scss */
+    .badge-juju {
+      right: 25px; } }
 
 /* line 95, ../scss/app.scss */
 .excerpt-content {
   position: absolute;
-  z-index: 200; }
+  z-index: 200;
+  width: 100%; }
 
 /* line 96, ../scss/app.scss */
-.excerpt-container {
-  position: relative;
+.excerpt-border {
+  position: absolute;
+  z-index: 100;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 900px;
   height: 100%; }
-  /* line 181, ../../bower_components/foundation/scss/foundation/components/_global.scss */
-  .excerpt-container:before, .excerpt-container:after {
-    content: " ";
-    display: table; }
-  /* line 182, ../../bower_components/foundation/scss/foundation/components/_global.scss */
-  .excerpt-container:after {
-    clear: both; }
 
-/* line 101, ../scss/app.scss */
-.excerpt-container-juju, .excerpt-container-how-to {
+/* line 97, ../scss/app.scss */
+.excerpt-container, .excerpt-container-juju, .excerpt-container-how-to {
   position: relative;
   width: 100%;
   margin-left: auto;
@@ -6915,39 +6947,39 @@ nav ul li {
   margin-bottom: 0;
   max-width: 900px;
   height: 100%;
-  min-height: 450px;
-  background-color: #e6e6e6; }
+  height: 480px; }
   /* line 181, ../../bower_components/foundation/scss/foundation/components/_global.scss */
-  .excerpt-container-juju:before, .excerpt-container-juju:after, .excerpt-container-how-to:before, .excerpt-container-how-to:after {
+  .excerpt-container:before, .excerpt-container-juju:before, .excerpt-container-how-to:before, .excerpt-container:after, .excerpt-container-juju:after, .excerpt-container-how-to:after {
     content: " ";
     display: table; }
   /* line 182, ../../bower_components/foundation/scss/foundation/components/_global.scss */
-  .excerpt-container-juju:after, .excerpt-container-how-to:after {
+  .excerpt-container:after, .excerpt-container-juju:after, .excerpt-container-how-to:after {
     clear: both; }
+  @media only screen and (max-width: 40em) {
+    /* line 97, ../scss/app.scss */
+    .excerpt-container, .excerpt-container-juju, .excerpt-container-how-to {
+      height: 400px; } }
 
-/* line 108, ../scss/app.scss */
-.excerpt-blog-banner {
-  min-height: 450px;
-  padding: 0 15px 15px 0; }
+/* line 98, ../scss/app.scss */
+.excerpt-container-juju, .excerpt-container-how-to {
+  background-color: #e6e6e6; }
 
-/* line 113, ../scss/app.scss */
-.excerpt-blog {
-  min-height: 450px;
-  padding: 0 15px 15px 0; }
-
-/* line 118, ../scss/app.scss */
+/* line 101, ../scss/app.scss */
 .blog-aside {
-  padding-left: 20px; }
-  /* line 120, ../scss/app.scss */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px; }
+  /* line 101, ../scss/app.scss */
   .blog-aside p {
     clear: both;
-    margin-left: 50px; }
+    margin-left: 50px;
+    padding-right: 30px; }
 
-/* line 122, ../scss/app.scss */
+/* line 102, ../scss/app.scss */
 .blog-image, .artist-image {
   overflow: hidden; }
 
-/* line 123, ../scss/app.scss */
+/* line 103, ../scss/app.scss */
 .blog-date {
   float: left;
   width: 50px;
@@ -6958,53 +6990,34 @@ nav ul li {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
-/* line 124, ../scss/app.scss */
-.excerpt-artist {
-  min-height: 450px;
-  padding: 0 15px 15px 0; }
-
-/* line 130, ../scss/app.scss */
+/* line 106, ../scss/app.scss */
 .artist-aside {
   text-align: center;
   margin-top: 25px; }
 
-/* line 131, ../scss/app.scss */
-.excerpt-juju {
-  padding: 0 15px 15px 0; }
-
-/* line 135, ../scss/app.scss */
+/* line 108, ../scss/app.scss */
 .juju-image {
   padding-left: 0;
   padding-right: 0;
   width: 62.5%;
   float: left; }
 
-/* line 138, ../scss/app.scss */
+/* line 109, ../scss/app.scss */
 .juju-aside {
   position: absolute;
   right: 0;
   bottom: 0;
   margin-right: 15px; }
 
-/* line 144, ../scss/app.scss */
-.excerpt-how-to {
-  min-height: 450px;
-  padding: 0 15px 15px 0; }
-
-/* line 149, ../scss/app.scss */
+/* line 111, ../scss/app.scss */
 .how-to-aside {
   margin: 15px; }
 
-/* line 150, ../scss/app.scss */
-.excerpt-new-art {
-  min-height: 450px;
-  padding: 0 15px 15px 0; }
-
-/* line 155, ../scss/app.scss */
+/* line 113, ../scss/app.scss */
 .new-art-aside {
   text-align: center; }
 
-/* line 161, ../scss/app.scss */
+/* line 116, ../scss/app.scss */
 .opening-container {
   width: 100%;
   margin-left: auto;
@@ -7020,7 +7033,7 @@ nav ul li {
   .opening-container:after {
     clear: both; }
 
-/* line 162, ../scss/app.scss */
+/* line 117, ../scss/app.scss */
 .opening {
   padding-left: 0;
   padding-right: 0;
@@ -7030,23 +7043,23 @@ nav ul li {
   margin-right: auto;
   float: none; }
 
-/* line 163, ../scss/app.scss */
+/* line 118, ../scss/app.scss */
 .opening-animation {
   position: fixed;
   bottom: 0px; }
 
-/* line 165, ../scss/app.scss */
-.introduction-title, .introduction-title-help {
+/* line 120, ../scss/app.scss */
+.introduction-photo {
+  position: relative; }
+
+/* line 121, ../scss/app.scss */
+.introduction-title {
   position: absolute;
   z-index: 300;
-  top: 440px;
+  bottom: -50px;
   left: 15px; }
-  /* line 165, ../scss/app.scss */
-  .introduction-title h1, .introduction-title-help h1 {
+  /* line 121, ../scss/app.scss */
+  .introduction-title h1 {
     font-size: 65px;
     text-transform: uppercase;
     color: #e6e6e6; }
-
-/* line 166, ../scss/app.scss */
-.introduction-title-help {
-  top: 315px; }

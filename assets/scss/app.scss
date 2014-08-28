@@ -42,18 +42,18 @@ html, body {
 .right-column { @include grid-column(3); padding-left:20px; }
 
 // MASTHEAD
-.masthead-container { position:absolute; z-index:$z-masthead; width:100%; font-weight:800; }
+.masthead-container { position:absolute; z-index:$z-masthead; width:100%; font-weight:800; @media #{$small-only} { position:static; } }
 .navigation-container { width:100%; background-color:$poppy; }
 .navigation { @include grid-row(); padding:20px 0; }
 nav { 
 	ul { list-style-type:none; margin:0; padding:0; }
-	ul li { display:inline; margin-right:16px; }
+	ul li { display:inline; margin-right:16px; @media #{$small-only} { display:block; text-align:center; } }
 }
 .nav-hide { display:none; }
 .nav-show { display:block; }
-.masthead { @include grid-row(); padding:0; margin-top:20px; }
-.menu-container { @include grid-column(2); margin-top:20px; }
-.menu-toggle { display:block; float:left; width:56px; height:75px; text-align:center; text-transform:lowercase; font-size:$font-medium; cursor:pointer; }
+.masthead { @include grid-row(); padding:0; margin-top:20px; @media #{$small-only} { margin-top:0; } }
+.menu-container { @include grid-column(2); margin-top:20px; @media #{$small-only} { @include grid-column(8, $center:true); margin-top:5px; } }
+.menu-toggle { display:block; float:left; width:56px; height:75px; text-align:center; text-transform:lowercase; font-size:$font-medium; cursor:pointer; @media #{$small-only} { margin-left:20px; } }
 .menu-icon { display:block; margin-bottom:3px; @extend %large-circle; @extend %juju-sprite; background-position:-65px 10px; }
 .menu-icon-close { background-position:16px 10px; }
 .app-store { 
@@ -67,12 +67,13 @@ nav {
 	text-indent:-9999px;
 	background-position:-154px 9px;
 	a { display:block; width:144px; height:54px; }
+	@media #{$small-only} { float:right; margin-right:20px; }
 }
-.logo { @include grid-column(4); text-align:center; }
-.masthead-sub { height:150px; }
+.logo { @include grid-column(4); text-align:center; @media #{$small-only} { @include grid-column(8); margin-bottom:25px; } }
+.masthead-sub { height:150px; @media #{$small-only} { height:auto; } }
 .masthead-expand { height:225px; }
 // SOCIAL
-.follow-us { @include grid-column(2); }
+.follow-us { @include grid-column(2); @media #{$small-only} { display:none; } }
 .follow-nav { float:right; margin-top:12px; }
 .follow-title { text-transform:lowercase; margin-bottom:1px; }
 .follow-block { @include block-grid(3, rem-calc(10)); }
@@ -88,82 +89,36 @@ nav {
 .badge-blog { @extend %badge-type; @extend %juju-sprite; width:110px; height:111px; background-position:-362px -111px; }
 .badge-artist { @extend %badge-type; @extend %juju-sprite; width:146px; height:170px; background-position:-630px -111px; }
 .badge-new-art { @extend %badge-type; @extend %juju-sprite; width:118px; height:150px; background-position:-934px -111px; }
-.badge-juju { @extend %badge-type; @extend %juju-sprite; right:auto; left:225px; top:25px; width:126px; height:94px; background-position:-80px -120px; }
+.badge-juju { @extend %badge-type; @extend %juju-sprite; right:85px; top:25px; width:126px; height:94px; background-position:-80px -120px; @media #{$small-only} { right:25px; } }
 .badge-how { @extend %badge-type; @extend %juju-sprite; }
 // EXCERPTS
-.excerpt-border { position:absolute; z-index:100; width:100%; @extend %border; min-height:435px; }
-.excerpt-content { position:absolute; z-index:200; }
-.excerpt-container {
-	position:relative;
-	@include grid-row();
-	height:100%;
-}
-.excerpt-container-juju, .excerpt-container-how-to {
-	position:relative;
-	@include grid-row();
-	height:100%;
-	min-height:450px;
-	background-color:$lightgrey;
-}
-.excerpt-blog-banner {
-	@extend %excerpt-large;
-	min-height:450px;
-	padding:0 15px 15px 0;
-}
-.excerpt-blog {
-	@extend %excerpt-small;
-	min-height:450px;
-	padding:0 15px 15px 0;
-}
-.blog-aside {
-	padding-left:$margin-large;
-	p { clear:both; margin-left:50px; }
-}
+.excerpt-content { position:absolute; z-index:200; width:100%; }
+.excerpt-border { position:absolute; z-index:100; width:100%; height:100%; @extend %border; }
+.excerpt-container { position:relative; @include grid-row(); height:100%; height:480px; @media #{$small-only} { height:400px; } }
+.excerpt-container-juju, .excerpt-container-how-to { @extend .excerpt-container; background-color:$lightgrey; }
+.excerpt-blog-banner { @extend %excerpt-large; }
+.excerpt-blog { @extend %excerpt-small; }
+.blog-aside { padding-left:$margin-large; padding-right:$margin-large; margin-top:$margin-large; p { clear:both; margin-left:50px; padding-right:30px; } }
 .blog-image { overflow:hidden; }
 .blog-date { float:left; width:50px; margin-top:30px; @include transform(rotate(-90deg)); }
-.excerpt-artist {
-	@extend %excerpt-small;
-	min-height:450px;
-	padding:0 15px 15px 0;
-}
+.excerpt-artist { @extend %excerpt-small; }
 .artist-image { @extend .blog-image; }
 .artist-aside { text-align:center; margin-top:25px; }
-.excerpt-juju {
-	@extend %excerpt-small;
-	padding:0 15px 15px 0;
-}
-.juju-image {
-	@include grid-column(5);
-}
-.juju-aside {
-	position:absolute;
-	right:0;
-	bottom:0;
-	margin-right:$margin-medium;
-}
-.excerpt-how-to {
-	@extend %excerpt-small;
-	min-height:450px;
-	padding:0 15px 15px 0;
-}
-.how-to-aside { margin:$margin-medium;}
-.excerpt-new-art {
-	@extend %excerpt-small;
-	min-height:450px;
-	padding:0 15px 15px 0;
-}
+.excerpt-juju { @extend %excerpt-small; }
+.juju-image { @include grid-column(5); }
+.juju-aside { position:absolute; right:0; bottom:0; margin-right:$margin-medium; }
+.excerpt-how-to { @extend %excerpt-small; }
+.how-to-aside { margin:$margin-medium; }
+.excerpt-new-art { @extend %excerpt-small; }
 .new-art-aside { text-align:center; }
-.excerpt-pro-tip {
-	@extend %excerpt-small;
-	@extend %wireframe;
-}
+.excerpt-pro-tip { @extend %excerpt-small; }
 // HOME
 .opening-container { @include grid-row(); }
-.opening {  @include grid-column(5, $center:true); }
-.opening-animation { position:fixed; bottom:0px;  }
+.opening { @include grid-column(5, $center:true); }
+.opening-animation { position:fixed; bottom:0px; }
 // SINGLE PAGE
-.introduction-title { position:absolute; z-index:$z-introduction; top:440px; left:15px;  h1 { font-size:65px; text-transform:uppercase; color:$lightgrey; } }
-.introduction-title-help { @extend .introduction-title; top:315px; }
+.introduction-photo { position:relative; }
+.introduction-title { position:absolute; z-index:$z-introduction; bottom:-50px; left:15px; h1 { font-size:65px; text-transform:uppercase; color:$lightgrey; } }
 
 
 // Or selectively include components
