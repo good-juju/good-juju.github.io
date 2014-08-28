@@ -1,5 +1,5 @@
 ---
-layout: help
+layout: page
 title: Help
 permalink: /help/
 introduction: Sometimes ____ happens and we just need a little help.

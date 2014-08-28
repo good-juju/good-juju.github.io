@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 {% include head.html %}
-<body class="page {% if page.url == '/help/' %}help {% endif %}">
-<div id="masthead-sub" class="masthead-sub">
+<body class="page help">
+<div id="masthead-sub" class="masthead-sub background-water">
 {% include header.html %}
 </div>
-<div id="color-band" class="color-band background-poppy">
+<div id="color-band" class="color-band background-water">
 <section id="single-opening" class="single-opening">
-	<div id="introduction-photo" class="introduction-photo"><img src="{{ site.baseurl }}/assets/img/help_operational.jpg" width="901" height="380" alt="JUJU is Operational" /></div>
-		<div id="introduction-title" class="introduction-title"><span class="breadcrumb">home</span><span class="slash">/</span><span class="breadcrumb">artists</span><span class="slash">/</span>
-			<h1>{{page.title}}</h1></div>
+	<div id="introduction-photo" class="introduction-photo">
+		<div id="introduction-title" class="introduction-title"><h1>{{page.title}}</h1></div>
+		<img src="{{ site.baseurl }}/assets/img/help_operational.jpg" width="901" height="380" alt="JUJU is Operational" />
+	</div>
 		<p id="introduction-copy" class="introduction-copy">{{page.introduction}}</p>
 </section>
 </div>
