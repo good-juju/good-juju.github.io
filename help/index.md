@@ -2,7 +2,12 @@
 layout: page
 title: Help
 permalink: /help/
-introduction: Sometimes ____ happens and we just need a little help.
+background-color: background-water
+thumbnail: 
+photo: help_operational.jpg
+photo-alt: JUJU is operational
+custom-excerpt: 
+page-introduction: Sometimes ____ happens and we just need a little help.
 ---
 
 Frequently Asked Questions
