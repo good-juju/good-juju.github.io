@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Victoria Weiss"
-date:   2014-08-29 23:14:47
+date:   2014-08-28 23:14:47
 categories: new-art
 background-color: 
 thumbnail: /assets/img/new-art/victoria_weiss_newart_thumb.png
