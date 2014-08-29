@@ -6519,7 +6519,11 @@ p {
 .h6 {
   font-size: 1rem; }
 
-/* line 22, ../scss/partials/_typography.scss */
+/* line 21, ../scss/partials/_typography.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none; }
+
+/* line 23, ../scss/partials/_typography.scss */
 .breadcrumb {
   padding-right: 8px;
   color: #e6e6e6;
@@ -6527,7 +6531,7 @@ p {
   letter-spacing: 1px;
   font-weight: 800; }
 
-/* line 23, ../scss/partials/_typography.scss */
+/* line 24, ../scss/partials/_typography.scss */
 .slash {
   padding-right: 8px;
   color: #e6e6e6;
@@ -6535,20 +6539,25 @@ p {
   letter-spacing: 1px;
   font-weight: 800; }
 
-/* line 25, ../scss/partials/_typography.scss */
+/* line 26, ../scss/partials/_typography.scss */
 a {
   color: black;
   text-decoration: underline; }
 
-/* line 26, ../scss/partials/_typography.scss */
+/* line 27, ../scss/partials/_typography.scss */
 nav ul li a {
   text-decoration: none; }
 
-/* line 28, ../scss/partials/_typography.scss */
+/* line 29, ../scss/partials/_typography.scss */
 .introduction-copy {
   margin-top: 50px;
   margin-left: 15px;
   font-size: 1.125em; }
+
+/* line 31, ../scss/partials/_typography.scss */
+.pullquote {
+  font-size: 2.1875em;
+  font-weight: 800; }
 
 /* line 10, ../scss/app.scss */
 html, body {
@@ -6963,6 +6972,10 @@ nav ul li {
 /* line 98, ../scss/app.scss */
 .excerpt-container-juju, .excerpt-container-how-to {
   background-color: #e6e6e6; }
+  @media only screen and (max-width: 40em) {
+    /* line 98, ../scss/app.scss */
+    .excerpt-container-juju, .excerpt-container-how-to {
+      height: 444px; } }
 
 /* line 101, ../scss/app.scss */
 .blog-aside {
@@ -7050,7 +7063,8 @@ nav ul li {
 
 /* line 120, ../scss/app.scss */
 .introduction-photo {
-  position: relative; }
+  position: relative;
+  margin-top: 20px; }
 
 /* line 121, ../scss/app.scss */
 .introduction-title {
@@ -7062,4 +7076,5 @@ nav ul li {
   .introduction-title h1 {
     font-size: 65px;
     text-transform: uppercase;
-    color: #e6e6e6; }
+    color: #e6e6e6;
+    line-height: 65px; }

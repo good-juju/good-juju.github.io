@@ -95,7 +95,7 @@ nav {
 .excerpt-content { position:absolute; z-index:200; width:100%; }
 .excerpt-border { position:absolute; z-index:100; width:100%; height:100%; @extend %border; }
 .excerpt-container { position:relative; @include grid-row(); height:100%; height:480px; @media #{$small-only} { height:400px; } }
-.excerpt-container-juju, .excerpt-container-how-to { @extend .excerpt-container; background-color:$lightgrey; }
+.excerpt-container-juju, .excerpt-container-how-to { @extend .excerpt-container; background-color:$lightgrey; @media #{$small-only} { height:444px; } }
 .excerpt-blog-banner { @extend %excerpt-large; }
 .excerpt-blog { @extend %excerpt-small; }
 .blog-aside { padding-left:$margin-large; padding-right:$margin-large; margin-top:$margin-large; p { clear:both; margin-left:50px; padding-right:30px; } }
@@ -117,8 +117,8 @@ nav {
 .opening { @include grid-column(5, $center:true); }
 .opening-animation { position:fixed; bottom:0px; }
 // SINGLE PAGE
-.introduction-photo { position:relative; }
-.introduction-title { position:absolute; z-index:$z-introduction; bottom:-50px; left:15px; h1 { font-size:65px; text-transform:uppercase; color:$lightgrey; } }
+.introduction-photo { position:relative; margin-top:$margin-large; }
+.introduction-title { position:absolute; z-index:$z-introduction; bottom:-50px; left:15px; h1 { font-size:65px; text-transform:uppercase; color:$lightgrey; line-height:65px; } }
 
 
 // Or selectively include components

@@ -4,104 +4,34 @@ layout: home
 
 <section id="overlay-container" class="overlay-container">
 	<div id="home-content-container" class="home-content-container">
-		<div id="excerpt-blog-banner" class="excerpt-blog-banner">
-			<div class="excerpt-container">
-					<div id="badge-blog" class="badge-blog"></div>
-					<div class="excerpt-content">
-					<div class="blog-image"><img src="assets/img/blog/vote_SXSW_contest.png" width="897" height="302" alt="JEM and JUJU Contest"></div>
-					<div class="blog-aside">
-						<date class="blog-date">01.24.14</date>
-						<h1 class="h4">Press title</h1>
-						<p>Lorem ipsum dolores tu va bien. What is this copy for, well hopefully it will do its job and make you click.</p>
-					</div>
-				</div>
-				<div class="excerpt-border"></div>
-			</div>
-		</div>
-		<div id="excerpt-juju" class="excerpt-juju">
-				<div class="excerpt-container-juju">
-					<div id="badge-juju" class="badge-juju"></div>
-					<div class="juju-image"><img src="assets/img/juju/JUJU_Tiger_BAM.jpg" width="270" height="482" alt="JUJU Tiger BAM"></div>
-					<div class="juju-aside">
-						<p><strong>Created by</strong><br> Julia Junkin</p>
-						<p><strong>Artists</strong><br>
-							Linda Diteman<br>
-							Benjamin Kinzer<br>
-							Alex Reisfar
-						</p>
-					</div>
-				</div>
-		</div>
-		<div id="excerpt-juju" class="excerpt-juju">
-				<div class="excerpt-container-juju">
-					<div id="badge-juju" class="badge-juju"></div>
-					<div class="excerpt-content">
-					<div class="juju-image"><img src="assets/img/juju/JUJU_Pegasus_City.jpg" width="270" height="482" alt="JUJU Tiger BAM"></div>
-					<div class="juju-aside">
-						<p><strong>Created by</strong><br> Jay Junkin</p>
-						<p><strong>Artists</strong><br>
-							Benjamin Kinzer<br>
-							Adam Haynes<br>
-							Queen Rae
-						</p>
-					</div>
-				</div>
-				</div>
-		</div>
-		<div id="excerpt-blog" class="excerpt-blog">
-			<div class="excerpt-container">
-					<div id="badge-blog" class="badge-blog"></div>
-					<div class="excerpt-content">
-					<div class="blog-image"><img src="assets/img/blog/painting_press.jpg" width="444" height="277" alt="Painting Press"></div>
-					<div class="blog-aside">
-						<date class="blog-date">01.24.14</date>
-						<h1 class="h4">Press title</h1>
-						<p>Lorem ipsum dolores tu va bien. What is this copy for, well hopefully it will do its job and make you click.</p>
-					</div>
-				</div>
-				<div class="excerpt-border"></div>
-			</div>
-		</div>
-		<div id="excerpt-artist" class="excerpt-artist">
-			<div class="excerpt-container">
-					<div id="badge-artist" class="badge-artist"></div>
-					<div class="excerpt-content">
-					<div class="artist-image"><img src="assets/img/artist/tyler_roemer_thumb.jpg" width="444" height="277" alt="Tyler Roemer Photography"></div>
-					<div class="artist-aside">
-						<h1 class="h4">Tyler Roemer</h1>
-						<p>Bend, Oregon</p>
-					</div>
-				</div>
-				<div class="excerpt-border"></div>
-			</div>
-		</div>
-		<div id="excerpt-how-to" class="excerpt-how-to">
-			<div class="excerpt-container-how-to">
-					<div id="badge-how" class="badge-how"></div>
-					<div class="excerpt-content">
-						<div class="how-to-aside">
-							<h1 class="h4">Duplicate</h1>
-							<p>You can duplicate art by holding on a selected piece for 2 seconds.</p>
+		{% for post in site.posts %}
+			{% if post.categories.first == 'press' %}
+			{% else %}
+				<div id="excerpt-{{post.categories | first}}" class="excerpt-{{post.categories | first}}{% if post.banner == true %}-banner{% else %}{% endif %}">
+					<div class="excerpt-container{% if post.categories.first == 'juju' %}-juju{% endif %}">
+							<div id="badge-{{post.categories | first}}" class="badge-{{post.categories | first}}"></div>
+							<div class="excerpt-content">
+							<div class="{{post.categories | first}}-image">{% if post.categories.first == 'juju' %}{% else %}<a href="{{ post.url }}">{% endif %}<img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="{{post.photo-alt}}">{% if post.categories.first == 'juju' %}{% else %}</a>{% endif %}</div>
+							<div class="{{post.categories | first}}-aside">
+								{% if post.categories contains 'blog' %}
+								<date class="{{post.categories | first}}-date">01.24.14</date>
+								{% else %}{% endif %}
+								<h1 class="h4"><a href="{{ post.url }}">{{post.title}}</a></h1>
+								{% if post.custom-excerpt %}
+								{{ post.custom-excerpt }}
+								{% elsif post.categories.first == 'juju' %}
+								<p>{{ post.content }} </p>
+								{% else %}
+								{{ post.excerpt }} 
+								<p><a href="{{ post.url }}">Read more...</a></p>
+								{% endif %}
+							</div>
 						</div>
-					<div class="how-to-image"><img src="assets/img/new-art/victoria_weiss_newart.png" width="445" height="380" alt="Victoria Weiss Newart"></div>
-					
-				</div>
-			</div>
-		</div>
-		<div id="excerpt-new-art" class="excerpt-new-art">
-			<div class="excerpt-container">
-					<div id="badge-new-art" class="badge-new-art"></div>
-					<div class="excerpt-content">
-					<div class="new-art-image"><img src="assets/img/new-art/victoria_weiss_newart.png" width="445" height="380" alt="Victoria Weiss Newart"></div>
-					<div class="new-art-aside">
-						<h1 class="h4">Victoria Weiss</h1>
-						<p>New Art</p>
+						<div class="excerpt-border"></div>
 					</div>
 				</div>
-				<div class="excerpt-border"></div>
-			</div>
-		</div>
-	</div>
+			{% endif %}
+		{% endfor %}
 </section>
 <section id="home-banner" class="home-banner">
 	<div class="opening-container">
