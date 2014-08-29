@@ -14,16 +14,17 @@ layout: home
 							<div class="{{post.categories | first}}-image">{% if post.categories.first == 'juju' %}{% else %}<a href="{{ post.url }}">{% endif %}<img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="{{post.photo-alt}}">{% if post.categories.first == 'juju' %}{% else %}</a>{% endif %}</div>
 							<div class="{{post.categories | first}}-aside">
 								{% if post.categories contains 'blog' %}
-								<date class="{{post.categories | first}}-date">01.24.14</date>
+								<date class="{{post.categories | first}}-date">{{ post.date | date: "%m %d %y" }}</date>
 								{% else %}{% endif %}
+								{% if post.title %}
 								<h1 class="h4"><a href="{{ post.url }}">{{post.title}}</a></h1>
+								{% else %}{% endif %}
 								{% if post.custom-excerpt %}
 								{{ post.custom-excerpt }}
 								{% elsif post.categories.first == 'juju' %}
-								<p>{{ post.content }} </p>
+								<p>{{ post.content }}</p>
 								{% else %}
-								{{ post.excerpt }} 
-								<p><a href="{{ post.url }}">Read more...</a></p>
+								<a class="read-more" href="{{ post.url }}">{{ post.excerpt }}</a> 
 								{% endif %}
 							</div>
 						</div>

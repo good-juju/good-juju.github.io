@@ -92,15 +92,16 @@ nav {
 .badge-juju { @extend %badge-type; @extend %juju-sprite; right:85px; top:25px; width:126px; height:94px; background-position:-80px -120px; @media #{$small-only} { right:25px; } }
 .badge-how { @extend %badge-type; @extend %juju-sprite; }
 // EXCERPTS
+.read-more { text-decoration:none; }
 .excerpt-content { position:absolute; z-index:200; width:100%; }
 .excerpt-border { position:absolute; z-index:100; width:100%; height:100%; @extend %border; }
-.excerpt-container { position:relative; @include grid-row(); height:100%; height:480px; @media #{$small-only} { height:400px; } }
+.excerpt-container { position:relative; @include grid-row(); height:100%; height:480px; @media #{$small-only} { height:444px; } }
 .excerpt-container-juju, .excerpt-container-how-to { @extend .excerpt-container; background-color:$lightgrey; @media #{$small-only} { height:444px; } }
 .excerpt-blog-banner { @extend %excerpt-large; }
 .excerpt-blog { @extend %excerpt-small; }
-.blog-aside { padding-left:$margin-large; padding-right:$margin-large; margin-top:$margin-large; p { clear:both; margin-left:50px; padding-right:30px; } }
+.blog-aside { padding-left:$margin-large; padding-right:$margin-large; margin-top:$margin-large; p { clear:both; margin-left:75px; padding-right:30px; } }
 .blog-image { overflow:hidden; }
-.blog-date { float:left; width:50px; margin-top:30px; @include transform(rotate(-90deg)); }
+.blog-date { float:left; width:75px; margin-top:$margin-large; text-align:left; @include transform(rotate(-90deg)); }
 .excerpt-artist { @extend %excerpt-small; }
 .artist-image { @extend .blog-image; }
 .artist-aside { text-align:center; margin-top:25px; }

@@ -6934,19 +6934,23 @@ nav ul li {
       right: 25px; } }
 
 /* line 95, ../scss/app.scss */
+.read-more {
+  text-decoration: none; }
+
+/* line 96, ../scss/app.scss */
 .excerpt-content {
   position: absolute;
   z-index: 200;
   width: 100%; }
 
-/* line 96, ../scss/app.scss */
+/* line 97, ../scss/app.scss */
 .excerpt-border {
   position: absolute;
   z-index: 100;
   width: 100%;
   height: 100%; }
 
-/* line 97, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 .excerpt-container, .excerpt-container-juju, .excerpt-container-how-to {
   position: relative;
   width: 100%;
@@ -6965,72 +6969,73 @@ nav ul li {
   .excerpt-container:after, .excerpt-container-juju:after, .excerpt-container-how-to:after {
     clear: both; }
   @media only screen and (max-width: 40em) {
-    /* line 97, ../scss/app.scss */
+    /* line 98, ../scss/app.scss */
     .excerpt-container, .excerpt-container-juju, .excerpt-container-how-to {
-      height: 400px; } }
+      height: 444px; } }
 
-/* line 98, ../scss/app.scss */
+/* line 99, ../scss/app.scss */
 .excerpt-container-juju, .excerpt-container-how-to {
   background-color: #e6e6e6; }
   @media only screen and (max-width: 40em) {
-    /* line 98, ../scss/app.scss */
+    /* line 99, ../scss/app.scss */
     .excerpt-container-juju, .excerpt-container-how-to {
       height: 444px; } }
 
-/* line 101, ../scss/app.scss */
+/* line 102, ../scss/app.scss */
 .blog-aside {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 20px; }
-  /* line 101, ../scss/app.scss */
+  /* line 102, ../scss/app.scss */
   .blog-aside p {
     clear: both;
-    margin-left: 50px;
+    margin-left: 75px;
     padding-right: 30px; }
 
-/* line 102, ../scss/app.scss */
+/* line 103, ../scss/app.scss */
 .blog-image, .artist-image {
   overflow: hidden; }
 
-/* line 103, ../scss/app.scss */
+/* line 104, ../scss/app.scss */
 .blog-date {
   float: left;
-  width: 50px;
-  margin-top: 30px;
+  width: 75px;
+  margin-top: 20px;
+  text-align: left;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
-/* line 106, ../scss/app.scss */
+/* line 107, ../scss/app.scss */
 .artist-aside {
   text-align: center;
   margin-top: 25px; }
 
-/* line 108, ../scss/app.scss */
+/* line 109, ../scss/app.scss */
 .juju-image {
   padding-left: 0;
   padding-right: 0;
   width: 62.5%;
   float: left; }
 
-/* line 109, ../scss/app.scss */
+/* line 110, ../scss/app.scss */
 .juju-aside {
   position: absolute;
   right: 0;
   bottom: 0;
   margin-right: 15px; }
 
-/* line 111, ../scss/app.scss */
+/* line 112, ../scss/app.scss */
 .how-to-aside {
   margin: 15px; }
 
-/* line 113, ../scss/app.scss */
+/* line 114, ../scss/app.scss */
 .new-art-aside {
   text-align: center; }
 
-/* line 116, ../scss/app.scss */
+/* line 117, ../scss/app.scss */
 .opening-container {
   width: 100%;
   margin-left: auto;
@@ -7046,7 +7051,7 @@ nav ul li {
   .opening-container:after {
     clear: both; }
 
-/* line 117, ../scss/app.scss */
+/* line 118, ../scss/app.scss */
 .opening {
   padding-left: 0;
   padding-right: 0;
@@ -7056,30 +7061,30 @@ nav ul li {
   margin-right: auto;
   float: none; }
 
-/* line 118, ../scss/app.scss */
+/* line 119, ../scss/app.scss */
 .opening-animation {
   position: fixed;
   bottom: 0px; }
 
-/* line 120, ../scss/app.scss */
+/* line 121, ../scss/app.scss */
 .introduction-photo {
   position: relative;
   margin-top: 20px; }
 
-/* line 121, ../scss/app.scss */
+/* line 122, ../scss/app.scss */
 .introduction-title {
   position: absolute;
   z-index: 300;
   bottom: -50px;
   left: 15px; }
-  /* line 121, ../scss/app.scss */
+  /* line 122, ../scss/app.scss */
   .introduction-title h1 {
     font-size: 65px;
     text-transform: uppercase;
     color: #e6e6e6;
     line-height: 65px; }
 
-/* line 123, ../scss/app.scss */
+/* line 124, ../scss/app.scss */
 footer {
   width: 100%;
   margin-left: auto;
@@ -7097,7 +7102,7 @@ footer {
   footer:after {
     clear: both; }
 
-/* line 124, ../scss/app.scss */
+/* line 125, ../scss/app.scss */
 .footer-container {
   padding-left: 0;
   padding-right: 0;
