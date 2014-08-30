@@ -36,13 +36,14 @@ html, body {
 .content-container {
 	@include grid-row();
 	padding-top:35px;
+	@media #{$small-only} { padding-left:$margin-medium; padding-right:$margin-medium; }
 }
 .single-opening { position:relative; @include grid-row(); }
 .left-column { @include grid-column(5); }
 .right-column { @include grid-column(3); padding-left:20px; }
-
+.color-band { @media #{$small-only} { padding-top:175px; } }
 // MASTHEAD
-.masthead-container { position:absolute; z-index:$z-masthead; width:100%; font-weight:800; @media #{$small-only} { position:static; } }
+.masthead-container { position:absolute; z-index:$z-masthead; width:100%; font-weight:800; }
 .navigation-container { width:100%; background-color:$poppy; }
 .navigation { @include grid-row(); padding:20px 0; }
 nav { 
@@ -115,14 +116,15 @@ nav {
 .excerpt-pro-tip { @extend %excerpt-small; }
 // HOME
 .opening-container { @include grid-row(); }
-.opening { @include grid-column(5, $center:true); }
-.opening-animation { position:fixed; bottom:0px; }
+.opening { @include grid-column(5, $center:true); @media #{$small-only} { @include grid-column(5); } }
+// .opening-animation { position:fixed; bottom:0px; width:560px; height:600px; }
+.opening-animation { position:fixed; bottom:0px; width:560px; height:600px; @media #{$small-only} { width:100% !important; height:auto !important; } }
 // SINGLE PAGE
 .introduction-photo { position:relative; margin-top:$margin-large; }
 .introduction-title { position:absolute; z-index:$z-introduction; bottom:-50px; left:15px; h1 { font-size:65px; text-transform:uppercase; color:$lightgrey; line-height:65px; } }
 // FOOTER
 footer { @include grid-row(); margin-top:75px; margin-bottom:75px; }
-.footer-container { @include grid-column(8); }
+.footer-container { @include grid-column(8); @media #{$small-only} { padding-left:$margin-medium; padding-right:$margin-medium; } }
 
 // Or selectively include components
 // @import

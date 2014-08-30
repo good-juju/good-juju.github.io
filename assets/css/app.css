@@ -6614,8 +6614,13 @@ html, body {
   /* line 182, ../../bower_components/foundation/scss/foundation/components/_global.scss */
   .content-container:after {
     clear: both; }
+  @media only screen and (max-width: 40em) {
+    /* line 36, ../scss/app.scss */
+    .content-container {
+      padding-left: 15px;
+      padding-right: 15px; } }
 
-/* line 40, ../scss/app.scss */
+/* line 41, ../scss/app.scss */
 .single-opening {
   position: relative;
   width: 100%;
@@ -6632,14 +6637,14 @@ html, body {
   .single-opening:after {
     clear: both; }
 
-/* line 41, ../scss/app.scss */
+/* line 42, ../scss/app.scss */
 .left-column {
   padding-left: 0;
   padding-right: 0;
   width: 62.5%;
   float: left; }
 
-/* line 42, ../scss/app.scss */
+/* line 43, ../scss/app.scss */
 .right-column {
   padding-left: 0;
   padding-right: 0;
@@ -6647,23 +6652,24 @@ html, body {
   float: left;
   padding-left: 20px; }
 
-/* line 45, ../scss/app.scss */
+@media only screen and (max-width: 40em) {
+  /* line 44, ../scss/app.scss */
+  .color-band {
+    padding-top: 175px; } }
+
+/* line 46, ../scss/app.scss */
 .masthead-container {
   position: absolute;
   z-index: 1000;
   width: 100%;
   font-weight: 800; }
-  @media only screen and (max-width: 40em) {
-    /* line 45, ../scss/app.scss */
-    .masthead-container {
-      position: static; } }
 
-/* line 46, ../scss/app.scss */
+/* line 47, ../scss/app.scss */
 .navigation-container {
   width: 100%;
   background-color: #fa3241; }
 
-/* line 47, ../scss/app.scss */
+/* line 48, ../scss/app.scss */
 .navigation {
   width: 100%;
   margin-left: auto;
@@ -6680,30 +6686,30 @@ html, body {
   .navigation:after {
     clear: both; }
 
-/* line 49, ../scss/app.scss */
+/* line 50, ../scss/app.scss */
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
-/* line 50, ../scss/app.scss */
+/* line 51, ../scss/app.scss */
 nav ul li {
   display: inline;
   margin-right: 16px; }
   @media only screen and (max-width: 40em) {
-    /* line 50, ../scss/app.scss */
+    /* line 51, ../scss/app.scss */
     nav ul li {
       display: block;
       text-align: center; } }
 
-/* line 52, ../scss/app.scss */
+/* line 53, ../scss/app.scss */
 .nav-hide {
   display: none; }
 
-/* line 53, ../scss/app.scss */
+/* line 54, ../scss/app.scss */
 .nav-show {
   display: block; }
 
-/* line 54, ../scss/app.scss */
+/* line 55, ../scss/app.scss */
 .masthead {
   width: 100%;
   margin-left: auto;
@@ -6721,11 +6727,11 @@ nav ul li {
   .masthead:after {
     clear: both; }
   @media only screen and (max-width: 40em) {
-    /* line 54, ../scss/app.scss */
+    /* line 55, ../scss/app.scss */
     .masthead {
       margin-top: 0; } }
 
-/* line 55, ../scss/app.scss */
+/* line 56, ../scss/app.scss */
 .menu-container {
   padding-left: 0;
   padding-right: 0;
@@ -6733,7 +6739,7 @@ nav ul li {
   float: left;
   margin-top: 20px; }
   @media only screen and (max-width: 40em) {
-    /* line 55, ../scss/app.scss */
+    /* line 56, ../scss/app.scss */
     .menu-container {
       padding-left: 0;
       padding-right: 0;
@@ -6744,7 +6750,7 @@ nav ul li {
       float: none;
       margin-top: 5px; } }
 
-/* line 56, ../scss/app.scss */
+/* line 57, ../scss/app.scss */
 .menu-toggle {
   display: block;
   float: left;
@@ -6755,21 +6761,21 @@ nav ul li {
   font-size: 0.875em;
   cursor: pointer; }
   @media only screen and (max-width: 40em) {
-    /* line 56, ../scss/app.scss */
+    /* line 57, ../scss/app.scss */
     .menu-toggle {
       margin-left: 20px; } }
 
-/* line 57, ../scss/app.scss */
+/* line 58, ../scss/app.scss */
 .menu-icon {
   display: block;
   margin-bottom: 3px;
   background-position: -65px 10px; }
 
-/* line 58, ../scss/app.scss */
+/* line 59, ../scss/app.scss */
 .menu-icon-close {
   background-position: 16px 10px; }
 
-/* line 59, ../scss/app.scss */
+/* line 60, ../scss/app.scss */
 .app-store {
   float: left;
   width: 144px;
@@ -6781,18 +6787,18 @@ nav ul li {
   border: 4px solid black;
   text-indent: -9999px;
   background-position: -154px 9px; }
-  /* line 69, ../scss/app.scss */
+  /* line 70, ../scss/app.scss */
   .app-store a {
     display: block;
     width: 144px;
     height: 54px; }
   @media only screen and (max-width: 40em) {
-    /* line 59, ../scss/app.scss */
+    /* line 60, ../scss/app.scss */
     .app-store {
       float: right;
       margin-right: 20px; } }
 
-/* line 72, ../scss/app.scss */
+/* line 73, ../scss/app.scss */
 .logo {
   padding-left: 0;
   padding-right: 0;
@@ -6800,7 +6806,7 @@ nav ul li {
   float: left;
   text-align: center; }
   @media only screen and (max-width: 40em) {
-    /* line 72, ../scss/app.scss */
+    /* line 73, ../scss/app.scss */
     .logo {
       padding-left: 0;
       padding-right: 0;
@@ -6808,40 +6814,40 @@ nav ul li {
       float: left;
       margin-bottom: 25px; } }
 
-/* line 73, ../scss/app.scss */
+/* line 74, ../scss/app.scss */
 .masthead-sub {
   height: 150px; }
   @media only screen and (max-width: 40em) {
-    /* line 73, ../scss/app.scss */
+    /* line 74, ../scss/app.scss */
     .masthead-sub {
       height: auto; } }
 
-/* line 74, ../scss/app.scss */
+/* line 75, ../scss/app.scss */
 .masthead-expand {
   height: 225px; }
 
-/* line 76, ../scss/app.scss */
+/* line 77, ../scss/app.scss */
 .follow-us {
   padding-left: 0;
   padding-right: 0;
   width: 25%;
   float: left; }
   @media only screen and (max-width: 40em) {
-    /* line 76, ../scss/app.scss */
+    /* line 77, ../scss/app.scss */
     .follow-us {
       display: none; } }
 
-/* line 77, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 .follow-nav {
   float: right;
   margin-top: 12px; }
 
-/* line 78, ../scss/app.scss */
+/* line 79, ../scss/app.scss */
 .follow-title {
   text-transform: lowercase;
   margin-bottom: 1px; }
 
-/* line 79, ../scss/app.scss */
+/* line 80, ../scss/app.scss */
 .follow-block {
   display: block;
   padding: 0;
@@ -6871,57 +6877,57 @@ nav ul li {
     .follow-block > li:nth-of-type(3n+1) {
       clear: both; }
 
-/* line 81, ../scss/app.scss */
+/* line 82, ../scss/app.scss */
 .facebook, .tumblr, .twitter, .instagram, .pinterest {
   display: block;
   text-indent: -9999px; }
 
-/* line 82, ../scss/app.scss */
+/* line 83, ../scss/app.scss */
 .facebook {
   background-position: -412px 3px; }
 
-/* line 83, ../scss/app.scss */
+/* line 84, ../scss/app.scss */
 .tumblr {
   background-position: -335px 3px; }
 
-/* line 84, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 .twitter {
   background-position: -363px -111px; }
 
-/* line 85, ../scss/app.scss */
+/* line 86, ../scss/app.scss */
 .instagram {
   background-position: -363px -111px; }
 
-/* line 86, ../scss/app.scss */
+/* line 87, ../scss/app.scss */
 .pinterest {
   background-position: -573px 2px; }
 
-/* line 88, ../scss/app.scss */
+/* line 89, ../scss/app.scss */
 .badge-blog, .badge-artist, .badge-new-art, .badge-juju, .badge-how {
   position: absolute;
   z-index: 300;
   top: 0px;
   right: 0px; }
 
-/* line 89, ../scss/app.scss */
+/* line 90, ../scss/app.scss */
 .badge-blog {
   width: 110px;
   height: 111px;
   background-position: -362px -111px; }
 
-/* line 90, ../scss/app.scss */
+/* line 91, ../scss/app.scss */
 .badge-artist {
   width: 146px;
   height: 170px;
   background-position: -630px -111px; }
 
-/* line 91, ../scss/app.scss */
+/* line 92, ../scss/app.scss */
 .badge-new-art {
   width: 118px;
   height: 150px;
   background-position: -934px -111px; }
 
-/* line 92, ../scss/app.scss */
+/* line 93, ../scss/app.scss */
 .badge-juju {
   right: 85px;
   top: 25px;
@@ -6929,28 +6935,28 @@ nav ul li {
   height: 94px;
   background-position: -80px -120px; }
   @media only screen and (max-width: 40em) {
-    /* line 92, ../scss/app.scss */
+    /* line 93, ../scss/app.scss */
     .badge-juju {
       right: 25px; } }
 
-/* line 95, ../scss/app.scss */
+/* line 96, ../scss/app.scss */
 .read-more {
   text-decoration: none; }
 
-/* line 96, ../scss/app.scss */
+/* line 97, ../scss/app.scss */
 .excerpt-content {
   position: absolute;
   z-index: 200;
   width: 100%; }
 
-/* line 97, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 .excerpt-border {
   position: absolute;
   z-index: 100;
   width: 100%;
   height: 100%; }
 
-/* line 98, ../scss/app.scss */
+/* line 99, ../scss/app.scss */
 .excerpt-container, .excerpt-container-juju, .excerpt-container-how-to {
   position: relative;
   width: 100%;
@@ -6969,34 +6975,34 @@ nav ul li {
   .excerpt-container:after, .excerpt-container-juju:after, .excerpt-container-how-to:after {
     clear: both; }
   @media only screen and (max-width: 40em) {
-    /* line 98, ../scss/app.scss */
+    /* line 99, ../scss/app.scss */
     .excerpt-container, .excerpt-container-juju, .excerpt-container-how-to {
       height: 444px; } }
 
-/* line 99, ../scss/app.scss */
+/* line 100, ../scss/app.scss */
 .excerpt-container-juju, .excerpt-container-how-to {
   background-color: #e6e6e6; }
   @media only screen and (max-width: 40em) {
-    /* line 99, ../scss/app.scss */
+    /* line 100, ../scss/app.scss */
     .excerpt-container-juju, .excerpt-container-how-to {
       height: 444px; } }
 
-/* line 102, ../scss/app.scss */
+/* line 103, ../scss/app.scss */
 .blog-aside {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 20px; }
-  /* line 102, ../scss/app.scss */
+  /* line 103, ../scss/app.scss */
   .blog-aside p {
     clear: both;
     margin-left: 75px;
     padding-right: 30px; }
 
-/* line 103, ../scss/app.scss */
+/* line 104, ../scss/app.scss */
 .blog-image, .artist-image {
   overflow: hidden; }
 
-/* line 104, ../scss/app.scss */
+/* line 105, ../scss/app.scss */
 .blog-date {
   float: left;
   width: 75px;
@@ -7008,34 +7014,34 @@ nav ul li {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
-/* line 107, ../scss/app.scss */
+/* line 108, ../scss/app.scss */
 .artist-aside {
   text-align: center;
   margin-top: 25px; }
 
-/* line 109, ../scss/app.scss */
+/* line 110, ../scss/app.scss */
 .juju-image {
   padding-left: 0;
   padding-right: 0;
   width: 62.5%;
   float: left; }
 
-/* line 110, ../scss/app.scss */
+/* line 111, ../scss/app.scss */
 .juju-aside {
   position: absolute;
   right: 0;
   bottom: 0;
   margin-right: 15px; }
 
-/* line 112, ../scss/app.scss */
+/* line 113, ../scss/app.scss */
 .how-to-aside {
   margin: 15px; }
 
-/* line 114, ../scss/app.scss */
+/* line 115, ../scss/app.scss */
 .new-art-aside {
   text-align: center; }
 
-/* line 117, ../scss/app.scss */
+/* line 118, ../scss/app.scss */
 .opening-container {
   width: 100%;
   margin-left: auto;
@@ -7051,7 +7057,7 @@ nav ul li {
   .opening-container:after {
     clear: both; }
 
-/* line 118, ../scss/app.scss */
+/* line 119, ../scss/app.scss */
 .opening {
   padding-left: 0;
   padding-right: 0;
@@ -7060,31 +7066,45 @@ nav ul li {
   margin-left: auto;
   margin-right: auto;
   float: none; }
-
-/* line 119, ../scss/app.scss */
-.opening-animation {
-  position: fixed;
-  bottom: 0px; }
+  @media only screen and (max-width: 40em) {
+    /* line 119, ../scss/app.scss */
+    .opening {
+      padding-left: 0;
+      padding-right: 0;
+      width: 62.5%;
+      float: left; } }
 
 /* line 121, ../scss/app.scss */
+.opening-animation {
+  position: fixed;
+  bottom: 0px;
+  width: 560px;
+  height: 600px; }
+  @media only screen and (max-width: 40em) {
+    /* line 121, ../scss/app.scss */
+    .opening-animation {
+      width: 100% !important;
+      height: auto !important; } }
+
+/* line 123, ../scss/app.scss */
 .introduction-photo {
   position: relative;
   margin-top: 20px; }
 
-/* line 122, ../scss/app.scss */
+/* line 124, ../scss/app.scss */
 .introduction-title {
   position: absolute;
   z-index: 300;
   bottom: -50px;
   left: 15px; }
-  /* line 122, ../scss/app.scss */
+  /* line 124, ../scss/app.scss */
   .introduction-title h1 {
     font-size: 65px;
     text-transform: uppercase;
     color: #e6e6e6;
     line-height: 65px; }
 
-/* line 124, ../scss/app.scss */
+/* line 126, ../scss/app.scss */
 footer {
   width: 100%;
   margin-left: auto;
@@ -7102,9 +7122,14 @@ footer {
   footer:after {
     clear: both; }
 
-/* line 125, ../scss/app.scss */
+/* line 127, ../scss/app.scss */
 .footer-container {
   padding-left: 0;
   padding-right: 0;
   width: 100%;
   float: left; }
+  @media only screen and (max-width: 40em) {
+    /* line 127, ../scss/app.scss */
+    .footer-container {
+      padding-left: 15px;
+      padding-right: 15px; } }
