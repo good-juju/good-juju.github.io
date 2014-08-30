@@ -1,0 +1,37 @@
+// Z-Index
+$z-masthead:							1000;
+$z-home-banner:						100;
+$z-content-container:			200;
+$z-content-type:					300;
+$z-introduction:					300;
+// Fonts
+$primary-fonts:			"magallanes", helvetica, "Helvetica Neue", san-serif;
+// Font Sizes
+$font-small:				em(12);
+$font-medium:				em(14);
+$font-large:				em(18);
+$font-xlarge:				em(35);
+// Colors
+$poppy:							rgb(250,50,65);
+$mint:							rgb(65,235,30);
+$cyan:							rgb(0,175,240);
+$violet:						rgb(240,40,240);
+$orange:						rgb(240,130,100);
+$berry:							rgb(140,40,240);
+$water:							rgb(50,230,220);
+$peach:							rgb(240,130,100);
+$kiwi:							rgb(170,240,45);
+$yellow:						rgb(240,230,45);
+$gold:							rgb(240,210,60);
+// Greyscale
+$white:							rgb(255,255,255);
+$black:							rgb(0,0,0);
+$grey:							rgb(102,102,102);
+$lightgrey:					rgb(230,230,230);
+// ASSETS
+$font-assetpath:		"/assets/fonts/";
+$img-assetpath:			"/assets/img/";
+// MARGINS & PADDING
+$margin-small:			10px;
+$margin-medium:			15px;
+$margin-large:			20px;

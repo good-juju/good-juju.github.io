@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% include head.html %}
+<body class="page">
+<div id="masthead-sub" class="masthead-sub {% if page.background-color %}{{ page.background-color }}{% else %}background-poppy{% endif %}">
+{% include header.html %}
+</div>
+<div id="color-band" class="color-band {% if page.background-color %}{{ page.background-color }}{% else %}background-poppy{% endif %}">
+<section id="single-opening" class="single-opening">
+	<div id="introduction-photo" class="introduction-photo">
+		<div id="introduction-title" class="introduction-title"><h1>{{page.title}}</h1></div>
+		{% if page.photo %}
+		<img src="{{ site.baseurl }}{{ page.photo }}" width="901" height="380" alt="{{ page.photo-alt }}" />
+		{% endif %}
+	</div>
+		<p id="introduction-copy" class="introduction-copy">{{page.page-introduction}}</p>
+</section>
+</div>
+<section id="content-container" class="content-container">
+{% if page.url == "/press/" %}
+<ul>
+	{% for post in site.categories.press %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+	{% endfor %}
+</ul>
+{% elsif page.url == "/artists/" %}
+	{% for post in site.categories.artist %}
+		<div id="excerpt-artist" class="excerpt-artist">
+			<div class="excerpt-container">
+					<div id="badge-artist" class="badge-artist"></div>
+					<div class="excerpt-content">
+					<div class="artist-image"><a href="{{ post.url }}"><img src="{{ site.baseurl }}{{ post.thumbnail }}" width="444" height="277" alt="{{post.title}}"></a></div>
+					<div class="artist-aside">
+						<h1 class="h4"><a href="{{ post.url }}">{{post.title}}</a></h1>
+						{{post.custom-excerpt}}
+					</div>
+				</div>
+				<div class="excerpt-border"></div>
+			</div>
+		</div>
+	{% endfor %}
+{% else %}
+{{ content }}
+{% endif %}
+</section>
+{% include footer.html %}
+</body>
+</html>
