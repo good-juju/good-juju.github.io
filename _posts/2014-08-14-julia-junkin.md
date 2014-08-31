@@ -8,41 +8,29 @@ thumbnail: /assets/img/artist/julia_junkin_thumb.jpg
 photo: /assets/img/artist/julia_junkin.jpg
 photo-alt: Julia Junkin
 custom-excerpt: <p>Bend, Oregon</p>
-page-introduction: Sometimes ____ happens and we just need a little help.
+page-introduction: Julia’s an artist who will forever doodle. But there’s more here. As she moves easily between French poster art and Indian religious murals, we suspect a genre-bending belief–a key tenet of JUJU.
 ---
 
-Bend company creates iPhone app
-JuJu, an art mashup, lets users sample work of visual artists
-By Joseph Ditzler / The Bulletin
+**1-Where do you find inspiration?**
+little beautiful things, handmade things...funny things, funny people. When people are impassioned and alive it is almost always inspiring to me; that could be anything from a performance to someone earnestly expressing themselves...I'd say life is pretty inspiring!
 
-Published Aug 16, 2014 at 12:01AM / Updated Aug 18, 2014 at 02:04PM
+**2-What’s your preferred medium for making art?**
+I am a major doodler...so give me pens paper...and i am super happy. Also acrylics and wood i love that combo.
 
-Mona Daly’s artwork is well known, even if the Bend resident’s name is not.
+**3-What are the tools you love to work with?**
+pens and pencils.. black sharpies and nice black pens...they are very exciting....
 
-That could change with the advent of JuJu, an Apple iPhone app developed in Bend that allows users to create their own artistic statements using work from Daly and a battery of artists. The artists gain not only recognition but a taste of the financial pie, as well.
+**4-Talk to us about the process of creating on JUJU…**
+Well.....I really pulled from my main themes...women and little still life things (cups, forks, a branch etc) I think almost anything works on juju an involved piece of art or a simple drawing. For instance even a little drawing of a branch duplicated over and over starts to look really cool on juju. (love the duplicate feature)
 
-Julia Junkin, an artist and businesswoman, conceived the idea, and Bloomcrush, a Bend-based tech firm that develops apps, brought it to fruition. Junkin, who also lives in Bend, previously produced a line of ceramics, posters and kitchen apparel she marketed online and in department stores.
+**5-Before joining JUJU, was collaboration with other artists an important part of your process?**
+Yes! Collaboration is my favorite because something entirely new is created that I would not have thought of when you work with someone else.....thats why I love juju...You get to collaborate and create your own unique creation yet you’re using other people’s artwork... I love that. Possibilities are endless.
 
-Through JuJu, she said, she expects to capitalize on licensing agreements with artists who come on board, while offering users a creative outlet.
+**6-What scares you about creativity?**
+Basically I totally love creativity...and the chaos process...that ultimately leads to the birth of something brand new. But I guess what i never quite get used to is in the middle of the process...there are inevitably these moments when you are not quite sure you are going to make it......right then I tend to get shakey for a day or so and then thank god I get my head together and realize the only way through is to keep going...and I give it what I have got, It usually turns out alright! What I have learned is everyone is unsure at times...you just got to go for it. Life is short...don’t fool yourself.
 
-Junkin and the other creators describe JuJu as an art mash-up, in which users sample visual art the way DJs sample music.
+**7-How has your creative process changed over time? How has technology impacted you?**
+my creative process is similar...yet i collaborate with people more now which is fun. Technology has not impacted my actual initial production of artwork but I have used it quite a bit in the collaboration process..
 
-Daly, a freelance commercial artist who’s drawn images of Barbie for Mattel, said the idea of her work becoming popular through a mobile phone is a “whole new realm.” Making money is secondary to the opportunity to network with other local artists, she said. Twelve of the approximately 40 artists, graphic designers and other contributors to JuJu live in Bend.
-
-“I had extra work I never sold the rights to, lots of extra work I could reuse,” Daly said.
-
-The free basic app comes with a catalog of digital art that users mix and match, like a collage, to create their own messages, emails, wallpaper or digital postcards and greeting cards. For 99 cents, the user can purchase more art packs. Each artist receives 5 percent of that purchase, Junkin said.
-
-“If we had a million users, which is our goal for the first year, … the licensing is amazing for artists,” Junkin said. “They could make a living.”
-
-The app in its first week in June rose to No. 193 among top-grossing apps on iTunes, said Jacqueline Smith, JuJu marketing director. It’s since fallen to No. 636, but she hopes it will rise again with wider marketing, she said. It has about 1,500 users thus far, Junkin said.
-
-A financial backer, Junkin’s brother Jay Junkin, owner of Thump Coffee and Jackson’s Corner restaurant in Bend, said his sister’s artistic talent and business acumen sold him on the idea. He also likes the notion of an app that encourages creativity over violence and point-scoring.
-
-“Once they understand what it is, parents will direct their kids to it,” he said. “It offers kids a chance to engage a screen and learn while they’re doing it.”
-
-JuJu does not allow users to upload their own photos, but provides photographic art from people like Tyler Roemer, a locally based outdoor photographer. Julia Junkin said the app will soon permit users to add their own text.
-
-She and her team bank on JuJu feeding its users’ creative impulses.
-
-“I think people are pretty tired of doing the same things on their phones day after day,” said Matt Kern, of Bloomcrush. “There are social networks, but there’s not a lot in between that’s engaging. And I think this has the potential to spark creativity in people who don’t necessarily have it.”
+**8-Last chance, anything else you think we should know?**
+well I am one of the founders of JUJU you should probably know that! My initial inspiration for JUJU was: can we create something that is inspiring ,creative and fun to use....and that people can remember that they are naturally creative....given the right opportunity! Thanks.
