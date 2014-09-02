@@ -116,7 +116,7 @@ nav {
 .excerpt-pro-tip { @extend %excerpt-small; }
 // HOME
 .opening-container { @include grid-row(); }
-.opening { @include grid-column(5, $center:true); @media #{$small-only} { @include grid-column(5); } }
+.opening { @include grid-column(5, $center:true); @media #{$small-only} { @include grid-column(8); } }
 // .opening-animation { position:fixed; bottom:0px; width:560px; height:600px; }
 .opening-animation { position:fixed; bottom:0px; width:560px; height:600px; @media #{$small-only} { width:100% !important; height:auto !important; } }
 // SINGLE PAGE
