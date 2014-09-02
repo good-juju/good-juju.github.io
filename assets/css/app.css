@@ -6966,7 +6966,7 @@ nav ul li {
   margin-bottom: 0;
   max-width: 900px;
   height: 100%;
-  height: 480px; }
+  height: 483px; }
   /* line 181, ../../bower_components/foundation/scss/foundation/components/_global.scss */
   .excerpt-container:before, .excerpt-container-juju:before, .excerpt-container-how-to:before, .excerpt-container:after, .excerpt-container-juju:after, .excerpt-container-how-to:after {
     content: " ";
@@ -7096,7 +7096,8 @@ nav ul li {
   position: absolute;
   z-index: 300;
   bottom: -50px;
-  left: 15px; }
+  left: 15px;
+  width: 500px; }
   /* line 124, ../scss/app.scss */
   .introduction-title h1 {
     font-size: 65px;

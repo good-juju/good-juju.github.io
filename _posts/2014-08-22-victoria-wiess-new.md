@@ -7,7 +7,7 @@ background-color:
 thumbnail: /assets/img/new-art/victoria_weiss_newart_thumb.png
 photo: /assets/img/new-art/victoria_weiss_newart.png
 photo-alt: Victoria Weiss - Butter Pop Studio
-custom-excerpt: <p>Virginia</p>
+custom-excerpt: <p>Vintage Paris</p>
 page-introduction: 
 ---
 
