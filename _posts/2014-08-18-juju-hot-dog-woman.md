@@ -4,7 +4,7 @@ title:
 date:   2014-08-18 23:14:47
 categories: juju
 background-color: 
-thumbnail: /assets/img/juju/JUJU_hot_dog_woman.jpg
+thumbnail: /assets/img/juju/JUJU_Hot_Dog_Woman.jpg
 photo: 
 photo-alt: 
 custom-excerpt: 

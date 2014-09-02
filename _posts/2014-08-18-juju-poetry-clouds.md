@@ -4,7 +4,7 @@ title:
 date:   2014-08-22 23:14:47
 categories: juju
 background-color: 
-thumbnail: /assets/img/juju/JUJU_poetry_clouds.jpg
+thumbnail: /assets/img/juju/JUJU_Poetry_Clouds.jpg
 photo: 
 photo-alt: 
 custom-excerpt: 
