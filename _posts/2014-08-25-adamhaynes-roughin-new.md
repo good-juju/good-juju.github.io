@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Victoria Weiss"
+title: "Adam Haynes"
 date:   2014-08-25 23:14:47
 categories: new-art
 background-color: 
 thumbnail: /assets/img/new-art/adamhaynes_roughin_newart_thumb.png
 photo: /assets/img/new-art/adamhaynes_roughin_newart.png
 photo-alt: Adam Haynes - Roughin It Pack
-custom-excerpt: <p>Bend, Oregon</p>
+custom-excerpt: <p>Roughin’ It</p>
 page-introduction: 
 ---
 

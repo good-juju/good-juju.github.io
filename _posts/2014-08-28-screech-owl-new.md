@@ -7,7 +7,7 @@ background-color:
 thumbnail: /assets/img/new-art/screech_owl_newart_thumb.png
 photo: /assets/img/new-art/screech_owl_newart.png
 photo-alt: Screech Owl Design
-custom-excerpt: <p>Brooklyn, New York</p>
+custom-excerpt: <p>Recreation & Transportation</p>
 page-introduction: 
 ---
 
