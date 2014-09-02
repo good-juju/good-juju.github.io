@@ -7096,7 +7096,8 @@ nav ul li {
   position: absolute;
   z-index: 300;
   bottom: -50px;
-  left: 15px; }
+  left: 15px;
+  width: 500px; }
   /* line 124, ../scss/app.scss */
   .introduction-title h1 {
     font-size: 65px;
