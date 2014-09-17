@@ -7088,7 +7088,7 @@ nav ul li {
 .opening {
   padding-left: 0;
   padding-right: 0;
-  width: 62.5%;
+  /* width: 62.5%; */
   float: left;
   margin-left: auto;
   margin-right: auto;
@@ -7102,16 +7102,29 @@ nav ul li {
       float: left; } }
 
 /* line 135, ../scss/app.scss */
+			.opening-h1 { font-size:60px; line-height:50px; margin-bottom:20px; }
+			.opening-p { font-size:18px; }
 .opening-animation {
   position: fixed;
   bottom: 0px;
-  width: 560px;
-  height: 600px; }
+  width: 900px;
+  height: 600px;
+	padding: 200px 150px 0 380px;
+	background: url(/assets/img/juju_art_fingertips.png) no-repeat;
+	}
   @media only screen and (max-width: 40em) {
     /* line 135, ../scss/app.scss */
+		.opening-h1 { font-size:28px; line-height:20px; margin-bottom:20px; margin-top:45px; padding:80px 0 0 140px; }
+		.opening-p { font-size:13px; padding:0 0 0 140px; }
+		.opening-link { font-size:13px; padding:0 0 0 140px; }
     .opening-animation {
       width: 100% !important;
-      height: auto !important; } }
+      height: auto !important;
+			position:static;
+			margin-top:220px;
+			background-size:75%;
+			padding:0;
+			 } }
   @media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: portrait) {
     /* line 135, ../scss/app.scss */
     .opening-animation {
