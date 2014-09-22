@@ -20,15 +20,7 @@ html, body {
 .follow-us { @include grid-column(2, $float:right); margin-top:$margin-medium; @media #{$small-only} { display:none; }
 	 ul { list-style-type:none; margin:0; padding:0; } }
 .content { @include grid-row(); padding-top:$margin-large; @media #{$small-only} { text-align:center; padding:0 15px; } }
-//
-// SOCIAL BUTTONS
-//
-%social-link { display:block; float:right; margin-left:10px; @extend %medium-circle; @extend %juju-sprite; text-indent:-9999px; }
-.facebook { @extend %social-link; background-position:-412px 3px; }
-.tumblr { @extend %social-link; background-position:-335px 3px; }
-.twitter { @extend %social-link; background-position:-363px -111px; }
-.instagram { @extend %social-link; background-position:-363px -111px; }
-.pinterest { @extend %social-link; background-position:-573px 2px; }
+
 // JUJU examples
 .juju-friends { @include grid-column(2); margin-bottom:$margin-medium; @media #{$small-only} { @include grid-column(8); text-align:center; } }
 //

@@ -8677,6 +8677,7 @@ nav ul li {
 h1 {
   font-weight: 800;
   text-transform: uppercase;
+  line-height: 1.1;
 }
 
 /* line 15, ../scss/_typography.scss */
@@ -8729,28 +8730,60 @@ h3 {
   border-radius: 40px;
 }
 
-/* line 14, ../scss/_common.scss */
+/* line 15, ../scss/_common.scss */
 .button {
   color: black;
-  background-color: white;
-  border: 5px solid black;
+  background-color: #32e6dc;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
 }
-/* line 15, ../scss/_common.scss */
+/* line 16, ../scss/_common.scss */
 .button:hover {
-  background-color: #32e6dc;
+  background-color: #d3cfcf;
 }
 
-/* line 18, ../scss/_common.scss */
+/* line 19, ../scss/_common.scss */
 .background-poppy {
   background-color: #fa3241;
 }
 
-/* line 19, ../scss/_common.scss */
+/* line 20, ../scss/_common.scss */
 .background-water {
   background-color: #32e6dc;
+}
+
+/* line 24, ../scss/_common.scss */
+.facebook, .tumblr, .twitter, .instagram, .pinterest {
+  display: block;
+  float: right;
+  margin-left: 10px;
+  text-indent: -9999px;
+}
+
+/* line 25, ../scss/_common.scss */
+.facebook {
+  background-position: -412px 3px;
+}
+
+/* line 26, ../scss/_common.scss */
+.tumblr {
+  background-position: -335px 3px;
+}
+
+/* line 27, ../scss/_common.scss */
+.twitter {
+  background-position: -363px -111px;
+}
+
+/* line 28, ../scss/_common.scss */
+.instagram {
+  background-position: -363px -111px;
+}
+
+/* line 29, ../scss/_common.scss */
+.pinterest {
+  background-position: -573px 2px;
 }
 
 /* line 1, ../scss/_styles.scss */
@@ -8898,40 +8931,7 @@ nav ul li {
   }
 }
 
-/* line 26, ../scss/_styles.scss */
-.facebook, .tumblr, .twitter, .instagram, .pinterest {
-  display: block;
-  float: right;
-  margin-left: 10px;
-  text-indent: -9999px;
-}
-
-/* line 27, ../scss/_styles.scss */
-.facebook {
-  background-position: -412px 3px;
-}
-
-/* line 28, ../scss/_styles.scss */
-.tumblr {
-  background-position: -335px 3px;
-}
-
-/* line 29, ../scss/_styles.scss */
-.twitter {
-  background-position: -363px -111px;
-}
-
-/* line 30, ../scss/_styles.scss */
-.instagram {
-  background-position: -363px -111px;
-}
-
-/* line 31, ../scss/_styles.scss */
-.pinterest {
-  background-position: -573px 2px;
-}
-
-/* line 33, ../scss/_styles.scss */
+/* line 25, ../scss/_styles.scss */
 .juju-friends {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -8940,7 +8940,7 @@ nav ul li {
   margin-bottom: 25px;
 }
 @media only screen and (max-width: 40em) {
-  /* line 33, ../scss/_styles.scss */
+  /* line 25, ../scss/_styles.scss */
   .juju-friends {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -8950,7 +8950,7 @@ nav ul li {
   }
 }
 
-/* line 37, ../scss/_styles.scss */
+/* line 29, ../scss/_styles.scss */
 .art-fingertip {
   position: relative;
   padding-left: 0.9375rem;
@@ -8961,7 +8961,7 @@ nav ul li {
   float: left;
 }
 @media only screen and (max-width: 40em) {
-  /* line 37, ../scss/_styles.scss */
+  /* line 29, ../scss/_styles.scss */
   .art-fingertip {
     position: relative;
     padding-left: 0.9375rem;
@@ -8973,7 +8973,7 @@ nav ul li {
   }
 }
 
-/* line 38, ../scss/_styles.scss */
+/* line 30, ../scss/_styles.scss */
 .art-for-everyone {
   position: relative;
   padding-left: 0.9375rem;
@@ -8985,7 +8985,7 @@ nav ul li {
   margin-top: 100px;
 }
 @media only screen and (max-width: 40em) {
-  /* line 38, ../scss/_styles.scss */
+  /* line 30, ../scss/_styles.scss */
   .art-for-everyone {
     position: relative;
     padding-left: 0.9375rem;
@@ -8998,7 +8998,7 @@ nav ul li {
   }
 }
 
-/* line 39, ../scss/_styles.scss */
+/* line 31, ../scss/_styles.scss */
 .goodbye-emoticon {
   position: relative;
   padding-left: 0.9375rem;
@@ -9009,7 +9009,7 @@ nav ul li {
   float: right;
 }
 @media only screen and (max-width: 40em) {
-  /* line 39, ../scss/_styles.scss */
+  /* line 31, ../scss/_styles.scss */
   .goodbye-emoticon {
     position: relative;
     padding-left: 0.9375rem;
@@ -9021,7 +9021,7 @@ nav ul li {
   }
 }
 
-/* line 40, ../scss/_styles.scss */
+/* line 32, ../scss/_styles.scss */
 .share-your-world {
   position: relative;
   padding-left: 0.9375rem;
@@ -9033,7 +9033,7 @@ nav ul li {
   margin-top: 150px;
 }
 @media only screen and (max-width: 40em) {
-  /* line 40, ../scss/_styles.scss */
+  /* line 32, ../scss/_styles.scss */
   .share-your-world {
     position: relative;
     padding-left: 0.9375rem;
@@ -9046,7 +9046,7 @@ nav ul li {
   }
 }
 
-/* line 41, ../scss/_styles.scss */
+/* line 33, ../scss/_styles.scss */
 .home-community {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -9055,7 +9055,7 @@ nav ul li {
   text-align: center;
 }
 
-/* line 42, ../scss/_styles.scss */
+/* line 34, ../scss/_styles.scss */
 .artists-display {
   position: relative;
   padding-left: 0.9375rem;
@@ -9067,7 +9067,7 @@ nav ul li {
   margin-bottom: 45px;
 }
 @media only screen and (max-width: 40em) {
-  /* line 42, ../scss/_styles.scss */
+  /* line 34, ../scss/_styles.scss */
   .artists-display {
     position: relative;
     padding-left: 0.9375rem;
@@ -9079,7 +9079,7 @@ nav ul li {
   }
 }
 
-/* line 43, ../scss/_styles.scss */
+/* line 35, ../scss/_styles.scss */
 .artists-content {
   position: relative;
   padding-left: 0.9375rem;
@@ -9090,12 +9090,12 @@ nav ul li {
   float: left;
   margin-top: 100px;
 }
-/* line 43, ../scss/_styles.scss */
+/* line 35, ../scss/_styles.scss */
 .artists-content ul {
   list-style-type: none;
 }
 @media only screen and (max-width: 40em) {
-  /* line 43, ../scss/_styles.scss */
+  /* line 35, ../scss/_styles.scss */
   .artists-content {
     position: relative;
     padding-left: 0.9375rem;
@@ -9108,32 +9108,32 @@ nav ul li {
   }
 }
 
-/* line 44, ../scss/_styles.scss */
+/* line 36, ../scss/_styles.scss */
 .page-title {
   margin-bottom: 25px;
 }
 
-/* line 45, ../scss/_styles.scss */
+/* line 37, ../scss/_styles.scss */
 .press-list {
   list-style-type: none;
 }
-/* line 46, ../scss/_styles.scss */
+/* line 38, ../scss/_styles.scss */
 .press-list li {
   border-bottom: 3px solid black;
   padding: 20px 0;
 }
 
-/* line 48, ../scss/_styles.scss */
+/* line 40, ../scss/_styles.scss */
 .post-photo {
   margin-bottom: 25px;
 }
 
-/* line 49, ../scss/_styles.scss */
+/* line 41, ../scss/_styles.scss */
 .footer p {
   font-size: 12px;
 }
 
-/* line 50, ../scss/_styles.scss */
+/* line 42, ../scss/_styles.scss */
 .footer {
   font-size: 12px;
 }
