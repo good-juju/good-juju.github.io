@@ -11,9 +11,19 @@
 %excerpt-small { position:relative; @include grid-column(4); padding:0 15px 15px 0; @media #{$small-only} { @include grid-column(8); } }
 // Wireframe
 %wireframe { border:1px solid black; height:400px; }
-.button { color:$black; background-color:white; border:5px solid $black; @include border-radius(40px);
-	&:hover { background-color:$water; }
+// BUTTONS
+.button { color:$black; background-color:$water; @include border-radius(40px);
+	&:hover { background-color:$warmgrey; }
 }
 // COLORS
 .background-poppy { background-color:$poppy; }
 .background-water { background-color:$water; }
+//
+// SOCIAL BUTTONS
+//
+%social-link { display:block; float:right; margin-left:10px; @extend %medium-circle; @extend %juju-sprite; text-indent:-9999px; }
+.facebook { @extend %social-link; background-position:-412px 3px; }
+.tumblr { @extend %social-link; background-position:-335px 3px; }
+.twitter { @extend %social-link; background-position:-363px -111px; }
+.instagram { @extend %social-link; background-position:-363px -111px; }
+.pinterest { @extend %social-link; background-position:-573px 2px; }
