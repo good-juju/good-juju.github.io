@@ -8707,6 +8707,13 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 40em) {
+  /* line 18, ../scss/_typography.scss */
+  blockquote {
+    margin: 0 25px;
+  }
+}
+
 /* line 2, ../scss/_common.scss */
 .facebook, .tumblr, .twitter, .instagram, .pinterest {
   background: url(/images/juju_sprite.png) no-repeat;
@@ -8887,6 +8894,7 @@ nav ul li {
   /* line 22, ../scss/_styles.scss */
   .content {
     text-align: center;
+    padding: 0 15px;
   }
 }
 

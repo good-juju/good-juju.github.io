@@ -19,7 +19,7 @@ html, body {
 	}
 .follow-us { @include grid-column(2, $float:right); margin-top:$margin-medium; @media #{$small-only} { display:none; }
 	 ul { list-style-type:none; margin:0; padding:0; } }
-.content { @include grid-row(); padding-top:$margin-large; @media #{$small-only} { text-align:center; } }
+.content { @include grid-row(); padding-top:$margin-large; @media #{$small-only} { text-align:center; padding:0 15px; } }
 //
 // SOCIAL BUTTONS
 //
