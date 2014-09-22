@@ -2,47 +2,92 @@
 layout: home
 ---
 
-<section id="overlay-container" class="overlay-container">
-	<div id="home-content-container" class="home-content-container">
-		{% for post in site.posts %}
-			{% if post.categories.first == 'press' %}
-			{% else %}
-				<div id="excerpt-{{post.categories | first}}" class="excerpt-{{post.categories | first}}{% if post.banner == true %}-banner{% else %}{% endif %}">
-					<div class="excerpt-container{% if post.categories.first == 'juju' %}-juju{% endif %}">
-							<div id="badge-{{post.categories | first}}" class="badge-{{post.categories | first}}"></div>
-							<div class="excerpt-content">
-							<div class="{{post.categories | first}}-image">{% if post.categories.first == 'juju' %}{% else %}<a href="{{ post.url }}">{% endif %}<img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="{{post.photo-alt}}">{% if post.categories.first == 'juju' %}{% else %}</a>{% endif %}</div>
-							<div class="{{post.categories | first}}-aside">
-								{% if post.categories contains 'blog' %}
-								<date class="{{post.categories | first}}-date">{{ post.date | date: "%m %d %y" }}</date>
-								{% else %}{% endif %}
-								{% if post.title %}
-								<h1 class="h4"><a href="{{ post.url }}">{{post.title}}</a></h1>
-								{% else %}{% endif %}
-								{% if post.custom-excerpt %}
-								{{ post.custom-excerpt }}
-								{% elsif post.categories.first == 'juju' %}
-								<p>{{ post.content }}</p>
-								{% else %}
-								<a class="read-more" href="{{ post.url }}">{{ post.excerpt }}</a> 
-								{% endif %}
-							</div>
-						</div>
-						<div class="excerpt-border"></div>
-					</div>
+		<section>
+			<div id="content" class="content">
+				<div class="art-fingertip">
+					<img src="images/artfingertips.png" width="329" height="583" alt="JUJU - Art at your fingertips">
 				</div>
-			{% endif %}
-		{% endfor %}
-</section>
-<section id="home-banner" class="home-banner">
-	<div class="opening-container">
-		<div class="opening">
-		 <div id="opening-animation" class="opening-animation">
-			 <h1 class="opening-h1">Art for everyone</h1>
-			 <p class="opening-p">We made JUJU because we value individual expression
-through art and believe we all have something to share.</p>
-<a class="opening-link" href="https://itunes.apple.com/us/app/juju-art-mashup/id799548449?mt=8&uo=4" target="itunes_store">Download for iPhone</a>
-		 </div>
-		</div>
-	</div>
-</section>
+				<div class="art-for-everyone">
+					<h1>Art for everyone</h1>
+					<p>We made JUJU because we value individual expression and believe we all have something to share.</p>
+					<a href="https://itunes.apple.com/us/app/juju-art-mashup/id799548449?mt=8&uo=4" target="itunes_store" class="button">Download for iPhone</a>
+				</div>
+			</div>
+		</section>
+		<section style="background-color:#eee;">
+			<div id="content" class="content">
+				<div class="goodbye-emoticon">
+					<img src="images/goodbye-emoticons.png" width="360" height="739" alt="JUJU - Goodbye Emoticons">
+				</div>
+				<div class="share-your-world">
+					<h1>Share your world</h1>
+					<p>with the ones you love. Through text messages, Facebook, Instagram or a Postcard.</p>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div id="content" class="content">
+				<div class="home-community">
+					<h1>From our Community</h1>
+					<p>JUJU's made by our friends</p>
+				</div>
+				<div id="juju-friends" class="juju-friends">
+					<img src="images/juju/JUJU_Tiger_BAM.jpg" width="273" height="485" alt="JUJU Tiger BAM">
+				</div>
+				<div id="juju-friends" class="juju-friends">
+					<img src="images/juju/JUJU_The_Vision.jpg" width="273" height="485" alt="JUJU Tiger BAM">
+				</div>
+				<div id="juju-friends" class="juju-friends">
+					<img src="images/juju/JUJU_LOL.jpg" width="273" height="485" alt="JUJU LOL">
+				</div>
+				<div id="juju-friends" class="juju-friends">
+					<img src="images/juju/JUJU_Poetry_Clouds.jpg" width="273" height="485" alt="JUJU LOL">
+				</div>
+				<div id="juju-friends" class="juju-friends">
+					<img src="images/juju/JUJU_Hearts.jpg" width="273" height="485" alt="JUJU Hearts">
+				</div>
+				<div id="juju-friends" class="juju-friends">
+					<img src="images/juju/JUJU_Hot_Dog_Woman.jpg" width="273" height="485" alt="JUJU Hot Dog Woman">
+				</div>
+				<div id="juju-friends" class="juju-friends">
+					<img src="images/juju/JUJU_Chicken.jpg" width="273" height="485" alt="JUJU Chicken">
+				</div>
+				<div id="juju-friends" class="juju-friends">
+					<img src="images/juju/JUJU_Paul_Rand_Homage.jpg" width="273" height="485" alt="JUJU Paul Rand Homage">
+				</div>
+				<div id="juju-friends" class="juju-friends">
+					<img src="images/juju/JUJU_Pegasus_Center_All.jpg" width="273" height="485" alt="JUJU Pegasus Center All">
+				</div>
+				<div id="juju-friends" class="juju-friends">
+					<img src="images/juju/JUJU_Pegasus_City.jpg" width="273" height="485" alt="JUJU Pegasus City">
+				</div>
+				<div id="juju-friends" class="juju-friends">
+					<img src="images/juju/JUJU_Lips_And_All.jpg" width="273" height="485" alt="JUJU Lips And All">
+				</div>
+				<div id="juju-friends" class="juju-friends">
+					<img src="images/juju/JUJU_Birthday_Owl.jpg" width="273" height="485" alt="JUJU Birthday Owl">
+				</div>
+			</div>
+		</section>
+		<section style="background-color:#eee;">
+			<div id="content" class="content">
+				<div class="artists-display">
+					<img src="images/artists.png" width="354" height="558" alt="JUJU - Artists">
+				</div>
+				<div class="artists-content">
+					<h1>ARTISTS</h1>
+					<p>Curated artists right on your phone to choose from and create JUJU's with.</p>
+					<ul>
+						<li>Adam Haynes</li>
+						<li>Julia Junkin</li>
+						<li>Screech Owl Design</li>
+						<li>Sarah Watson</li>
+						<li>Alex Reisfar</li>
+						<li>Natalie Puls</li>
+						<li>Linda Diteman</li>
+						<li>Victoria Weiss</li>
+						<li>Joe Leonard Tattoo</li>
+					</ul>
+				</div>
+			</div>
+		</section>

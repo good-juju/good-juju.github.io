@@ -1,0 +1,50 @@
+html, body {
+	padding:0;
+	margin:0;
+	width:100%;
+	height:100%;
+}
+//
+// MASTHEAD
+//
+.masthead-container { width:100%; background-color:$warmgrey; }
+.masthead { @include grid-row(); padding-bottom:$margin-small; padding-top:$margin-small; }
+.logo { @include grid-column(2); @media #{$small-only} { @include grid-column(4); } }
+.juju { @media #{$small-only} { width:70%; width:70%; } }
+// Navigation
+.navigation { @include grid-column(4); margin-top:$margin-medium; @media #{$small-only} { @include grid-column(3, $float:right); margin-top:0; }  }
+	nav { 
+		ul { list-style-type:none; margin:0; padding:0; }
+		ul li { display:inline; margin-right:16px; @media #{$small-only} { display:block; } }
+	}
+.follow-us { @include grid-column(2, $float:right); margin-top:$margin-medium; @media #{$small-only} { display:none; }
+	 ul { list-style-type:none; margin:0; padding:0; } }
+.content { @include grid-row(); padding-top:$margin-large; @media #{$small-only} { text-align:center; } }
+//
+// SOCIAL BUTTONS
+//
+%social-link { display:block; float:right; margin-left:10px; @extend %medium-circle; @extend %juju-sprite; text-indent:-9999px; }
+.facebook { @extend %social-link; background-position:-412px 3px; }
+.tumblr { @extend %social-link; background-position:-335px 3px; }
+.twitter { @extend %social-link; background-position:-363px -111px; }
+.instagram { @extend %social-link; background-position:-363px -111px; }
+.pinterest { @extend %social-link; background-position:-573px 2px; }
+// JUJU examples
+.juju-friends { @include grid-column(2); margin-bottom:$margin-medium; @media #{$small-only} { @include grid-column(8); text-align:center; } }
+//
+// HOME
+//
+.art-fingertip { @include grid-column(3, $push:1); @media #{$small-only} { @include grid-column(8, $push:0); } }
+.art-for-everyone { @include grid-column(3, $push:1); margin-top:100px; @media #{$small-only} { @include grid-column(8, $push:0); margin-top:0px; } }
+.goodbye-emoticon { @include grid-column(3, $float:right, $pull:1); @media #{$small-only} { @include grid-column(8, $pull:0); } }
+.share-your-world { @include grid-column(3, $push:1); margin-top:150px; @media #{$small-only} { @include grid-column(8, $push:0); margin-top:0px; } }
+.home-community { @include grid-column(8); text-align:center; }
+.artists-display { @include grid-column(3, $push:1); margin-bottom:$margin-large; @media #{$small-only} { @include grid-column(8, $pull:0); } }
+.artists-content { @include grid-column(3, $push:1); ul { list-style-type:none; } margin-top:100px; @media #{$small-only} { @include grid-column(8, $push:0); margin-top:0px; } }
+.page-title { margin-bottom:$margin-medium; }
+.press-list { list-style-type:none;
+	li { border-bottom:3px solid black; padding:20px 0; }
+}
+.post-photo { margin-bottom:$margin-medium; }
+.footer p { font-size:12px; }
+.footer  { font-size:12px; }

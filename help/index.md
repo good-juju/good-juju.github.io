@@ -4,7 +4,7 @@ title: Help
 permalink: /help/
 background-color: background-water
 thumbnail: 
-photo: /assets/img/help_operational.jpg
+photo: /images/help_operational.jpg
 photo-alt: JUJU is operational
 custom-excerpt: 
 page-introduction: Sometimes ____ happens and we just need a little help.

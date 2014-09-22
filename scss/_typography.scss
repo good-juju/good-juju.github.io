@@ -1,0 +1,17 @@
+// FONT-FACE
+@include font-face(magallanes, '#{$font-assetpath}magallanes-essential-webfont');
+@include font-face(magallanes, '#{$font-assetpath}magallanes-essential-italic-webfont', normal, italic);
+@include font-face(magallanes, '#{$font-assetpath}magallanes-essential-light-webfont', 100);
+@include font-face(magallanes, '#{$font-assetpath}magallanes-essential-light-italic-webfont', 100, italic);
+@include font-face(magallanes, '#{$font-assetpath}magallanes-essential-black-webfont', 800);
+@include font-face(magallanes, '#{$font-assetpath}magallanes-essential-black-italic-webfont', 800, italic);
+@include font-face(magallanes, '#{$font-assetpath}magallanes-essential-bold-webfont', bold);
+@include font-face(magallanes, '#{$font-assetpath}magallanes-essential-bold-webfont', bold, italic);
+// NAVIGATION
+p { font-family:helvetica; }
+nav ul li { font-weight:800; letter-spacing:rem-calc(1); }
+
+h1 { font-weight:800; text-transform:uppercase;}
+h3 { line-height:45px; margin-bottom:$margin-medium; @media #{$small-only} { font-size:25px; } }
+.small { font-size:12px; }
+.pullquote { font-size:55px; @media #{$small-only} { font-size:25px; } }
