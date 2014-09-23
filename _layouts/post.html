@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 {% include head.html %}
 <body class="page help">
-<div id="masthead-sub" class="masthead-sub {% if page.background-color %}{{ page.background-color }}{% else %}background-poppy{% endif %}">
 {% include header.html %}
-</div>
-<div id="color-band" class="color-band {% if page.background-color %}{{ page.background-color }}{% else %}background-poppy{% endif %}">
-<section id="single-opening" class="single-opening">
-	<div id="introduction-photo" class="introduction-photo">
-		<div id="introduction-title" class="introduction-title"><h1>{{page.title}}</h1></div>
+<section>
+	<div class="content">
+		<h1 class="page-title">{{page.title}}</h1>
 		{% if page.photo %}
-		<img src="{{ site.baseurl }}{{ page.photo }}" width="901" height="380" alt="{{ page.photo-alt }}" />
+		<img class="post-photo" src="{{ site.baseurl }}{{ page.photo }}" width="901" height="380" alt="{{ page.photo-alt }}" />
 		{% endif %}
+		{{ content }}
 	</div>
-		<p id="introduction-copy" class="introduction-copy">{{page.page-introduction}}</p>
-</section>
-</div>
-<section id="content-container" class="content-container">
-
-{{ content }}
 </section>
 {% include footer.html %}
 </body>
