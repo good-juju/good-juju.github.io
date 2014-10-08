@@ -26,6 +26,7 @@ html, body {
 //
 // HOME
 //
+.kickstarter { @include grid-column(8); text-align:center; }
 .art-fingertip { @include grid-column(3, $push:1); @media #{$small-only} { @include grid-column(8, $push:0); } }
 .art-for-everyone { @include grid-column(3, $push:1); margin-top:100px; @media #{$small-only} { @include grid-column(8, $push:0); margin-top:0px; } }
 .goodbye-emoticon { @include grid-column(3, $float:right, $pull:1); @media #{$small-only} { @include grid-column(8, $pull:0); } }
