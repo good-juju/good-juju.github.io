@@ -8,6 +8,8 @@ photo:
 photo-alt: 
 banner: true
 ---
+JUJU, the mash-up, collaborative, multi-media game
+BY BRIANNA BREY, [The Source Weekly] (http://www.bendsource.com/bend/the-girl-talk-of-arts-apps/Content?oid=2393947)
 
 If you loved making cut-and-paste collages in elementary school, you'll love JUJU, one of Bend's most promising new tech startups. JUJU is an art-based messaging app that provides a library of licensed art pieces for users to combine and design into unique hodgepodges.
 
