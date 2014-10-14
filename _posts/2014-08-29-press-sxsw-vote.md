@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SXSW"
+title:  "Get JUJU to SXSW 2015"
 date:   2014-08-29 23:14:47
 categories: blog press
 thumbnail: /images/blog/vote_SXSW_thumb.png
