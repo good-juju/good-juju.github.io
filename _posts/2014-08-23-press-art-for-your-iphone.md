@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Art for your iPhone"
-date:   2014-08-23 23:14:47
+date:   2014-08-18 23:14:47
 categories: blog press
 thumbnail: /images/blog/bendbulletin_thumb.jpg
 photo: /images/blog/bendbulletin.jpg
