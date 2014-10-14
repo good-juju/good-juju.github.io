@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JUJU App Launches in App Store"
-date:   2014-08-23 23:14:47
+date:   2014-06-23 23:14:47
 categories: press
 background-color: 
 thumbnail: 
