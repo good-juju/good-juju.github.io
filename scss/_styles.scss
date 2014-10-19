@@ -27,13 +27,14 @@ html, body {
 // HOME
 //
 .kickstarter { @include grid-column(8); text-align:center; }
-.art-fingertip { @include grid-column(3, $push:1); @media #{$small-only} { @include grid-column(8, $push:0); } }
-.art-for-everyone { @include grid-column(3, $push:1); margin-top:100px; @media #{$small-only} { @include grid-column(8, $push:0); margin-top:0px; } }
+.art-fingertip { text-align:center; @include grid-column(8); @media #{$small-only} { @include grid-column(8); } }
+.art-for-everyone { text-align:center; @include grid-column(8); @media #{$small-only} { @include grid-column(8); margin-top:0px; } }
 .goodbye-emoticon { @include grid-column(3, $float:right, $pull:1); @media #{$small-only} { @include grid-column(8, $pull:0); } }
 .share-your-world { @include grid-column(3, $push:1); margin-top:150px; @media #{$small-only} { @include grid-column(8, $push:0); margin-top:0px; } }
 .home-community { @include grid-column(8); text-align:center; }
 .artists-display { @include grid-column(3, $push:1); margin-bottom:$margin-large; @media #{$small-only} { @include grid-column(8, $pull:0); } }
 .artists-content { @include grid-column(3, $push:1); ul { list-style-type:none; } margin-top:100px; @media #{$small-only} { @include grid-column(8, $push:0); margin-top:0px; } }
+.testimonial { text-align:center; margin-bottom:25px; p { font-size:em(22); } }
 .page-title { margin-bottom:$margin-medium; }
 .press-list { list-style-type:none;
 	li { border-bottom:3px solid black; padding:20px 0; }

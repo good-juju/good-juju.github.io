@@ -16,3 +16,4 @@ h3 { line-height:45px; margin-bottom:$margin-medium; @media #{$small-only} { fon
 .small { font-size:12px; }
 .pullquote { font-size:55px; @media #{$small-only} { font-size:25px; } }
 blockquote { @media #{$small-only} { margin:0 25px; } }
+small { font-size:em(12); }

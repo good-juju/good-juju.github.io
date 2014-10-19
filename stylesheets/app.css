@@ -7271,6 +7271,10 @@ h3 {
   blockquote {
     margin: 0 25px; } }
 
+/* line 19, ../scss/_typography.scss */
+small {
+  font-size: 0.75em; }
+
 /* line 2, ../scss/_common.scss */
 .facebook, .tumblr, .twitter, .instagram, .pinterest {
   background: url(/images/juju_sprite.png) no-repeat; }
@@ -7479,43 +7483,32 @@ nav ul li {
 
 /* line 30, ../scss/_styles.scss */
 .art-fingertip {
-  position: relative;
+  text-align: center;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-  width: 37.5%;
-  left: 12.5%;
-  right: auto;
+  width: 100%;
   float: left; }
   @media only screen and (max-width: 40em) {
     /* line 30, ../scss/_styles.scss */
     .art-fingertip {
-      position: relative;
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
       width: 100%;
-      left: 0%;
-      right: auto;
       float: left; } }
 
 /* line 31, ../scss/_styles.scss */
 .art-for-everyone {
-  position: relative;
+  text-align: center;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-  width: 37.5%;
-  left: 12.5%;
-  right: auto;
-  float: left;
-  margin-top: 100px; }
+  width: 100%;
+  float: left; }
   @media only screen and (max-width: 40em) {
     /* line 31, ../scss/_styles.scss */
     .art-for-everyone {
-      position: relative;
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
       width: 100%;
-      left: 0%;
-      right: auto;
       float: left;
       margin-top: 0px; } }
 
@@ -7616,25 +7609,33 @@ nav ul li {
       margin-top: 0px; } }
 
 /* line 37, ../scss/_styles.scss */
+.testimonial {
+  text-align: center;
+  margin-bottom: 25px; }
+  /* line 37, ../scss/_styles.scss */
+  .testimonial p {
+    font-size: 1.375em; }
+
+/* line 38, ../scss/_styles.scss */
 .page-title {
   margin-bottom: 25px; }
 
-/* line 38, ../scss/_styles.scss */
+/* line 39, ../scss/_styles.scss */
 .press-list {
   list-style-type: none; }
-  /* line 39, ../scss/_styles.scss */
+  /* line 40, ../scss/_styles.scss */
   .press-list li {
     border-bottom: 3px solid black;
     padding: 20px 0; }
 
-/* line 41, ../scss/_styles.scss */
+/* line 42, ../scss/_styles.scss */
 .post-photo {
   margin-bottom: 25px; }
 
-/* line 42, ../scss/_styles.scss */
+/* line 43, ../scss/_styles.scss */
 .footer p {
   font-size: 12px; }
 
-/* line 43, ../scss/_styles.scss */
+/* line 44, ../scss/_styles.scss */
 .footer {
   font-size: 12px; }
