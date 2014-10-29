@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JUJU in Central Oregon Magazine, Fall 2014 issue"
-date:   2014-10-14 10:00:00
+date:   2014-10-29 10:00:00
 categories: press
 background-color: 
 thumbnail: 
