@@ -12,9 +12,9 @@ Bend company creates iPhone app<br>
 JuJu, an art mashup, lets users sample work of visual artists<br>
 By Joseph Ditzler / The Bulletin
 
-<p class="small">Published Aug 16, 2014 at 12:01AM / Updated Aug 18, 2014 at 02:04PM</p>
+<p class="small">Published Aug 16, 2014</p>
 
-<h3>Mona Daly’s artwork is well known, even if the Bend resident’s name is not.</h3>
+Mona Daly’s artwork is well known, even if the Bend resident’s name is not.
 
 <h3>That could change with the advent of JuJu, an Apple iPhone app developed in Bend that allows users to create their own artistic statements using work from Daly and a battery of artists. The artists gain not only recognition but a taste of the financial pie, as well.</h3>
 
@@ -32,7 +32,7 @@ The free basic app comes with a catalog of digital art that users mix and match,
 
 “If we had a million users, which is our goal for the first year, … the licensing is amazing for artists,” Junkin said. “They could make a living.”
 
-<blockquote class="pullquote">in its first week in June rose to No. 193 among top-grossing apps on iTunes...</blockquote>
+<blockquote class="pullquote">In its first week in June rose to No. 193 among top-grossing apps on iTunes.</blockquote>
 
 The app in its first week in June rose to No. 193 among top-grossing apps on iTunes, said Jacqueline Smith, JuJu marketing director. It’s since fallen to No. 636, but she hopes it will rise again with wider marketing, she said. It has about 1,500 users thus far, Junkin said.
 
