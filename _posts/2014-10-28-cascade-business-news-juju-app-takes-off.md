@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JUJU’s iPhone App Taking Off"
+title: "JUJU’s iPhone App Taking Off noted by Cascade Business News"
 date:   2014-10-28 10:00:00
 categories: press
 background-color: 
@@ -12,6 +12,7 @@ page-introduction:
 ---
 JUJU’s iPhone App Taking Off<br>
 
+Cascade Business News<br>
 by Lauren Baker Davis<br>
 
 <p class="small">Published Oct 29, 2014</p>
