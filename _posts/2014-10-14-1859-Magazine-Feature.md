@@ -27,4 +27,4 @@ Creative expression. Set it as a phone background or send it in a message as a p
 CLIENTS<br>
 Anyone with an iPhone and a desire to create.
 
-<p class="small">For the full article, grab the November/December 2014 issue of 1859 Magazine found at various locations (grocery stores, restaurants, coffee shops, and even banks) around the state of Oregon.</p>
+<p class="small">For the full article, grab the November/December 2014 issue of 1859 Magazine found at various locations (grocery stores, restaurants, coffee shops, and even banks) around the state of Oregon.</p> 
