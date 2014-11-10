@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Good JUJU App: Mixing Art with Mobile Messaging, Nov/Dec 2014 Issue"
+title:  "Good JUJU App: Mixing Art with Mobile Messaging, 1859 Oregon's Magazine"
 date:   2014-11-10 10:14:47
 categories: press
 thumbnail: 
@@ -8,7 +8,7 @@ photo:
 photo-alt: 
 banner: true
 ---
-1859 Magazine [1859 Magazine](http://1859oregonmagazine.com/)<br>
+1859 Oregon's Magazine [1859 Oregon's Magazine](http://1859oregonmagazine.com/)<br>
 Good JUJU App: Mixing Art with Mobile Messaging<br> 
 by Lee Lewis Husk<br>
 
@@ -27,4 +27,4 @@ Creative expression. Set it as a phone background or send it in a message as a p
 CLIENTS<br>
 Anyone with an iPhone and a desire to create.
 
-For the full article, grab the November/December 2014 issue of 1859 Magazine found at various locations (grocery stores, restaurants, coffee shops, and even banks) around the state of Oregon. 
+<p class="small">For the full article, grab the November/December 2014 issue of 1859 Magazine found at various locations (grocery stores, restaurants, coffee shops, and even banks) around the state of Oregon.</p>
