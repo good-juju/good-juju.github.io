@@ -17,6 +17,8 @@ by Lauren Baker Davis<br>
 
 <p class="small">Published Oct 29, 2014</p>
 
+<!-- jujus-iphone-app-taking-off -->
+
 After a June 2014 soft launch, JUJU, an art-mash messaging app, is poised for a national launch. The timing is terrific for several reasons. First, product sales are soaring with a social media soft launch, which means a national launch should have a tremendous draw. Secondly, Version 1.2 will create a JUJU community which, like Facebook and Instagram, will invite customers to create profiles, share work, and ideas—building brand identity and demand. Finally, art mashup is gaining attention and artistic credibility. 
 
 Musical mashups—the blending of two or more songs—have been popular since the late 1990’s. Art mashups—the combining of images and, in some cases, text—are a rising art form. Art mashups drew the attention of the Huffington Post, who published a cutting edge collection of classical art and hip-hop song lyrics on June 23rd of this year.  
