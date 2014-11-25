@@ -45,3 +45,5 @@ JuJu does not allow users to upload their own photos, but provides photographic 
 She and her team bank on JuJu feeding its users’ creative impulses.
 
 “I think people are pretty tired of doing the same things on their phones day after day,” said Matt Kern, of Bloomcrush. “There are social networks, but there’s not a lot in between that’s engaging. And I think this has the potential to spark creativity in people who don’t necessarily have it.”
+
+<!-- Art-For-Your-iPhone --> 
