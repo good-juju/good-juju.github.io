@@ -14,6 +14,8 @@ by Lee Lewis Husk<br>
 
 <p class="small">Published early November 2014</p>
 
+<!-- good-juju-app-mixing-art-with-mobile-messaging -->
+
 After years of expressing her artistic skills on fabric and canvas, Julia Junkin moved into the electronic realm. Good JUJU, the Bend-based company she founded, released its first messaging app in June and puts Junkin's art and the portfolios of about fifty painters, illustrators, photographers, graphic designers and typographers at the fingertips of anyone with an iPhone or iPad. By year end, the goal is to have 1,000 artists represented. 
 
 <blockquote class="pullquote">When artistic expression meets artist discovery.</blockquote>
