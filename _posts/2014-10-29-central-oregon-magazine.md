@@ -28,3 +28,5 @@ Hundreds of thousands of contributors, many from local artists, make up the cata
 While the makers of the app grow familiar with copyright laws, they also hope to market JUJU on an international platform, starting with nearby English-speaking countries and then moving further. But as the app expands its reach, Smith expects the roots to stay local. “Bend it literally brimming with talent,” she says. 
 
 For more information, go to www.sharthejuju.com. 
+
+<!-- juju-in-central-oregon-magazine-fall-2014-->
