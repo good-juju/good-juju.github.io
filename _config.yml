@@ -7,4 +7,4 @@ url: "http://sharethejuju.com"
 
 # Build settings
 markdown: kramdown
-exclude: [Gemfile*, scss, *.json, _config.yml]
+exclude: [Gemfile, Gemfile.lock, scss, bower.json, package.json]
